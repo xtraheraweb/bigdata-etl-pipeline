@@ -4,8 +4,7 @@
     "builder": "dockerfile"
   },
   "deploy": {
-    "startCommand": "bash -c 'pip install apache-airflow-providers-docker && airflow webserver --port 8080'",
-    "healthcheckPath": "/health",
-    "healthcheckTimeout": 300
+    "healthcheckTimeout": 300,
+    "restartPolicyType": "always"
   }
 }
