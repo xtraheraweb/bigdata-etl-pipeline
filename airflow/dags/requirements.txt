@@ -1,6 +1,6 @@
 # Database and MongoDB
 apache-airflow-providers-mongo==3.2.1
-pymongo==4.5.0
+pymongo==4.3.3
 
 # Data Processing (simplified versions)
 pandas==1.5.3
