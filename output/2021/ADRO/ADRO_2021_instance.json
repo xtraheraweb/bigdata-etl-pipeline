@@ -2,7 +2,7 @@
   "emiten": "ADARO ENERGY Tbk",
   "company_code": "ADRO",
   "report_year": "2021",
-  "processed_at": "2025-06-17T12:20:53.796329",
+  "processed_at": "2025-06-18T02:12:27.580436",
   "source_file": "ADRO_instance_2021.zip",
   "data_fields_count": 488,
   "laporan_keuangan_data": {
@@ -3404,7 +3404,7 @@
     ],
     "company_code": "ADRO",
     "report_year": "2021",
-    "processed_at": "2025-06-17T12:20:53.796329",
+    "processed_at": "2025-06-18T02:12:27.580436",
     "source_file": "ADRO_instance_2021.zip"
   }
 }

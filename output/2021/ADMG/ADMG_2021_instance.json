@@ -2,7 +2,7 @@
   "emiten": "Polychem Indonesia Tbk",
   "company_code": "ADMG",
   "report_year": "2021",
-  "processed_at": "2025-06-17T12:20:52.401997",
+  "processed_at": "2025-06-18T02:12:26.708023",
   "source_file": "ADMG_instance_2021.zip",
   "data_fields_count": 486,
   "laporan_keuangan_data": {
@@ -3396,7 +3396,7 @@
     ],
     "company_code": "ADMG",
     "report_year": "2021",
-    "processed_at": "2025-06-17T12:20:52.401997",
+    "processed_at": "2025-06-18T02:12:26.708023",
     "source_file": "ADMG_instance_2021.zip"
   }
 }

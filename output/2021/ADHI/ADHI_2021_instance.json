@@ -2,7 +2,7 @@
   "emiten": "PT Adhi Karya (Persero) Tbk.",
   "company_code": "ADHI",
   "report_year": "2021",
-  "processed_at": "2025-06-17T12:20:51.081054",
+  "processed_at": "2025-06-18T02:12:26.020545",
   "source_file": "ADHI_instance_2021.zip",
   "data_fields_count": 389,
   "laporan_keuangan_data": {
@@ -3008,7 +3008,7 @@
     ],
     "company_code": "ADHI",
     "report_year": "2021",
-    "processed_at": "2025-06-17T12:20:51.081054",
+    "processed_at": "2025-06-18T02:12:26.020545",
     "source_file": "ADHI_instance_2021.zip"
   }
 }

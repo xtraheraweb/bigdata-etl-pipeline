@@ -2,7 +2,7 @@
   "emiten": "PT Adhi Commuter Properti Tbk",
   "company_code": "ADCP",
   "report_year": "2021",
-  "processed_at": "2025-06-17T12:20:49.588286",
+  "processed_at": "2025-06-18T02:12:25.213032",
   "source_file": "ADCP_instance_2021.zip",
   "data_fields_count": 486,
   "laporan_keuangan_data": {
@@ -3396,7 +3396,7 @@
     ],
     "company_code": "ADCP",
     "report_year": "2021",
-    "processed_at": "2025-06-17T12:20:49.588286",
+    "processed_at": "2025-06-18T02:12:25.213032",
     "source_file": "ADCP_instance_2021.zip"
   }
 }

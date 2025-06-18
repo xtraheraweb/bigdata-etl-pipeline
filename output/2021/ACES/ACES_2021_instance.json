@@ -2,7 +2,7 @@
   "emiten": "Ace Hardware Indonesia Tbk",
   "company_code": "ACES",
   "report_year": "2021",
-  "processed_at": "2025-06-17T12:20:47.884562",
+  "processed_at": "2025-06-18T02:12:24.478107",
   "source_file": "ACES_instance_2021.zip",
   "data_fields_count": 486,
   "laporan_keuangan_data": {
@@ -3396,7 +3396,7 @@
     ],
     "company_code": "ACES",
     "report_year": "2021",
-    "processed_at": "2025-06-17T12:20:47.884562",
+    "processed_at": "2025-06-18T02:12:24.478107",
     "source_file": "ACES_instance_2021.zip"
   }
 }

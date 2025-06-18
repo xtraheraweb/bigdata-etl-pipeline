@@ -1,0 +1,63 @@
+[2025-06-18T02:12:23.844+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.transform_idx manual__2025-06-18T02:12:05.437289+00:00 [queued]>
+[2025-06-18T02:12:23.873+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.transform_idx manual__2025-06-18T02:12:05.437289+00:00 [queued]>
+[2025-06-18T02:12:23.874+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-06-18T02:12:23.915+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): transform_idx> on 2025-06-18 02:12:05.437289+00:00
+[2025-06-18T02:12:23.925+0000] {standard_task_runner.py:57} INFO - Started process 258 to run task
+[2025-06-18T02:12:23.934+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'transform_idx', 'manual__2025-06-18T02:12:05.437289+00:00', '--job-id', '109', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmpuuacp_cj']
+[2025-06-18T02:12:23.936+0000] {standard_task_runner.py:85} INFO - Job 109: Subtask transform_idx
+[2025-06-18T02:12:24.056+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.transform_idx manual__2025-06-18T02:12:05.437289+00:00 [running]> on host 790f4cde8a0c
+[2025-06-18T02:12:24.312+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='transform_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-18T02:12:05.437289+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-18T02:12:05.437289+00:00'
+[2025-06-18T02:12:24.391+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-18T02:12:27.211+0000] {docker.py:403} INFO - Starting IDX revenue transformation process
+Starting revenue transformation by sector...
+[2025-06-18T02:12:31.512+0000] {docker.py:403} INFO - Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+[2025-06-18T02:12:31.513+0000] {docker.py:403} INFO - Setting default log level to "WARN
+[2025-06-18T02:12:31.515+0000] {docker.py:403} INFO - ".
+[2025-06-18T02:12:31.516+0000] {docker.py:403} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-06-18T02:12:32.050+0000] {docker.py:403} INFO - 25/06/18 02:12:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-06-18T02:12:38.368+0000] {docker.py:403} INFO - Connected to MongoDB - Database: tugas_bigdata
+[2025-06-18T02:13:29.862+0000] {docker.py:403} INFO - Found 89 raw financial reports
+Processing financial reports...
+[2025-06-18T02:13:30.062+0000] {docker.py:403} INFO - Processed 20/89 documents (22.5%)
+[2025-06-18T02:13:30.307+0000] {docker.py:403} INFO - Processed 40/89 documents (44.9%)
+[2025-06-18T02:13:30.541+0000] {docker.py:403} INFO - Processed 60/89 documents (67.4%)
+[2025-06-18T02:13:30.682+0000] {docker.py:403} INFO - Processed 80/89 documents (89.9%)
+[2025-06-18T02:13:30.750+0000] {docker.py:403} INFO - Processed 89/89 documents (100.0%)
+
+Storing 89 records to MongoDB...
+[2025-06-18T02:13:30.945+0000] {docker.py:403} INFO - Successfully stored 89 records
+
+=== TRANSFORMATION SUMMARY ===
+Total documents processed: 89
+Successful transformations: 89
+Failed transformations: 0
+
+Companies with Revenue: 89/89 (100.0%)
+Companies with Revenue Growth: 89/89 (100.0%)
+Companies with Operating Profit: 45/89 (50.6%)
+[2025-06-18T02:13:30.946+0000] {docker.py:403} INFO - Top 5 sectors by company count:
+- E. Consumer Cyclicals: 17 companies
+- 9. Trade, Services & Investment: 13 companies
+- D. Consumer Non-Cyclicals: 11 companies
+- G. Financials: 11 companies
+[2025-06-18T02:13:30.947+0000] {docker.py:403} INFO - - A. Energy: 11 companies
+[2025-06-18T02:13:31.195+0000] {docker.py:403} INFO - Transformation process completed
+[2025-06-18T02:13:31.303+0000] {docker.py:403} INFO - Validating transformed data...
+[2025-06-18T02:13:31.992+0000] {docker.py:403} INFO - === VALIDATION SUMMARY ===
+Total Records: 89
+Records with Revenue: 89
+Records with Revenue Growth: 89
+Records with Gross Profit: 45
+Records with Operating Profit: 45
+Records with Net Profit: 48
+Records with Cash: 48
+Records with Assets: 89
+Records with Short Term Borrowing: 38
+Records with Long Term Borrowing: 40
+Records with Equity: 89
+
+✓ Validation completed successfully
+[2025-06-18T02:13:31.994+0000] {docker.py:403} INFO - IDX revenue transformation process completed
+[2025-06-18T02:13:33.452+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=idx_pipeline, task_id=transform_idx, execution_date=20250618T021205, start_date=20250618T021223, end_date=20250618T021333
+[2025-06-18T02:13:33.553+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2025-06-18T02:13:33.606+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

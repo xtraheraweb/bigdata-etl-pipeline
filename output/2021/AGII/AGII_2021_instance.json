@@ -2,7 +2,7 @@
   "emiten": "PT Aneka Gas Industri Tbk.",
   "company_code": "AGII",
   "report_year": "2021",
-  "processed_at": "2025-06-17T12:20:55.493693",
+  "processed_at": "2025-06-18T02:12:28.327745",
   "source_file": "AGII_instance_2021.zip",
   "data_fields_count": 486,
   "laporan_keuangan_data": {
@@ -3396,7 +3396,7 @@
     ],
     "company_code": "AGII",
     "report_year": "2021",
-    "processed_at": "2025-06-17T12:20:55.493693",
+    "processed_at": "2025-06-18T02:12:28.327745",
     "source_file": "AGII_instance_2021.zip"
   }
 }

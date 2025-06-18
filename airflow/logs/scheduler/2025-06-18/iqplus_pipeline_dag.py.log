@@ -1,0 +1,176 @@
+[2025-06-18T02:10:09.937+0000] {processor.py:157} INFO - Started process (PID=161) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:10:09.939+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:10:09.942+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:10:09.941+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:10:10.029+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:10:10.060+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:10:10.147+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:10:10.145+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:10:10.240+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:10:10.240+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:10:10.549+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.619 seconds
+[2025-06-18T02:10:41.208+0000] {processor.py:157} INFO - Started process (PID=181) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:10:41.210+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:10:41.212+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:10:41.212+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:10:41.298+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:10:41.324+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:10:41.355+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:10:41.355+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:10:41.437+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:10:41.435+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:10:41.493+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.293 seconds
+[2025-06-18T02:11:11.981+0000] {processor.py:157} INFO - Started process (PID=201) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:11:11.983+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:11:11.986+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:11:11.985+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:11:12.070+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:11:12.092+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:11:12.155+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:11:12.155+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:11:12.441+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:11:12.441+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:11:12.494+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.528 seconds
+[2025-06-18T02:11:42.846+0000] {processor.py:157} INFO - Started process (PID=221) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:11:42.848+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:11:42.850+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:11:42.849+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:11:42.932+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:11:42.952+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:11:43.228+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:11:43.227+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:11:43.292+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:11:43.291+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:11:43.346+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.506 seconds
+[2025-06-18T02:12:13.899+0000] {processor.py:157} INFO - Started process (PID=243) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:12:13.901+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:12:13.903+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:12:13.902+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:12:13.980+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:12:14.238+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:12:14.302+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:12:14.302+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:12:14.375+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:12:14.374+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:12:14.423+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.532 seconds
+[2025-06-18T02:12:44.689+0000] {processor.py:157} INFO - Started process (PID=264) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:12:44.690+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:12:44.692+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:12:44.692+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:12:44.981+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:12:45.004+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:12:45.072+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:12:45.071+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:12:45.137+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:12:45.137+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:12:45.194+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.515 seconds
+[2025-06-18T02:13:15.339+0000] {processor.py:157} INFO - Started process (PID=289) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:13:15.341+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:13:15.343+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:13:15.343+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:13:15.435+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:13:15.462+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:13:15.547+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:13:15.546+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:13:15.624+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:13:15.623+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:13:15.694+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.361 seconds
+[2025-06-18T02:13:45.833+0000] {processor.py:157} INFO - Started process (PID=302) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:13:45.835+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:13:45.838+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:13:45.837+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:13:45.924+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:13:45.953+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:13:46.029+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:13:46.028+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:13:46.106+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:13:46.106+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:13:46.657+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.834 seconds
+[2025-06-18T02:14:17.092+0000] {processor.py:157} INFO - Started process (PID=322) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:14:17.093+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:14:17.095+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:14:17.095+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:14:17.188+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:14:17.220+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:14:17.321+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:14:17.321+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:14:17.401+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:14:17.401+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:14:17.453+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.369 seconds
+[2025-06-18T02:14:47.841+0000] {processor.py:157} INFO - Started process (PID=342) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:14:47.843+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:14:47.845+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:14:47.845+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:14:47.945+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:14:47.973+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:14:48.051+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:14:48.050+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:14:48.123+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:14:48.123+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:14:48.175+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.341 seconds
+[2025-06-18T02:15:18.624+0000] {processor.py:157} INFO - Started process (PID=362) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:15:18.625+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:15:18.627+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:15:18.627+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:15:18.706+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:15:18.731+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:15:18.801+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:15:18.801+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:15:18.868+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:15:18.867+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:15:18.915+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.299 seconds
+[2025-06-18T02:15:49.188+0000] {processor.py:157} INFO - Started process (PID=387) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:15:49.190+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:15:49.192+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:15:49.191+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:15:49.277+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:15:49.300+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:15:49.383+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:15:49.382+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:15:49.472+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:15:49.471+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:15:49.535+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.352 seconds
+[2025-06-18T02:16:19.752+0000] {processor.py:157} INFO - Started process (PID=402) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:16:19.754+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:16:19.757+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:16:19.756+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:16:19.844+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:16:19.872+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:16:19.938+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:16:19.937+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:16:20.004+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:16:20.003+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:16:20.057+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.314 seconds
+[2025-06-18T02:16:50.839+0000] {processor.py:157} INFO - Started process (PID=427) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:16:50.841+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:16:50.843+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:16:50.842+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:16:50.919+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:16:50.950+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:16:51.016+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:16:51.015+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:16:51.093+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:16:51.092+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:16:51.163+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.329 seconds
+[2025-06-18T02:17:21.628+0000] {processor.py:157} INFO - Started process (PID=447) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:17:21.629+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:17:21.631+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:17:21.631+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:17:21.711+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:17:21.732+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:17:21.805+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:17:21.804+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:17:21.868+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:17:21.867+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:17:21.919+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.299 seconds
+[2025-06-18T02:17:52.319+0000] {processor.py:157} INFO - Started process (PID=467) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:17:52.321+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:17:52.323+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:17:52.322+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:17:52.405+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:17:52.429+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:17:52.501+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:17:52.501+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:17:52.569+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:17:52.568+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:17:52.624+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.313 seconds
+[2025-06-18T02:18:23.012+0000] {processor.py:157} INFO - Started process (PID=487) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:18:23.014+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:18:23.016+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:18:23.016+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:18:23.097+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:18:23.119+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:18:23.179+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:18:23.178+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:18:23.248+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:18:23.247+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:18:23.301+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.296 seconds
+[2025-06-18T02:18:53.723+0000] {processor.py:157} INFO - Started process (PID=507) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:18:53.725+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:18:53.727+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:18:53.727+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:18:53.814+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:18:53.837+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:18:53.900+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:18:53.899+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:18:53.963+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:18:53.962+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:18:54.012+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.296 seconds
+[2025-06-18T02:19:24.386+0000] {processor.py:157} INFO - Started process (PID=527) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:19:24.387+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:19:24.390+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:19:24.389+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:19:24.468+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:19:24.492+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:19:24.556+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:19:24.555+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:19:24.614+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:19:24.613+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:19:24.660+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.283 seconds
+[2025-06-18T02:19:54.813+0000] {processor.py:157} INFO - Started process (PID=547) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:19:54.815+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:19:54.817+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:19:54.816+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:19:54.897+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:19:54.918+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:19:54.981+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:19:54.981+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:19:55.054+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:19:55.053+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:19:55.104+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.298 seconds
+[2025-06-18T02:20:25.703+0000] {processor.py:157} INFO - Started process (PID=567) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:20:25.704+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:20:25.707+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:20:25.706+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:20:25.796+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:20:25.821+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:20:25.887+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:20:25.887+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:20:25.953+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:20:25.952+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:20:26.001+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.306 seconds
+[2025-06-18T02:20:56.370+0000] {processor.py:157} INFO - Started process (PID=587) to work on /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:20:56.371+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/iqplus_pipeline_dag.py for tasks to queue
+[2025-06-18T02:20:56.373+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:20:56.373+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:20:56.459+0000] {logging_mixin.py:150} INFO - Detected host output path: C:\Users\Safira Aliyah Azmi\Downloads\bigdata\output
+[2025-06-18T02:20:56.483+0000] {processor.py:836} INFO - DAG(s) dict_keys(['iqplus_pipeline']) retrieved from /opt/airflow/dags/iqplus_pipeline_dag.py
+[2025-06-18T02:20:56.547+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:20:56.546+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-06-18T02:20:56.607+0000] {logging_mixin.py:150} INFO - [2025-06-18T02:20:56.607+0000] {dag.py:3508} INFO - Setting next_dagrun for iqplus_pipeline to 2025-06-17T00:00:00+00:00, run_after=2025-06-18T00:00:00+00:00
+[2025-06-18T02:20:56.658+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/iqplus_pipeline_dag.py took 0.296 seconds

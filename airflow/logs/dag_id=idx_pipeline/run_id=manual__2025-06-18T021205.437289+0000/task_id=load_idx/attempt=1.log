@@ -1,0 +1,216 @@
+[2025-06-18T02:12:17.612+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.load_idx manual__2025-06-18T02:12:05.437289+00:00 [queued]>
+[2025-06-18T02:12:17.636+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.load_idx manual__2025-06-18T02:12:05.437289+00:00 [queued]>
+[2025-06-18T02:12:17.638+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-06-18T02:12:17.679+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): load_idx> on 2025-06-18 02:12:05.437289+00:00
+[2025-06-18T02:12:17.688+0000] {standard_task_runner.py:57} INFO - Started process 256 to run task
+[2025-06-18T02:12:17.698+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'load_idx', 'manual__2025-06-18T02:12:05.437289+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmpqf1k1sup']
+[2025-06-18T02:12:17.701+0000] {standard_task_runner.py:85} INFO - Job 108: Subtask load_idx
+[2025-06-18T02:12:17.824+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.load_idx manual__2025-06-18T02:12:05.437289+00:00 [running]> on host 790f4cde8a0c
+[2025-06-18T02:12:18.077+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='load_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-18T02:12:05.437289+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-18T02:12:05.437289+00:00'
+[2025-06-18T02:12:18.151+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-18T02:12:21.517+0000] {docker.py:403} INFO - 🚀 IDX XBRL to JSON Converter & MongoDB Loader
+============================================================
+🔗 MongoDB URI: mongodb+srv://bigdatakecil:bigdata04@xtrahera.m7x7qad.mongodb.net/?retryWrites=true&w=majority&appName=xtrahera
+📂 Download Directory: /app/output
+🗃️  Database: tugas_bigdata
+📁 Collection: idx_raw
+🎯 This will process data from all years (2021-2025) into a single collection
+============================================================
+🚀 Starting XBRL to JSON Conversion and MongoDB Load Process
+================================================================================
+🔗 Testing MongoDB connection...
+   📍 Connecting to MongoDB using URI: mongodb+srv://bigdatakecil:bigdata04@xtrahera.m7x7qad.mongodb.net/?retryWrites=true&w=majority&appName=xtrahera
+[2025-06-18T02:12:22.345+0000] {docker.py:403} INFO - ✅ MongoDB connection successful!
+   📊 Database: tugas_bigdata
+[2025-06-18T02:12:22.372+0000] {docker.py:403} INFO - 📁 Available collections: ['yfinance_data_bulanan', 'idx_raw', 'yfinance_data_lima_tahun', 'idx_transform', 'iqplus_market_news', 'yfinance_data_tiga_tahun', 'yfinance_data_mingguan', 'iqplus_stock_news', 'yfinance_data_satu_tahun', 'yfinance_data_tahunan', 'yfinance_data_harian']
+   🎯 Target collection: idx_raw
+[2025-06-18T02:12:22.495+0000] {docker.py:403} INFO - 📈 Existing documents in collection: 70
+[2025-06-18T02:12:22.499+0000] {docker.py:403} INFO - 📂 Scanning download directory: /app/output
+[2025-06-18T02:12:22.523+0000] {docker.py:403} INFO - 📅 Found 5 year directories: 2021, 2022, 2023, 2024, 2025
+
+📊 ==================== Processing Year: 2021 ====================
+[2025-06-18T02:12:22.582+0000] {docker.py:403} INFO - 🏢 Found 15 company directories for year 2021
+   📋 Companies: AALI, ABBA, ABDA, ABMM, ACES, ACST, ADCP, ADES, ADHI, ADMF, ADMG, ADMR, ADRO, AGAR, AGII
+   [ 1/15] Processing company: AALI
+        📂 Directory: /app/output/2021/AALI
+[2025-06-18T02:12:22.589+0000] {docker.py:403} INFO - 📁 Found 2 files: AALI_2021_instance.json, AALI_instance_2021.zip
+        ✅ Match found: AALI_instance_2021.zip
+        🎯 ZIP files matching pattern: ['AALI_instance_2021.zip']
+        📦 Processing: AALI_instance_2021.zip
+[2025-06-18T02:12:22.598+0000] {docker.py:403} INFO - 📏 File size: 28,906 bytes
+[2025-06-18T02:12:22.608+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:22.814+0000] {docker.py:403} INFO - 📄 Processed 3129 XML elements, extracted 484 data fields
+            🏢 Resolved company name: Astra Agro Lestari Tbk
+[2025-06-18T02:12:22.879+0000] {docker.py:403} INFO - 💾 Local JSON saved: AALI_2021_instance.json
+[2025-06-18T02:12:23.093+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 685220861c828ec3e36b65e8
+        ✅ Success: AALI (2021) processed and loaded
+[2025-06-18T02:12:23.094+0000] {docker.py:403} INFO - [ 2/15] Processing company: ABBA
+        📂 Directory: /app/output/2021/ABBA
+[2025-06-18T02:12:23.102+0000] {docker.py:403} INFO - 📁 Found 2 files: ABBA_2021_instance.json, ABBA_instance_2021.zip
+        ✅ Match found: ABBA_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ABBA_instance_2021.zip']
+        📦 Processing: ABBA_instance_2021.zip
+[2025-06-18T02:12:23.112+0000] {docker.py:403} INFO - 📏 File size: 29,336 bytes
+[2025-06-18T02:12:23.122+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:23.267+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: Mahaka Media Tbk
+[2025-06-18T02:12:23.334+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABBA_2021_instance.json
+[2025-06-18T02:12:23.463+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 685220871c828ec3e36b65e9
+        ✅ Success: ABBA (2021) processed and loaded
+[2025-06-18T02:12:23.465+0000] {docker.py:403} INFO - [ 3/15] Processing company: ABDA
+        📂 Directory: /app/output/2021/ABDA
+[2025-06-18T02:12:23.471+0000] {docker.py:403} INFO - 📁 Found 2 files: ABDA_2021_instance.json, ABDA_instance_2021.zip
+        ✅ Match found: ABDA_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ABDA_instance_2021.zip']
+        📦 Processing: ABDA_instance_2021.zip
+[2025-06-18T02:12:23.481+0000] {docker.py:403} INFO - 📏 File size: 24,130 bytes
+[2025-06-18T02:12:23.499+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:23.618+0000] {docker.py:403} INFO - 📄 Processed 2663 XML elements, extracted 251 data fields
+            🏢 Resolved company name: Asuransi Bina Dana Arta Tbk
+[2025-06-18T02:12:23.676+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABDA_2021_instance.json
+[2025-06-18T02:12:23.912+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 685220871c828ec3e36b65ea
+        ✅ Success: ABDA (2021) processed and loaded
+[2025-06-18T02:12:23.914+0000] {docker.py:403} INFO - [ 4/15] Processing company: ABMM
+        📂 Directory: /app/output/2021/ABMM
+[2025-06-18T02:12:23.921+0000] {docker.py:403} INFO - 📁 Found 2 files: ABMM_2021_instance.json, ABMM_instance_2021.zip
+        ✅ Match found: ABMM_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ABMM_instance_2021.zip']
+        📦 Processing: ABMM_instance_2021.zip
+[2025-06-18T02:12:23.931+0000] {docker.py:403} INFO - 📏 File size: 29,290 bytes
+[2025-06-18T02:12:23.940+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:24.087+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: ABM Investama Tbk
+[2025-06-18T02:12:24.159+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABMM_2021_instance.json
+[2025-06-18T02:12:24.273+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 685220881c828ec3e36b65eb
+        ✅ Success: ABMM (2021) processed and loaded
+[2025-06-18T02:12:24.275+0000] {docker.py:403} INFO - [ 5/15] Processing company: ACES
+        📂 Directory: /app/output/2021/ACES
+[2025-06-18T02:12:24.282+0000] {docker.py:403} INFO - 📁 Found 2 files: ACES_2021_instance.json, ACES_instance_2021.zip
+        ✅ Match found: ACES_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ACES_instance_2021.zip']
+        📦 Processing: ACES_instance_2021.zip
+[2025-06-18T02:12:24.292+0000] {docker.py:403} INFO - 📏 File size: 29,450 bytes
+[2025-06-18T02:12:24.306+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:24.480+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: Ace Hardware Indonesia Tbk
+[2025-06-18T02:12:24.553+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACES_2021_instance.json
+[2025-06-18T02:12:24.665+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 685220881c828ec3e36b65ec
+        ✅ Success: ACES (2021) processed and loaded
+[2025-06-18T02:12:24.666+0000] {docker.py:403} INFO - [ 6/15] Processing company: ACST
+        📂 Directory: /app/output/2021/ACST
+[2025-06-18T02:12:24.672+0000] {docker.py:403} INFO - 📁 Found 2 files: ACST_2021_instance.json, ACST_instance_2021.zip
+        ✅ Match found: ACST_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ACST_instance_2021.zip']
+        📦 Processing: ACST_instance_2021.zip
+[2025-06-18T02:12:24.680+0000] {docker.py:403} INFO - 📏 File size: 28,282 bytes
+[2025-06-18T02:12:24.695+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:24.849+0000] {docker.py:403} INFO - 📄 Processed 3033 XML elements, extracted 436 data fields
+            🏢 Resolved company name: PT Acset Indonusa Tbk.
+[2025-06-18T02:12:24.909+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACST_2021_instance.json
+[2025-06-18T02:12:25.026+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 685220881c828ec3e36b65ed
+        ✅ Success: ACST (2021) processed and loaded
+[2025-06-18T02:12:25.027+0000] {docker.py:403} INFO - [ 7/15] Processing company: ADCP
+        📂 Directory: /app/output/2021/ADCP
+[2025-06-18T02:12:25.034+0000] {docker.py:403} INFO - 📁 Found 2 files: ADCP_2021_instance.json, ADCP_instance_2021.zip
+        ✅ Match found: ADCP_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADCP_instance_2021.zip']
+        📦 Processing: ADCP_instance_2021.zip
+[2025-06-18T02:12:25.042+0000] {docker.py:403} INFO - 📏 File size: 28,862 bytes
+[2025-06-18T02:12:25.051+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:25.214+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: PT Adhi Commuter Properti Tbk
+[2025-06-18T02:12:25.277+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADCP_2021_instance.json
+[2025-06-18T02:12:25.393+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 685220891c828ec3e36b65ee
+        ✅ Success: ADCP (2021) processed and loaded
+[2025-06-18T02:12:25.395+0000] {docker.py:403} INFO - [ 8/15] Processing company: ADES
+        📂 Directory: /app/output/2021/ADES
+[2025-06-18T02:12:25.401+0000] {docker.py:403} INFO - 📁 Found 2 files: ADES_2021_instance.json, ADES_instance_2021.zip
+        ✅ Match found: ADES_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADES_instance_2021.zip']
+        📦 Processing: ADES_instance_2021.zip
+[2025-06-18T02:12:25.409+0000] {docker.py:403} INFO - 📏 File size: 28,067 bytes
+[2025-06-18T02:12:25.416+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:25.571+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: Akasha Wira International Tbk  Tbk
+[2025-06-18T02:12:25.662+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADES_2021_instance.json
+[2025-06-18T02:12:25.778+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 685220891c828ec3e36b65ef
+        ✅ Success: ADES (2021) processed and loaded
+[2025-06-18T02:12:25.780+0000] {docker.py:403} INFO - [ 9/15] Processing company: ADHI
+        📂 Directory: /app/output/2021/ADHI
+[2025-06-18T02:12:25.788+0000] {docker.py:403} INFO - 📁 Found 2 files: ADHI_2021_instance.json, ADHI_instance_2021.zip
+        ✅ Match found: ADHI_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADHI_instance_2021.zip']
+        📦 Processing: ADHI_instance_2021.zip
+[2025-06-18T02:12:25.797+0000] {docker.py:403} INFO - 📏 File size: 28,206 bytes
+[2025-06-18T02:12:25.865+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:26.022+0000] {docker.py:403} INFO - 📄 Processed 2931 XML elements, extracted 385 data fields
+            🏢 Resolved company name: PT Adhi Karya (Persero) Tbk.
+[2025-06-18T02:12:26.081+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADHI_2021_instance.json
+[2025-06-18T02:12:26.204+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 6852208a1c828ec3e36b65f0
+        ✅ Success: ADHI (2021) processed and loaded
+[2025-06-18T02:12:26.205+0000] {docker.py:403} INFO - [10/15] Processing company: ADMF
+        📂 Directory: /app/output/2021/ADMF
+[2025-06-18T02:12:26.211+0000] {docker.py:403} INFO - 📁 Found 2 files: ADMF_2021_instance.json, ADMF_instance_2021.zip
+        ✅ Match found: ADMF_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADMF_instance_2021.zip']
+        📦 Processing: ADMF_instance_2021.zip
+[2025-06-18T02:12:26.219+0000] {docker.py:403} INFO - 📏 File size: 28,258 bytes
+[2025-06-18T02:12:26.226+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:26.382+0000] {docker.py:403} INFO - 📄 Processed 3009 XML elements, extracted 353 data fields
+            🏢 Resolved company name: Adira Dinamika Multi Finance Tbk
+[2025-06-18T02:12:26.433+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMF_2021_instance.json
+[2025-06-18T02:12:26.539+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 6852208a1c828ec3e36b65f1
+        ✅ Success: ADMF (2021) processed and loaded
+[2025-06-18T02:12:26.540+0000] {docker.py:403} INFO - [11/15] Processing company: ADMG
+        📂 Directory: /app/output/2021/ADMG
+[2025-06-18T02:12:26.546+0000] {docker.py:403} INFO - 📁 Found 2 files: ADMG_2021_instance.json, ADMG_instance_2021.zip
+        ✅ Match found: ADMG_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADMG_instance_2021.zip']
+        📦 Processing: ADMG_instance_2021.zip
+[2025-06-18T02:12:26.553+0000] {docker.py:403} INFO - 📏 File size: 28,528 bytes
+[2025-06-18T02:12:26.559+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:26.710+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: Polychem Indonesia Tbk
+[2025-06-18T02:12:26.775+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMG_2021_instance.json
+[2025-06-18T02:12:26.885+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 6852208a1c828ec3e36b65f2
+        ✅ Success: ADMG (2021) processed and loaded
+[2025-06-18T02:12:26.886+0000] {docker.py:403} INFO - [12/15] Processing company: ADMR
+        📂 Directory: /app/output/2021/ADMR
+[2025-06-18T02:12:26.892+0000] {docker.py:403} INFO - 📁 Found 2 files: ADMR_2021_instance.json, ADMR_instance_2021.zip
+        ✅ Match found: ADMR_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADMR_instance_2021.zip']
+        📦 Processing: ADMR_instance_2021.zip
+[2025-06-18T02:12:26.900+0000] {docker.py:403} INFO - 📏 File size: 29,091 bytes
+[2025-06-18T02:12:26.908+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:27.081+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: PT Adaro Minerals Indonesia Tbk
+[2025-06-18T02:12:27.219+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMR_2021_instance.json
+[2025-06-18T02:12:27.329+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 6852208b1c828ec3e36b65f3
+        ✅ Success: ADMR (2021) processed and loaded
+[2025-06-18T02:12:27.330+0000] {docker.py:403} INFO - [13/15] Processing company: ADRO
+        📂 Directory: /app/output/2021/ADRO
+[2025-06-18T02:12:27.338+0000] {docker.py:403} INFO - 📁 Found 2 files: ADRO_2021_instance.json, ADRO_instance_2021.zip
+        ✅ Match found: ADRO_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADRO_instance_2021.zip']
+        📦 Processing: ADRO_instance_2021.zip
+[2025-06-18T02:12:27.347+0000] {docker.py:403} INFO - 📏 File size: 29,674 bytes
+[2025-06-18T02:12:27.355+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:27.582+0000] {docker.py:403} INFO - 📄 Processed 3129 XML elements, extracted 484 data fields
+            🏢 Resolved company name: ADARO ENERGY Tbk
+[2025-06-18T02:12:27.646+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADRO_2021_instance.json
+[2025-06-18T02:12:27.768+0000] {docker.py:403} INFO - 🎯 MongoDB insert successful: 6852208b1c828ec3e36b65f4
+        ✅ Success: ADRO (2021) processed and loaded
+[2025-06-18T02:12:27.770+0000] {docker.py:403} INFO - [14/15] Processing company: AGAR
+        📂 Directory: /app/output/2021/AGAR
+[2025-06-18T02:12:27.776+0000] {docker.py:403} INFO - 📁 Found 2 files: AGAR_2021_instance.json, AGAR_instance_2021.zip
+        ✅ Match found: AGAR_instance_2021.zip
+        🎯 ZIP files matching pattern: ['AGAR_instance_2021.zip']
+        📦 Processing: AGAR_instance_2021.zip
+[2025-06-18T02:12:27.787+0000] {docker.py:403} INFO - 📏 File size: 28,411 bytes
+[2025-06-18T02:12:27.796+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-18T02:12:27.823+0000] {local_task_job_runner.py:292} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2025-06-18T02:12:27.827+0000] {process_utils.py:135} INFO - Sending Signals.SIGTERM to group 256. PIDs of all processes in the group: [256]
+[2025-06-18T02:12:27.828+0000] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 256
+[2025-06-18T02:12:27.829+0000] {taskinstance.py:1517} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-18T02:12:27.830+0000] {docker.py:495} INFO - Stopping docker container
+[2025-06-18T02:12:38.706+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=256, status='terminated', exitcode=0, started='02:12:17') (256) terminated with exit code 0

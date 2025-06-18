@@ -2,7 +2,7 @@
   "emiten": "Asuransi Bina Dana Arta Tbk",
   "company_code": "ABDA",
   "report_year": "2022",
-  "processed_at": "2025-06-17T12:21:06.694097",
+  "processed_at": "2025-06-18T02:12:33.691730",
   "source_file": "ABDA_instance_2022.zip",
   "data_fields_count": 379,
   "laporan_keuangan_data": {
@@ -5208,7 +5208,7 @@
     ],
     "company_code": "ABDA",
     "report_year": "2022",
-    "processed_at": "2025-06-17T12:21:06.694097",
+    "processed_at": "2025-06-18T02:12:33.691730",
     "source_file": "ABDA_instance_2022.zip"
   }
 }

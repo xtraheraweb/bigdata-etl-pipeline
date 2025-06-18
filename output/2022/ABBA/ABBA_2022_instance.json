@@ -2,7 +2,7 @@
   "emiten": "Mahaka Media Tbk",
   "company_code": "ABBA",
   "report_year": "2022",
-  "processed_at": "2025-06-17T12:21:02.649889",
+  "processed_at": "2025-06-18T02:12:32.613892",
   "source_file": "ABBA_instance_2022.zip",
   "data_fields_count": 707,
   "laporan_keuangan_data": {
@@ -13858,7 +13858,7 @@
     ],
     "company_code": "ABBA",
     "report_year": "2022",
-    "processed_at": "2025-06-17T12:21:02.649889",
+    "processed_at": "2025-06-18T02:12:32.613892",
     "source_file": "ABBA_instance_2022.zip"
   }
 }

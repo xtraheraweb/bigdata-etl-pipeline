@@ -2,7 +2,7 @@
   "emiten": "ABM Investama Tbk",
   "company_code": "ABMM",
   "report_year": "2021",
-  "processed_at": "2025-06-17T12:20:46.980680",
+  "processed_at": "2025-06-18T02:12:24.084662",
   "source_file": "ABMM_instance_2021.zip",
   "data_fields_count": 486,
   "laporan_keuangan_data": {
@@ -3396,7 +3396,7 @@
     ],
     "company_code": "ABMM",
     "report_year": "2021",
-    "processed_at": "2025-06-17T12:20:46.980680",
+    "processed_at": "2025-06-18T02:12:24.084662",
     "source_file": "ABMM_instance_2021.zip"
   }
 }

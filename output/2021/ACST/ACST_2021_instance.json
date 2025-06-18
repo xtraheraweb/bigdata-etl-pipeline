@@ -2,7 +2,7 @@
   "emiten": "PT Acset Indonusa Tbk.",
   "company_code": "ACST",
   "report_year": "2021",
-  "processed_at": "2025-06-17T12:20:48.812252",
+  "processed_at": "2025-06-18T02:12:24.847682",
   "source_file": "ACST_instance_2021.zip",
   "data_fields_count": 440,
   "laporan_keuangan_data": {
@@ -3212,7 +3212,7 @@
     ],
     "company_code": "ACST",
     "report_year": "2021",
-    "processed_at": "2025-06-17T12:20:48.812252",
+    "processed_at": "2025-06-18T02:12:24.847682",
     "source_file": "ACST_instance_2021.zip"
   }
 }

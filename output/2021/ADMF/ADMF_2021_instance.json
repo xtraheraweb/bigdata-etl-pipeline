@@ -2,7 +2,7 @@
   "emiten": "Adira Dinamika Multi Finance Tbk",
   "company_code": "ADMF",
   "report_year": "2021",
-  "processed_at": "2025-06-17T12:20:51.824380",
+  "processed_at": "2025-06-18T02:12:26.380458",
   "source_file": "ADMF_instance_2021.zip",
   "data_fields_count": 357,
   "laporan_keuangan_data": {
@@ -2993,7 +2993,7 @@
     ],
     "company_code": "ADMF",
     "report_year": "2021",
-    "processed_at": "2025-06-17T12:20:51.824380",
+    "processed_at": "2025-06-18T02:12:26.380458",
     "source_file": "ADMF_instance_2021.zip"
   }
 }

@@ -2,7 +2,7 @@
   "emiten": "Astra Agro Lestari Tbk",
   "company_code": "AALI",
   "report_year": "2021",
-  "processed_at": "2025-06-17T12:20:44.331819",
+  "processed_at": "2025-06-18T02:12:22.812168",
   "source_file": "AALI_instance_2021.zip",
   "data_fields_count": 488,
   "laporan_keuangan_data": {
@@ -3404,7 +3404,7 @@
     ],
     "company_code": "AALI",
     "report_year": "2021",
-    "processed_at": "2025-06-17T12:20:44.331819",
+    "processed_at": "2025-06-18T02:12:22.812168",
     "source_file": "AALI_instance_2021.zip"
   }
 }
