@@ -1,0 +1,24 @@
+[2025-06-17T08:45:43.075+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T08:43:59.913453+00:00 [queued]>
+[2025-06-17T08:45:43.083+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T08:43:59.913453+00:00 [queued]>
+[2025-06-17T08:45:43.083+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-06-17T08:45:43.098+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): transform_idx> on 2025-06-17 08:43:59.913453+00:00
+[2025-06-17T08:45:43.103+0000] {standard_task_runner.py:57} INFO - Started process 388 to run task
+[2025-06-17T08:45:43.105+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'transform_idx', 'manual__2025-06-17T08:43:59.913453+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmpsi49whqm']
+[2025-06-17T08:45:43.107+0000] {standard_task_runner.py:85} INFO - Job 50: Subtask transform_idx
+[2025-06-17T08:45:43.147+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T08:43:59.913453+00:00 [running]> on host 96e228aebcb0
+[2025-06-17T08:45:43.225+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='transform_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-17T08:43:59.913453+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-17T08:43:59.913453+00:00'
+[2025-06-17T08:45:43.249+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-17T08:45:43.498+0000] {docker.py:403} INFO - python: can't open file '/app/idx-transform.py': [Errno 2] No such file or directory
+[2025-06-17T08:45:43.905+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 478, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 351, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 412, in _run_image_with_mounts
+    raise AirflowException(f"Docker container failed: {repr(result)} lines {joined_log_lines}")
+airflow.exceptions.AirflowException: Docker container failed: {'StatusCode': 2} lines python: can't open file '/app/idx-transform.py': [Errno 2] No such file or directory
+[2025-06-17T08:45:43.910+0000] {taskinstance.py:1350} INFO - Marking task as UP_FOR_RETRY. dag_id=idx_pipeline, task_id=transform_idx, execution_date=20250617T084359, start_date=20250617T084543, end_date=20250617T084543
+[2025-06-17T08:45:43.926+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 50 for task transform_idx (Docker container failed: {'StatusCode': 2} lines python: can't open file '/app/idx-transform.py': [Errno 2] No such file or directory; 388)
+[2025-06-17T08:45:43.960+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2025-06-17T08:45:43.981+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

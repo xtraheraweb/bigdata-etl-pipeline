@@ -1,0 +1,297 @@
+services:
+  #=================================== INFRASTRUCTURE =================================
+  postgres:
+    container_name: postgres-db
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+      POSTGRES_CONFIG: "-c lock_timeout=30000"
+    networks:
+      - bigdata_net
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mongodb:
+    container_name: mongodb-local
+    image: mongo:6.0
+    ports:
+      - "27018:27017"
+    networks:
+      - bigdata_net
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: tugas_bigdata
+    restart: unless-stopped
+    healthcheck:
+      test: echo 'db.runCommand("ismaster").ismaster' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+
+  #=================================== AIRFLOW SERVICES =================================
+  airflow-init:
+    container_name: airflow-init
+    image: apache/airflow:2.6.3
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./output:/opt/airflow/output
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    command: |
+      bash -c '
+        pip install apache-airflow-providers-docker &&
+        airflow db init &&
+        airflow users create \
+          --username admin \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@example.com \
+          --password admin
+      '
+    networks:
+      - bigdata_net
+
+  airflow-webserver: 
+    container_name: airflow-webserver
+    image: apache/airflow:2.6.3
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    networks:
+      - bigdata_net
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./output:/opt/airflow/output
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: |
+      bash -c '
+        pip install apache-airflow-providers-docker &&
+        airflow webserver
+      '
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow 
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  airflow-scheduler: 
+    container_name: airflow-scheduler
+    image: apache/airflow:2.6.3
+    command: |
+      bash -c '
+        pip install apache-airflow-providers-docker &&
+        airflow scheduler
+      '
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    networks:
+      - bigdata_net
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./output:/opt/airflow/output
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow 
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__PARALLELISM: 24
+      AIRFLOW__CORE__DAG_CONCURRENCY: 8
+      AIRFLOW__CORE__MAX_ACTIVE_RUNS_PER_DAG: 3
+    restart: unless-stopped
+
+  #=================================== ETL BUILD SERVICE =================================
+  # Service untuk build image (auto-start untuk build)
+  bigdata-builder:
+    build:
+      context: . 
+      dockerfile: Dockerfile
+    image: bigdata-pipeline:latest
+    container_name: bigdata_builder
+    command: ["echo", "Image built successfully! Ready for ETL pipelines."]
+    networks:
+      - bigdata_net
+    restart: "no"
+
+  #=================================== ETL SERVICES =================================
+  
+  # EXTRACT SERVICE (YFinance)
+  extract_yfinance: 
+    image: bigdata-pipeline:latest
+    container_name: extract_yfinance_service
+    networks:
+      - bigdata_net
+    volumes:
+      - ./output:/app/output 
+      - ./airflow/logs:/app/logs
+    environment:
+      EXCEL_FILE_PATH: /app/tickers.xlsx
+      YFINANCE_OUTPUT_PATH: /app/output/tickers_data.json
+      PYTHONUNBUFFERED: 1
+    restart: "no"
+    profiles: ["manual"]
+    depends_on:
+      - bigdata-builder
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: '2.0'
+
+  # EXTRACT SERVICE (IQPlus)
+  extract_iqplus:
+    image: bigdata-pipeline:latest
+    container_name: extract_iqplus_service
+    networks:
+      - bigdata_net
+    volumes:
+      - ./output:/app/output
+      - ./airflow/logs:/app/logs
+    environment:
+      PYTHONUNBUFFERED: 1
+    restart: "no"
+    profiles: ["manual"]
+    depends_on:
+      - bigdata-builder
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: '2.0'
+
+  # EXTRACT SERVICE (IDX)
+  extract_idx:
+    image: bigdata-pipeline:latest
+    container_name: extract_idx_service
+    networks:
+      - bigdata_net
+    volumes:
+      - ./output:/app/output 
+      - ./airflow/logs:/app/logs
+    environment:
+      IDX_DOWNLOAD_DIR: /app/output
+      PYTHONUNBUFFERED: 1
+      DISPLAY: ":99"
+      TZ: "Asia/Jakarta"
+    restart: no
+    profiles: ["manual"]
+    depends_on:
+      - bigdata-builder
+    deploy:
+      resources:
+        limits:
+          memory: 6G
+          cpus: '3.0'
+
+  # TRANSFORM SERVICE (IQPlus)
+  transform_iqplus:
+    image: bigdata-pipeline:latest
+    container_name: transform_iqplus_service
+    networks:
+      - bigdata_net
+    volumes:
+      - ./output:/app/output
+      - ./airflow/logs:/app/logs
+    environment:
+      PYTHONUNBUFFERED: 1
+    restart: "no"
+    profiles: ["manual"]
+    depends_on:
+      - bigdata-builder
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+          cpus: '4.0'
+
+  # LOAD SERVICE (YFinance)
+  load_yfinance:
+    image: bigdata-pipeline:latest
+    container_name: load_yfinance_service
+    networks:
+      - bigdata_net
+    volumes:
+      - ./output:/app/output
+      - ./airflow/logs:/app/logs
+    environment:
+      MONGO_URI: "mongodb+srv://bigdatakecil:bigdata04@xtrahera.m7x7qad.mongodb.net/?retryWrites=true&w=majority&appName=xtrahera"
+      MONGO_DB: "tugas_bigdata"
+      INPUT_PATH: "/app/output/tickers_data.json"
+      PYTHONUNBUFFERED: 1
+    restart: "no"
+    profiles: ["manual"]
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      bigdata-builder:
+        condition: service_completed_successfully
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+          cpus: '2.0'
+  
+  # LOAD SERVICE (IQPlus)
+  load_iqplus:
+    image: bigdata-pipeline:latest
+    container_name: load_iqplus_service
+    networks:
+      - bigdata_net
+    volumes:
+      - ./output:/app/output
+      - ./airflow/logs:/app/logs
+    environment:
+      MONGO_URI: "mongodb+srv://bigdatakecil:bigdata04@xtrahera.m7x7qad.mongodb.net/?retryWrites=true&w=majority&appName=xtrahera"
+      MONGO_DB: "tugas_bigdata"
+      INPUT_DIR: "/app/output"
+      PYTHONUNBUFFERED: 1
+    restart: "no"
+    profiles: ["manual"]
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      bigdata-builder:
+        condition: service_completed_successfully
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+          cpus: '2.0'
+
+volumes:
+  postgres-db:
+    name: postgres_db
+  mongodb_data:
+    name: mongodb_data
+
+networks:
+  bigdata_net:
+    name: bigdata_net
+    driver: bridge

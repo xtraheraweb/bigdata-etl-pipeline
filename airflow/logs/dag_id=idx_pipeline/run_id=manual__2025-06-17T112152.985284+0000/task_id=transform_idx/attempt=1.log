@@ -1,0 +1,41 @@
+[2025-06-17T11:22:20.088+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T11:21:52.985284+00:00 [queued]>
+[2025-06-17T11:22:20.111+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T11:21:52.985284+00:00 [queued]>
+[2025-06-17T11:22:20.113+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-06-17T11:22:20.156+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): transform_idx> on 2025-06-17 11:21:52.985284+00:00
+[2025-06-17T11:22:20.166+0000] {standard_task_runner.py:57} INFO - Started process 1194 to run task
+[2025-06-17T11:22:20.171+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'transform_idx', 'manual__2025-06-17T11:21:52.985284+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmpnhu3cfz2']
+[2025-06-17T11:22:20.173+0000] {standard_task_runner.py:85} INFO - Job 90: Subtask transform_idx
+[2025-06-17T11:22:20.273+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T11:21:52.985284+00:00 [running]> on host 790f4cde8a0c
+[2025-06-17T11:22:20.505+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='transform_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-17T11:21:52.985284+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-17T11:21:52.985284+00:00'
+[2025-06-17T11:22:20.573+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-17T11:22:22.592+0000] {docker.py:403} INFO - Starting IDX revenue transformation process
+Starting revenue transformation by sector...
+[2025-06-17T11:22:25.209+0000] {docker.py:403} INFO - Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "
+[2025-06-17T11:22:25.210+0000] {docker.py:403} INFO - WARN".
+[2025-06-17T11:22:25.211+0000] {docker.py:403} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-06-17T11:22:25.579+0000] {docker.py:403} INFO - 25/06/17 11:22:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-06-17T11:22:29.433+0000] {docker.py:403} INFO - Connected to MongoDB - Database: tugas_bigdata
+[2025-06-17T11:22:30.234+0000] {docker.py:403} INFO - Found 0 raw financial reports
+No raw data found to transform
+[2025-06-17T11:22:30.480+0000] {docker.py:403} INFO - Transformation process completed
+[2025-06-17T11:22:30.481+0000] {docker.py:403} INFO - 
+[2025-06-17T11:22:30.482+0000] {docker.py:403} INFO - Validating transformed data...
+[2025-06-17T11:22:31.321+0000] {docker.py:403} INFO - === VALIDATION SUMMARY ===
+Total Records: 0
+Records with Revenue: 0
+Records with Revenue Growth: 0
+Records with Gross Profit: 0
+Records with Operating Profit: 0
+Records with Net Profit: 0
+Records with Cash: 0
+Records with Assets: 0
+Records with Short Term Borrowing: 0
+Records with Long Term Borrowing: 0
+Records with Equity: 0
+
+✓ Validation completed successfully
+[2025-06-17T11:22:31.322+0000] {docker.py:403} INFO - IDX revenue transformation process completed
+[2025-06-17T11:22:32.509+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=idx_pipeline, task_id=transform_idx, execution_date=20250617T112152, start_date=20250617T112220, end_date=20250617T112232
+[2025-06-17T11:22:32.554+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2025-06-17T11:22:32.592+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

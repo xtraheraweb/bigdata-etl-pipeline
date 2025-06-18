@@ -1,0 +1,1005 @@
+[2025-06-16T16:02:58.754+0000] {processor.py:157} INFO - Started process (PID=152) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:02:58.757+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:02:58.759+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:02:58.759+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:02:58.782+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:02:58.813+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T16:03:29.280+0000] {processor.py:157} INFO - Started process (PID=175) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:03:29.282+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:03:29.284+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:03:29.284+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:03:29.309+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:03:29.340+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T16:04:00.029+0000] {processor.py:157} INFO - Started process (PID=203) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:04:00.031+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:04:00.033+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:04:00.032+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:04:00.053+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:04:00.083+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T16:04:30.263+0000] {processor.py:157} INFO - Started process (PID=223) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:04:30.266+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:04:30.268+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:04:30.267+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:04:30.292+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:04:30.322+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T16:05:00.928+0000] {processor.py:157} INFO - Started process (PID=252) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:05:00.930+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:05:00.933+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:05:00.932+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:05:00.956+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:05:00.985+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T16:05:31.696+0000] {processor.py:157} INFO - Started process (PID=280) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:05:31.698+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:05:31.701+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:05:31.701+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:05:31.723+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:05:31.755+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T16:06:02.287+0000] {processor.py:157} INFO - Started process (PID=302) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:06:02.290+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:06:02.292+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:06:02.291+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:06:02.312+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:06:02.343+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.063 seconds
+[2025-06-16T16:06:33.012+0000] {processor.py:157} INFO - Started process (PID=330) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:06:33.014+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:06:33.016+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:06:33.015+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:06:33.038+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:06:33.069+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T16:07:03.891+0000] {processor.py:157} INFO - Started process (PID=355) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:07:03.892+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:07:03.893+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:07:03.893+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:07:03.899+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:07:03.913+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.025 seconds
+[2025-06-16T16:07:34.237+0000] {processor.py:157} INFO - Started process (PID=380) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:07:34.238+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:07:34.238+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:07:34.238+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:07:34.244+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:07:34.255+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.021 seconds
+[2025-06-16T16:08:04.703+0000] {processor.py:157} INFO - Started process (PID=405) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:08:04.704+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:08:04.705+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:08:04.704+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:08:04.711+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:08:04.722+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T16:08:35.052+0000] {processor.py:157} INFO - Started process (PID=434) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:08:35.053+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:08:35.054+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:08:35.054+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:08:35.060+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:08:35.071+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T16:09:05.406+0000] {processor.py:157} INFO - Started process (PID=459) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:09:05.407+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:09:05.408+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:09:05.407+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:09:05.418+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:09:05.434+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.031 seconds
+[2025-06-16T16:52:27.417+0000] {processor.py:157} INFO - Started process (PID=154) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:52:27.418+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:52:27.419+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:52:27.419+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:52:27.425+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:52:27.437+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.023 seconds
+[2025-06-16T16:52:59.689+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:52:59.690+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:52:59.691+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:52:59.690+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:52:59.697+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:52:59.711+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.026 seconds
+[2025-06-16T16:53:31.090+0000] {processor.py:157} INFO - Started process (PID=207) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:53:31.091+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:53:31.092+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:53:31.092+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:53:31.097+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:53:31.109+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.021 seconds
+[2025-06-16T16:54:01.686+0000] {processor.py:157} INFO - Started process (PID=234) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:54:01.686+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:54:01.687+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:54:01.687+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:54:01.695+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:54:01.708+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.025 seconds
+[2025-06-16T16:54:32.202+0000] {processor.py:157} INFO - Started process (PID=259) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:54:32.202+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:54:32.203+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:54:32.203+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:54:32.209+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:54:32.221+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T16:55:02.636+0000] {processor.py:157} INFO - Started process (PID=284) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:55:02.637+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:55:02.639+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:55:02.639+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:55:02.650+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:55:02.670+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.038 seconds
+[2025-06-16T16:55:33.034+0000] {processor.py:157} INFO - Started process (PID=311) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:55:33.035+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:55:33.036+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:55:33.036+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:55:33.041+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:55:33.054+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T16:56:03.436+0000] {processor.py:157} INFO - Started process (PID=336) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:56:03.437+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:56:03.438+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:56:03.437+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:56:03.443+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:56:03.456+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T16:56:33.826+0000] {processor.py:157} INFO - Started process (PID=361) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:56:33.827+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:56:33.827+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:56:33.827+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:56:33.833+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:56:33.844+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.021 seconds
+[2025-06-16T16:57:04.213+0000] {processor.py:157} INFO - Started process (PID=386) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:57:04.214+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:57:04.215+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:57:04.215+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:57:04.221+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:57:04.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T16:57:34.793+0000] {processor.py:157} INFO - Started process (PID=411) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:57:34.794+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:57:34.795+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:57:34.795+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:57:34.800+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:57:34.814+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.024 seconds
+[2025-06-16T16:58:05.161+0000] {processor.py:157} INFO - Started process (PID=436) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:58:05.162+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:58:05.163+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:58:05.163+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:58:05.169+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:58:05.181+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T16:58:35.561+0000] {processor.py:157} INFO - Started process (PID=461) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:58:35.561+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:58:35.562+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:58:35.562+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:58:35.567+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:58:35.580+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T16:59:06.119+0000] {processor.py:157} INFO - Started process (PID=486) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:59:06.120+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:59:06.121+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:59:06.121+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:59:06.127+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:59:06.140+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.024 seconds
+[2025-06-16T16:59:36.491+0000] {processor.py:157} INFO - Started process (PID=511) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:59:36.492+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T16:59:36.493+0000] {logging_mixin.py:150} INFO - [2025-06-16T16:59:36.493+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:59:36.498+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T16:59:36.511+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T17:00:06.882+0000] {processor.py:157} INFO - Started process (PID=536) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:00:06.883+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:00:06.883+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:00:06.883+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:00:06.889+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:00:06.901+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T17:00:37.386+0000] {processor.py:157} INFO - Started process (PID=563) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:00:37.387+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:00:37.388+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:00:37.388+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:00:37.393+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:00:37.405+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.021 seconds
+[2025-06-16T17:01:07.757+0000] {processor.py:157} INFO - Started process (PID=588) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:01:07.758+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:01:07.759+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:01:07.758+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:01:07.764+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:01:07.776+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T17:01:38.150+0000] {processor.py:157} INFO - Started process (PID=613) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:01:38.151+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:01:38.152+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:01:38.152+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:01:38.159+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:01:38.173+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.025 seconds
+[2025-06-16T17:02:08.547+0000] {processor.py:157} INFO - Started process (PID=638) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:02:08.548+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:02:08.548+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:02:08.548+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:02:08.554+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:02:08.566+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.023 seconds
+[2025-06-16T17:02:39.012+0000] {processor.py:157} INFO - Started process (PID=663) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:02:39.013+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:02:39.014+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:02:39.014+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:02:39.019+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:02:39.032+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T17:03:09.404+0000] {processor.py:157} INFO - Started process (PID=688) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:03:09.405+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:03:09.406+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:03:09.406+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:03:09.412+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:03:09.426+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.025 seconds
+[2025-06-16T17:03:39.974+0000] {processor.py:157} INFO - Started process (PID=713) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:03:39.976+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:03:39.976+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:03:39.976+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:03:39.984+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:03:40.003+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.032 seconds
+[2025-06-16T17:04:10.392+0000] {processor.py:157} INFO - Started process (PID=738) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:04:10.393+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:04:10.395+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:04:10.394+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:04:10.401+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:04:10.414+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.025 seconds
+[2025-06-16T17:04:40.938+0000] {processor.py:157} INFO - Started process (PID=763) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:04:40.940+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:04:40.941+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:04:40.941+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:04:40.947+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:04:40.959+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.024 seconds
+[2025-06-16T17:05:11.343+0000] {processor.py:157} INFO - Started process (PID=788) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:05:11.344+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:05:11.345+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:05:11.345+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:05:11.351+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:05:11.363+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.023 seconds
+[2025-06-16T17:05:41.733+0000] {processor.py:157} INFO - Started process (PID=813) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:05:41.734+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:05:41.735+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:05:41.734+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:05:41.742+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:05:41.755+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.025 seconds
+[2025-06-16T17:06:12.127+0000] {processor.py:157} INFO - Started process (PID=838) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:06:12.128+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:06:12.129+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:06:12.129+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:06:12.134+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:06:12.146+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.021 seconds
+[2025-06-16T17:06:42.527+0000] {processor.py:157} INFO - Started process (PID=863) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:06:42.528+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:06:42.529+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:06:42.528+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:06:42.533+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:06:42.545+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.021 seconds
+[2025-06-16T17:07:12.964+0000] {processor.py:157} INFO - Started process (PID=888) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:07:12.965+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:07:12.966+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:07:12.966+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:07:12.973+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:07:12.987+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.026 seconds
+[2025-06-16T17:07:43.427+0000] {processor.py:157} INFO - Started process (PID=913) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:07:43.428+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:07:43.429+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:07:43.429+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:07:43.435+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:07:43.448+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.024 seconds
+[2025-06-16T17:08:13.823+0000] {processor.py:157} INFO - Started process (PID=938) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:08:13.824+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:08:13.825+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:08:13.825+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:08:13.830+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:08:13.845+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.025 seconds
+[2025-06-16T17:08:44.184+0000] {processor.py:157} INFO - Started process (PID=963) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:08:44.185+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:08:44.186+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:08:44.186+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:08:44.192+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:08:44.206+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.025 seconds
+[2025-06-16T17:09:14.569+0000] {processor.py:157} INFO - Started process (PID=988) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:09:14.570+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:09:14.571+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:09:14.571+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:09:14.576+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:09:14.589+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T17:09:44.956+0000] {processor.py:157} INFO - Started process (PID=1013) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:09:44.957+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:09:44.958+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:09:44.957+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:09:44.963+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:09:44.975+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T17:10:15.453+0000] {processor.py:157} INFO - Started process (PID=1038) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:10:15.454+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:10:15.454+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:10:15.454+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:10:15.459+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:10:15.471+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.021 seconds
+[2025-06-16T17:10:45.854+0000] {processor.py:157} INFO - Started process (PID=1063) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:10:45.855+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:10:45.856+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:10:45.856+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:10:45.862+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:10:45.875+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.023 seconds
+[2025-06-16T17:11:16.374+0000] {processor.py:157} INFO - Started process (PID=1088) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:11:16.376+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:11:16.376+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:11:16.376+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:11:16.383+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:11:16.397+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.026 seconds
+[2025-06-16T17:11:46.736+0000] {processor.py:157} INFO - Started process (PID=1113) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:11:46.737+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:11:46.738+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:11:46.738+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:11:46.745+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:11:46.762+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.029 seconds
+[2025-06-16T17:12:17.104+0000] {processor.py:157} INFO - Started process (PID=1138) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:12:17.105+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:12:17.106+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:12:17.105+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:12:17.111+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:12:17.123+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.021 seconds
+[2025-06-16T17:12:47.593+0000] {processor.py:157} INFO - Started process (PID=1173) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:12:47.594+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:12:47.595+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:12:47.595+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:12:47.601+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:12:47.614+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.023 seconds
+[2025-06-16T17:13:18.063+0000] {processor.py:157} INFO - Started process (PID=1200) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:13:18.064+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:13:18.065+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:13:18.065+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:13:18.071+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:13:18.082+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T17:13:48.473+0000] {processor.py:157} INFO - Started process (PID=1225) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:13:48.473+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:13:48.475+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:13:48.474+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:13:48.480+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:13:48.492+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.022 seconds
+[2025-06-16T17:14:18.881+0000] {processor.py:157} INFO - Started process (PID=1250) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:14:18.883+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:14:18.884+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:14:18.883+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:14:18.891+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:14:18.906+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.028 seconds
+[2025-06-16T17:14:49.288+0000] {processor.py:157} INFO - Started process (PID=1275) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:14:49.290+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:14:49.290+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:14:49.290+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:14:49.295+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:14:49.308+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.023 seconds
+[2025-06-16T17:15:19.679+0000] {processor.py:157} INFO - Started process (PID=1300) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:15:19.680+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T17:15:19.681+0000] {logging_mixin.py:150} INFO - [2025-06-16T17:15:19.681+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:15:19.686+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T17:15:19.699+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.023 seconds
+[2025-06-16T18:00:07.839+0000] {processor.py:157} INFO - Started process (PID=149) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:00:07.841+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:00:07.844+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:00:07.843+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:00:07.866+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:00:07.893+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.063 seconds
+[2025-06-16T18:00:39.121+0000] {processor.py:157} INFO - Started process (PID=169) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:00:39.123+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:00:39.125+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:00:39.124+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:00:39.145+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:00:39.181+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T18:01:09.535+0000] {processor.py:157} INFO - Started process (PID=189) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:01:09.537+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:01:09.539+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:01:09.539+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:01:09.566+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:01:09.596+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T18:01:40.052+0000] {processor.py:157} INFO - Started process (PID=209) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:01:40.054+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:01:40.057+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:01:40.056+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:01:40.081+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:01:40.115+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.072 seconds
+[2025-06-16T18:02:10.587+0000] {processor.py:157} INFO - Started process (PID=229) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:02:10.590+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:02:10.592+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:02:10.591+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:02:10.615+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:02:10.648+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T18:02:41.067+0000] {processor.py:157} INFO - Started process (PID=247) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:02:41.070+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:02:41.077+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:02:41.076+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:02:41.111+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:02:41.138+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.079 seconds
+[2025-06-16T18:03:11.590+0000] {processor.py:157} INFO - Started process (PID=267) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:03:11.595+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:03:11.604+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:03:11.603+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:03:11.626+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:03:11.660+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.077 seconds
+[2025-06-16T18:03:41.817+0000] {processor.py:157} INFO - Started process (PID=282) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:03:41.820+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:03:41.822+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:03:41.821+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:03:41.845+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:03:41.875+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.064 seconds
+[2025-06-16T18:04:12.260+0000] {processor.py:157} INFO - Started process (PID=302) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:04:12.263+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:04:12.265+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:04:12.264+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:04:12.284+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:04:12.317+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.063 seconds
+[2025-06-16T18:04:42.751+0000] {processor.py:157} INFO - Started process (PID=317) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:04:42.753+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:04:42.755+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:04:42.755+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:04:42.777+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:04:42.808+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.064 seconds
+[2025-06-16T18:05:13.552+0000] {processor.py:157} INFO - Started process (PID=337) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:05:13.555+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:05:13.557+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:05:13.557+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:05:13.582+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:05:13.614+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.070 seconds
+[2025-06-16T18:05:43.923+0000] {processor.py:157} INFO - Started process (PID=354) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:05:43.925+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:05:43.928+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:05:43.927+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:05:43.950+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:05:43.984+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.072 seconds
+[2025-06-16T18:06:14.376+0000] {processor.py:157} INFO - Started process (PID=374) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:06:14.378+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:06:14.381+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:06:14.380+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:06:14.407+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:06:14.436+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:06:44.918+0000] {processor.py:157} INFO - Started process (PID=394) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:06:44.920+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:06:44.923+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:06:44.922+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:06:44.948+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:06:44.980+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.069 seconds
+[2025-06-16T18:07:15.558+0000] {processor.py:157} INFO - Started process (PID=419) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:07:15.560+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:07:15.563+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:07:15.562+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:07:15.587+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:07:15.624+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.073 seconds
+[2025-06-16T18:07:45.784+0000] {processor.py:157} INFO - Started process (PID=436) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:07:45.786+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:07:45.788+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:07:45.787+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:07:45.807+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:07:45.838+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.060 seconds
+[2025-06-16T18:08:16.274+0000] {processor.py:157} INFO - Started process (PID=456) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:08:16.281+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:08:16.284+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:08:16.283+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:08:16.307+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:08:16.340+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.072 seconds
+[2025-06-16T18:08:46.457+0000] {processor.py:157} INFO - Started process (PID=476) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:08:46.459+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:08:46.461+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:08:46.461+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:08:46.485+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:08:46.518+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T18:09:17.425+0000] {processor.py:157} INFO - Started process (PID=496) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:09:17.427+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:09:17.430+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:09:17.429+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:09:17.454+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:09:17.483+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:09:47.582+0000] {processor.py:157} INFO - Started process (PID=516) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:09:47.585+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:09:47.587+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:09:47.587+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:09:47.608+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:09:47.640+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.064 seconds
+[2025-06-16T18:10:18.294+0000] {processor.py:157} INFO - Started process (PID=536) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:10:18.296+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:10:18.299+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:10:18.298+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:10:18.324+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:10:18.354+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:10:48.670+0000] {processor.py:157} INFO - Started process (PID=556) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:10:48.672+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:10:48.675+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:10:48.674+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:10:48.701+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:10:48.741+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.078 seconds
+[2025-06-16T18:11:19.136+0000] {processor.py:157} INFO - Started process (PID=576) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:11:19.139+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:11:19.142+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:11:19.141+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:11:19.174+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:11:19.207+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.079 seconds
+[2025-06-16T18:11:49.619+0000] {processor.py:157} INFO - Started process (PID=596) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:11:49.621+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:11:49.623+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:11:49.622+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:11:49.648+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:11:49.677+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T18:12:20.068+0000] {processor.py:157} INFO - Started process (PID=618) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:12:20.070+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:12:20.073+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:12:20.072+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:12:20.098+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:12:20.128+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.069 seconds
+[2025-06-16T18:12:50.269+0000] {processor.py:157} INFO - Started process (PID=638) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:12:50.271+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:12:50.274+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:12:50.273+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:12:50.298+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:12:50.332+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.072 seconds
+[2025-06-16T18:13:21.206+0000] {processor.py:157} INFO - Started process (PID=658) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:13:21.208+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:13:21.211+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:13:21.210+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:13:21.235+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:13:21.268+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.069 seconds
+[2025-06-16T18:13:52.253+0000] {processor.py:157} INFO - Started process (PID=678) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:13:52.255+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:13:52.258+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:13:52.257+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:13:52.282+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:13:52.311+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.064 seconds
+[2025-06-16T18:14:23.223+0000] {processor.py:157} INFO - Started process (PID=698) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:14:23.225+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:14:23.228+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:14:23.227+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:14:23.260+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:14:23.295+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.079 seconds
+[2025-06-16T18:14:54.351+0000] {processor.py:157} INFO - Started process (PID=718) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:14:54.361+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:14:54.363+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:14:54.363+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:14:54.384+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:14:54.423+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.082 seconds
+[2025-06-16T18:15:24.713+0000] {processor.py:157} INFO - Started process (PID=738) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:15:24.715+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:15:24.717+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:15:24.716+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:15:24.738+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:15:24.766+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.061 seconds
+[2025-06-16T18:15:55.209+0000] {processor.py:157} INFO - Started process (PID=758) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:15:55.213+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:15:55.216+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:15:55.215+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:15:55.247+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:15:55.285+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.087 seconds
+[2025-06-16T18:16:25.677+0000] {processor.py:157} INFO - Started process (PID=778) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:16:25.679+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:16:25.681+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:16:25.681+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:16:25.711+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:16:25.737+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T18:16:56.167+0000] {processor.py:157} INFO - Started process (PID=798) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:16:56.170+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:16:56.172+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:16:56.171+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:16:56.201+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:16:56.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.077 seconds
+[2025-06-16T18:17:26.630+0000] {processor.py:157} INFO - Started process (PID=818) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:17:26.632+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:17:26.634+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:17:26.634+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:17:26.650+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:17:26.678+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.056 seconds
+[2025-06-16T18:17:57.046+0000] {processor.py:157} INFO - Started process (PID=838) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:17:57.049+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:17:57.051+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:17:57.050+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:17:57.070+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:17:57.104+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T18:18:27.569+0000] {processor.py:157} INFO - Started process (PID=858) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:18:27.571+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:18:27.574+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:18:27.573+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:18:27.598+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:18:27.628+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:18:58.059+0000] {processor.py:157} INFO - Started process (PID=878) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:18:58.061+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:18:58.063+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:18:58.063+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:18:58.083+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:18:58.115+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T18:19:28.627+0000] {processor.py:157} INFO - Started process (PID=898) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:19:28.629+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:19:28.632+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:19:28.631+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:19:28.654+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:19:28.685+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T18:19:59.237+0000] {processor.py:157} INFO - Started process (PID=918) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:19:59.240+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:19:59.242+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:19:59.241+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:19:59.271+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:19:59.307+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.077 seconds
+[2025-06-16T18:20:30.099+0000] {processor.py:157} INFO - Started process (PID=938) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:20:30.101+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:20:30.103+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:20:30.103+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:20:30.122+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:20:30.151+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.062 seconds
+[2025-06-16T18:21:00.555+0000] {processor.py:157} INFO - Started process (PID=958) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:21:00.557+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:21:00.559+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:21:00.559+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:21:00.585+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:21:00.615+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:21:31.012+0000] {processor.py:157} INFO - Started process (PID=978) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:21:31.014+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:21:31.017+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:21:31.016+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:21:31.040+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:21:31.081+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.078 seconds
+[2025-06-16T18:22:01.436+0000] {processor.py:157} INFO - Started process (PID=1000) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:22:01.438+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:22:01.440+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:22:01.440+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:22:01.465+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:22:01.497+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.069 seconds
+[2025-06-16T18:22:31.907+0000] {processor.py:157} INFO - Started process (PID=1020) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:22:31.909+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:22:31.912+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:22:31.911+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:22:31.937+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:22:31.973+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.073 seconds
+[2025-06-16T18:23:02.387+0000] {processor.py:157} INFO - Started process (PID=1040) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:23:02.389+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:23:02.392+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:23:02.391+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:23:02.413+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:23:02.454+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.073 seconds
+[2025-06-16T18:23:32.836+0000] {processor.py:157} INFO - Started process (PID=1060) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:23:32.838+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:23:32.840+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:23:32.839+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:23:32.858+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:23:32.890+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.060 seconds
+[2025-06-16T18:24:03.199+0000] {processor.py:157} INFO - Started process (PID=1080) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:24:03.201+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:24:03.204+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:24:03.203+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:24:03.230+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:24:03.260+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T18:24:33.646+0000] {processor.py:157} INFO - Started process (PID=1100) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:24:33.649+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:24:33.651+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:24:33.650+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:24:33.676+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:24:33.703+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.063 seconds
+[2025-06-16T18:25:04.161+0000] {processor.py:157} INFO - Started process (PID=1122) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:25:04.166+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:25:04.172+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:25:04.170+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:25:04.201+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:25:04.276+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.169 seconds
+[2025-06-16T18:25:34.887+0000] {processor.py:157} INFO - Started process (PID=1142) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:25:34.889+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:25:34.892+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:25:34.891+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:25:34.923+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:25:34.958+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.078 seconds
+[2025-06-16T18:26:05.202+0000] {processor.py:157} INFO - Started process (PID=1162) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:26:05.206+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:26:05.208+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:26:05.208+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:26:05.236+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:26:05.270+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.076 seconds
+[2025-06-16T18:26:35.619+0000] {processor.py:157} INFO - Started process (PID=1182) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:26:35.621+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:26:35.623+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:26:35.623+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:26:35.648+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:26:35.677+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.064 seconds
+[2025-06-16T18:27:06.117+0000] {processor.py:157} INFO - Started process (PID=1204) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:27:06.119+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:27:06.121+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:27:06.121+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:27:06.145+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:27:06.175+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.064 seconds
+[2025-06-16T18:27:36.563+0000] {processor.py:157} INFO - Started process (PID=1224) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:27:36.566+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:27:36.569+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:27:36.568+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:27:36.593+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:27:36.625+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.070 seconds
+[2025-06-16T18:28:07.411+0000] {processor.py:157} INFO - Started process (PID=1244) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:28:07.413+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:28:07.416+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:28:07.415+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:28:07.441+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:28:07.498+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.094 seconds
+[2025-06-16T18:28:37.930+0000] {processor.py:157} INFO - Started process (PID=1264) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:28:37.932+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:28:37.935+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:28:37.934+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:28:37.960+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:28:37.992+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T18:29:08.385+0000] {processor.py:157} INFO - Started process (PID=1284) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:29:08.388+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:29:08.390+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:29:08.389+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:29:08.414+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:29:08.444+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T18:29:38.797+0000] {processor.py:157} INFO - Started process (PID=1304) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:29:38.799+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:29:38.802+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:29:38.801+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:29:38.826+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:29:38.857+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.069 seconds
+[2025-06-16T18:30:09.200+0000] {processor.py:157} INFO - Started process (PID=1326) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:30:09.203+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:30:09.205+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:30:09.204+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:30:09.229+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:30:09.262+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T18:30:39.705+0000] {processor.py:157} INFO - Started process (PID=1346) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:30:39.707+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:30:39.710+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:30:39.709+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:30:39.736+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:30:39.768+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.071 seconds
+[2025-06-16T18:31:10.165+0000] {processor.py:157} INFO - Started process (PID=1368) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:31:10.168+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:31:10.170+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:31:10.169+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:31:10.197+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:31:10.227+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T18:31:40.662+0000] {processor.py:157} INFO - Started process (PID=1390) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:31:40.664+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:31:40.665+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:31:40.665+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:31:40.685+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:31:40.718+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.063 seconds
+[2025-06-16T18:32:11.170+0000] {processor.py:157} INFO - Started process (PID=1410) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:32:11.172+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:32:11.175+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:32:11.174+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:32:11.202+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:32:11.234+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.073 seconds
+[2025-06-16T18:32:41.640+0000] {processor.py:157} INFO - Started process (PID=1430) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:32:41.642+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:32:41.645+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:32:41.644+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:32:41.670+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:32:41.701+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.070 seconds
+[2025-06-16T18:33:12.180+0000] {processor.py:157} INFO - Started process (PID=1450) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:33:12.183+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:33:12.185+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:33:12.184+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:33:12.211+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:33:12.240+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:33:42.421+0000] {processor.py:157} INFO - Started process (PID=1470) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:33:42.423+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:33:42.427+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:33:42.426+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:33:42.451+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:33:42.493+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.082 seconds
+[2025-06-16T18:34:12.936+0000] {processor.py:157} INFO - Started process (PID=1490) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:34:12.938+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:34:12.941+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:34:12.940+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:34:12.969+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:34:13.008+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.081 seconds
+[2025-06-16T18:34:43.136+0000] {processor.py:157} INFO - Started process (PID=1510) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:34:43.140+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:34:43.144+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:34:43.143+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:34:43.187+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:34:43.226+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.105 seconds
+[2025-06-16T18:35:13.503+0000] {processor.py:157} INFO - Started process (PID=1530) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:35:13.505+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:35:13.507+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:35:13.507+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:35:13.530+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:35:13.559+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.062 seconds
+[2025-06-16T18:35:43.863+0000] {processor.py:157} INFO - Started process (PID=1550) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:35:43.865+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:35:43.867+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:35:43.867+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:35:43.892+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:35:43.924+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T18:36:14.310+0000] {processor.py:157} INFO - Started process (PID=1570) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:36:14.313+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:36:14.315+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:36:14.315+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:36:14.340+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:36:14.376+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.074 seconds
+[2025-06-16T18:36:44.829+0000] {processor.py:157} INFO - Started process (PID=1592) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:36:44.831+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:36:44.834+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:36:44.833+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:36:44.856+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:36:44.881+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.059 seconds
+[2025-06-16T18:37:15.290+0000] {processor.py:157} INFO - Started process (PID=1612) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:37:15.292+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:37:15.294+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:37:15.294+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:37:15.312+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:37:15.343+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.059 seconds
+[2025-06-16T18:37:45.772+0000] {processor.py:157} INFO - Started process (PID=1632) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:37:45.774+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:37:45.776+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:37:45.776+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:37:45.803+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:37:45.834+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.069 seconds
+[2025-06-16T18:38:16.206+0000] {processor.py:157} INFO - Started process (PID=1652) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:38:16.208+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:38:16.210+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:38:16.210+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:38:16.237+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:38:16.269+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.072 seconds
+[2025-06-16T18:38:46.715+0000] {processor.py:157} INFO - Started process (PID=1672) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:38:46.717+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:38:46.719+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:38:46.719+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:38:46.743+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:38:46.771+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.061 seconds
+[2025-06-16T18:39:17.121+0000] {processor.py:157} INFO - Started process (PID=1692) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:39:17.124+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:39:17.126+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:39:17.126+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:39:17.149+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:39:17.182+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T18:39:47.565+0000] {processor.py:157} INFO - Started process (PID=1712) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:39:47.567+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:39:47.569+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:39:47.569+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:39:47.595+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:39:47.634+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.076 seconds
+[2025-06-16T18:40:17.994+0000] {processor.py:157} INFO - Started process (PID=1732) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:40:17.997+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:40:18.000+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:40:17.999+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:40:18.024+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:40:18.057+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.072 seconds
+[2025-06-16T18:40:48.462+0000] {processor.py:157} INFO - Started process (PID=1754) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:40:48.464+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:40:48.467+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:40:48.466+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:40:48.494+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:40:48.529+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.074 seconds
+[2025-06-16T18:41:18.942+0000] {processor.py:157} INFO - Started process (PID=1774) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:41:18.944+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:41:18.946+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:41:18.945+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:41:18.965+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:41:19.005+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.070 seconds
+[2025-06-16T18:41:49.422+0000] {processor.py:157} INFO - Started process (PID=1794) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:41:49.425+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:41:49.427+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:41:49.426+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:41:49.453+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:41:49.483+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:42:19.883+0000] {processor.py:157} INFO - Started process (PID=1814) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:42:19.886+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:42:19.888+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:42:19.887+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:42:19.911+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:42:19.943+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:42:50.299+0000] {processor.py:157} INFO - Started process (PID=1834) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:42:50.302+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:42:50.304+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:42:50.304+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:42:50.327+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:42:50.360+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T18:43:20.691+0000] {processor.py:157} INFO - Started process (PID=1854) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:43:20.693+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:43:20.696+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:43:20.695+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:43:20.720+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:43:20.752+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T18:43:51.183+0000] {processor.py:157} INFO - Started process (PID=1874) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:43:51.185+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:43:51.188+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:43:51.187+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:43:51.211+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:43:51.243+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T18:44:21.707+0000] {processor.py:157} INFO - Started process (PID=1896) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:44:21.709+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:44:21.711+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:44:21.711+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:44:21.735+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:44:21.766+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:44:52.418+0000] {processor.py:157} INFO - Started process (PID=1916) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:44:52.423+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:44:52.426+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:44:52.425+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:44:52.447+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:44:52.486+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.080 seconds
+[2025-06-16T18:45:23.182+0000] {processor.py:157} INFO - Started process (PID=1936) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:45:23.184+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:45:23.186+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:45:23.186+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:45:23.205+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:45:23.233+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.057 seconds
+[2025-06-16T18:45:53.749+0000] {processor.py:157} INFO - Started process (PID=1958) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:45:53.752+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:45:53.754+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:45:53.753+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:45:53.774+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:45:53.807+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T18:46:24.643+0000] {processor.py:157} INFO - Started process (PID=1978) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:46:24.645+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:46:24.647+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:46:24.647+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:46:24.673+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:46:24.721+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.085 seconds
+[2025-06-16T18:46:55.569+0000] {processor.py:157} INFO - Started process (PID=1998) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:46:55.571+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:46:55.573+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:46:55.573+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:46:55.597+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:46:55.627+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T18:47:26.493+0000] {processor.py:157} INFO - Started process (PID=2018) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:47:26.495+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:47:26.498+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:47:26.497+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:47:26.522+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:47:26.556+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.069 seconds
+[2025-06-16T18:47:57.538+0000] {processor.py:157} INFO - Started process (PID=2038) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:47:57.541+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:47:57.543+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:47:57.542+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:47:57.561+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:47:57.591+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.063 seconds
+[2025-06-16T18:48:28.674+0000] {processor.py:157} INFO - Started process (PID=2058) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:48:28.676+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:48:28.678+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:48:28.678+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:48:28.703+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:48:28.732+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:48:59.740+0000] {processor.py:157} INFO - Started process (PID=2078) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:48:59.742+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:48:59.744+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:48:59.744+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:48:59.769+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:48:59.799+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T18:49:30.124+0000] {processor.py:157} INFO - Started process (PID=2098) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:49:30.126+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:49:30.128+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:49:30.128+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:49:30.153+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:49:30.182+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:50:01.182+0000] {processor.py:157} INFO - Started process (PID=2118) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:50:01.184+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:50:01.187+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:50:01.186+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:50:01.212+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:50:01.240+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.064 seconds
+[2025-06-16T18:50:31.459+0000] {processor.py:157} INFO - Started process (PID=2138) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:50:31.463+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:50:31.465+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:50:31.465+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:50:31.488+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:50:31.520+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:51:02.187+0000] {processor.py:157} INFO - Started process (PID=2158) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:51:02.189+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:51:02.191+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:51:02.190+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:51:02.213+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:51:02.245+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T18:51:33.121+0000] {processor.py:157} INFO - Started process (PID=2178) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:51:33.123+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:51:33.125+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:51:33.124+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:51:33.148+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:51:33.181+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T18:52:04.045+0000] {processor.py:157} INFO - Started process (PID=2198) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:52:04.047+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:52:04.050+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:52:04.049+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:52:04.074+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:52:04.105+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T18:52:35.046+0000] {processor.py:157} INFO - Started process (PID=2218) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:52:35.048+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:52:35.050+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:52:35.050+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:52:35.072+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:52:35.099+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.059 seconds
+[2025-06-16T18:53:05.976+0000] {processor.py:157} INFO - Started process (PID=2238) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:53:05.978+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:53:05.981+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:53:05.980+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:53:06.005+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:53:06.049+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.082 seconds
+[2025-06-16T18:53:37.059+0000] {processor.py:157} INFO - Started process (PID=2258) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:53:37.061+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:53:37.063+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:53:37.063+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:53:37.088+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:53:37.117+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.064 seconds
+[2025-06-16T18:54:07.981+0000] {processor.py:157} INFO - Started process (PID=2278) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:54:07.984+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:54:07.986+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:54:07.985+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:54:08.010+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:54:08.045+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.072 seconds
+[2025-06-16T18:54:39.038+0000] {processor.py:157} INFO - Started process (PID=2298) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:54:39.041+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:54:39.044+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:54:39.043+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:54:39.068+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:54:39.100+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.073 seconds
+[2025-06-16T18:55:09.321+0000] {processor.py:157} INFO - Started process (PID=2318) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:55:09.323+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:55:09.325+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:55:09.325+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:55:09.350+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:55:09.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:55:39.647+0000] {processor.py:157} INFO - Started process (PID=2338) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:55:39.649+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:55:39.653+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:55:39.651+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:55:39.674+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:55:39.706+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.067 seconds
+[2025-06-16T18:56:10.119+0000] {processor.py:157} INFO - Started process (PID=2358) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:56:10.121+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:56:10.123+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:56:10.123+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:56:10.145+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:56:10.181+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.069 seconds
+[2025-06-16T18:56:40.563+0000] {processor.py:157} INFO - Started process (PID=2378) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:56:40.565+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:56:40.567+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:56:40.567+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:56:40.589+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:56:40.622+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:57:11.095+0000] {processor.py:157} INFO - Started process (PID=2398) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:57:11.097+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:57:11.099+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:57:11.098+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:57:11.123+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:57:11.153+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T18:57:41.528+0000] {processor.py:157} INFO - Started process (PID=2418) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:57:41.531+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:57:41.533+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:57:41.533+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:57:41.558+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:57:41.593+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.074 seconds
+[2025-06-16T18:58:12.098+0000] {processor.py:157} INFO - Started process (PID=2438) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:58:12.100+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:58:12.103+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:58:12.102+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:58:12.125+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:58:12.158+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T18:58:43.023+0000] {processor.py:157} INFO - Started process (PID=2458) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:58:43.025+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:58:43.027+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:58:43.027+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:58:43.047+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:58:43.077+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.060 seconds
+[2025-06-16T18:59:14.008+0000] {processor.py:157} INFO - Started process (PID=2478) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:59:14.010+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:59:14.013+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:59:14.012+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:59:14.035+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:59:14.070+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.071 seconds
+[2025-06-16T18:59:44.964+0000] {processor.py:157} INFO - Started process (PID=2498) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:59:44.966+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T18:59:44.968+0000] {logging_mixin.py:150} INFO - [2025-06-16T18:59:44.968+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:59:44.992+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T18:59:45.026+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T19:00:15.213+0000] {processor.py:157} INFO - Started process (PID=2518) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:00:15.216+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:00:15.218+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:00:15.217+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:00:15.244+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:00:15.273+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T19:00:45.579+0000] {processor.py:157} INFO - Started process (PID=2538) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:00:45.581+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:00:45.584+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:00:45.583+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:00:45.608+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:00:45.643+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.072 seconds
+[2025-06-16T19:01:16.064+0000] {processor.py:157} INFO - Started process (PID=2558) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:01:16.067+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:01:16.069+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:01:16.069+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:01:16.095+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:01:16.128+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.071 seconds
+[2025-06-16T19:01:46.544+0000] {processor.py:157} INFO - Started process (PID=2578) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:01:46.546+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:01:46.549+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:01:46.548+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:01:46.572+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:01:46.606+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T19:02:16.959+0000] {processor.py:157} INFO - Started process (PID=2598) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:02:16.961+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:02:16.964+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:02:16.963+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:02:16.984+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:02:17.016+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T19:02:47.435+0000] {processor.py:157} INFO - Started process (PID=2618) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:02:47.437+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:02:47.439+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:02:47.439+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:02:47.464+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:02:47.492+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.063 seconds
+[2025-06-16T19:03:17.826+0000] {processor.py:157} INFO - Started process (PID=2638) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:03:17.829+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:03:17.832+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:03:17.831+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:03:17.855+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:03:17.891+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.073 seconds
+[2025-06-16T19:03:48.278+0000] {processor.py:157} INFO - Started process (PID=2658) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:03:48.281+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:03:48.284+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:03:48.283+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:03:48.310+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:03:48.348+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.078 seconds
+[2025-06-16T19:04:18.749+0000] {processor.py:157} INFO - Started process (PID=2678) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:04:18.751+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:04:18.753+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:04:18.753+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:04:18.773+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:04:18.802+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.059 seconds
+[2025-06-16T19:04:49.178+0000] {processor.py:157} INFO - Started process (PID=2698) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:04:49.180+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:04:49.183+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:04:49.182+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:04:49.208+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:04:49.242+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.071 seconds
+[2025-06-16T19:05:19.935+0000] {processor.py:157} INFO - Started process (PID=2718) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:05:19.938+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:05:19.941+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:05:19.941+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:05:19.966+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:05:20.005+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.080 seconds
+[2025-06-16T19:05:50.434+0000] {processor.py:157} INFO - Started process (PID=2738) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:05:50.437+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:05:50.439+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:05:50.438+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:05:50.466+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:05:50.496+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.068 seconds
+[2025-06-16T19:06:20.919+0000] {processor.py:157} INFO - Started process (PID=2758) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:06:20.922+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:06:20.924+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:06:20.923+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:06:20.950+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:06:20.982+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.069 seconds
+[2025-06-16T19:06:51.346+0000] {processor.py:157} INFO - Started process (PID=2778) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:06:51.349+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:06:51.351+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:06:51.351+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:06:51.372+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:06:51.413+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.077 seconds
+[2025-06-16T19:07:21.812+0000] {processor.py:157} INFO - Started process (PID=2798) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:07:21.815+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:07:21.817+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:07:21.816+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:07:21.840+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:07:21.872+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T19:07:52.230+0000] {processor.py:157} INFO - Started process (PID=2818) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:07:52.232+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:07:52.235+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:07:52.234+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:07:52.261+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:07:52.293+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.070 seconds
+[2025-06-16T19:08:22.701+0000] {processor.py:157} INFO - Started process (PID=2838) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:08:22.703+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:08:22.706+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:08:22.705+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:08:22.728+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:08:22.764+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.071 seconds
+[2025-06-16T19:08:53.176+0000] {processor.py:157} INFO - Started process (PID=2858) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:08:53.178+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:08:53.181+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:08:53.180+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:08:53.204+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:08:53.235+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.065 seconds
+[2025-06-16T19:09:23.649+0000] {processor.py:157} INFO - Started process (PID=2878) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:09:23.652+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:09:23.654+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:09:23.653+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:09:23.678+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:09:23.708+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T19:09:54.106+0000] {processor.py:157} INFO - Started process (PID=2898) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:09:54.109+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:09:54.113+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:09:54.112+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:09:54.135+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:09:54.182+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.085 seconds
+[2025-06-16T19:10:24.523+0000] {processor.py:157} INFO - Started process (PID=2918) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:10:24.525+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:10:24.527+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:10:24.527+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:10:24.554+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:10:24.585+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.069 seconds
+[2025-06-16T19:10:54.904+0000] {processor.py:157} INFO - Started process (PID=2938) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:10:54.906+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:10:54.908+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:10:54.908+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:10:54.930+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:10:54.964+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.066 seconds
+[2025-06-16T19:11:25.378+0000] {processor.py:157} INFO - Started process (PID=2958) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:11:25.383+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:11:25.386+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:11:25.385+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:11:25.411+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:11:25.449+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.085 seconds
+[2025-06-16T19:11:55.890+0000] {processor.py:157} INFO - Started process (PID=2978) to work on /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:11:55.893+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/tickers.xlsx for tasks to queue
+[2025-06-16T19:11:55.895+0000] {logging_mixin.py:150} INFO - [2025-06-16T19:11:55.895+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:11:55.920+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/tickers.xlsx
+[2025-06-16T19:11:55.953+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tickers.xlsx took 0.070 seconds

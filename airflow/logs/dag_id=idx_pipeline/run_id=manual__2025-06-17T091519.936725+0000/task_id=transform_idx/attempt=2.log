@@ -1,0 +1,177 @@
+[2025-06-17T09:22:10.219+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T09:15:19.936725+00:00 [queued]>
+[2025-06-17T09:22:10.228+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T09:15:19.936725+00:00 [queued]>
+[2025-06-17T09:22:10.229+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2025-06-17T09:22:10.242+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): transform_idx> on 2025-06-17 09:15:19.936725+00:00
+[2025-06-17T09:22:10.247+0000] {standard_task_runner.py:57} INFO - Started process 626 to run task
+[2025-06-17T09:22:10.251+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'transform_idx', 'manual__2025-06-17T09:15:19.936725+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmpadnmf07i']
+[2025-06-17T09:22:10.252+0000] {standard_task_runner.py:85} INFO - Job 59: Subtask transform_idx
+[2025-06-17T09:22:10.295+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T09:15:19.936725+00:00 [running]> on host 790f4cde8a0c
+[2025-06-17T09:22:10.376+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='transform_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-17T09:15:19.936725+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-17T09:15:19.936725+00:00'
+[2025-06-17T09:22:10.400+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-17T09:22:11.201+0000] {docker.py:403} INFO - Starting IDX revenue transformation process
+Starting revenue transformation by sector...
+[2025-06-17T09:22:12.182+0000] {docker.py:403} INFO - Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+[2025-06-17T09:22:12.182+0000] {docker.py:403} INFO - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-06-17T09:22:12.303+0000] {docker.py:403} INFO - 25/06/17 09:22:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-06-17T09:22:12.729+0000] {docker.py:403} INFO - Traceback (most recent call last):
+  File "/app/idx-transform.py", line 1755, in <module>
+    transform_revenue_data()
+  File "/app/idx-transform.py", line 1386, in transform_revenue_data
+    spark = create_spark_session()
+  File "/app/idx-transform.py", line 165, in create_spark_session
+    spark = SparkSession.builder \
+  File "/usr/local/lib/python3.9/site-packages/pyspark/sql/session.py", line 228, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 392, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 146, in __init__
+    self._do_init(master, appName, sparkHome, pyFiles, environment, batchSize, serializer,
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 209, in _do_init
+    self._jsc = jsc or self._initialize_context(self._conf._jconf)
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 329, in _initialize_context
+    return self._jvm.JavaSparkContext(jconf)
+  File "/usr/local/lib/python3.9/site-packages/py4j/java_gateway.py", line 1573, in __call__
+    return_value = get_return_value(
+  File "/usr/local/lib/python3.9/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling None.org.apache.spark.api.java.JavaSparkContext.
+: java.lang.IllegalAccessError: class org.apache.spark.storage.StorageUtils$ (in unnamed module @0x69eee410) cannot access class sun.nio.ch.DirectBuffer (in module java.base) because module java.base does not export sun.nio.ch to unnamed module @0x69eee410
+	at org.apache.spark.storage.StorageUtils$.<init>(StorageUtils.scala:213)
+	at org.apache.spark.storage.StorageUtils$.<clinit>(StorageUtils.scala)
+	at org.apache.spark.storage.BlockManagerMasterEndpoint.<init>(BlockManagerMasterEndpoint.scala:110)
+	at org.apache.spark.SparkEnv$.$anonfun$create$9(SparkEnv.scala:348)
+	at org.apache.spark.SparkEnv$.registerOrLookupEndpoint$1(SparkEnv.scala:287)
+	at org.apache.spark.SparkEnv$.create(SparkEnv.scala:336)
+	at org.apache.spark.SparkEnv$.createDriverEnv(SparkEnv.scala:191)
+	at org.apache.spark.SparkContext.createSparkEnv(SparkContext.scala:277)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:460)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:238)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2025-06-17T09:22:13.186+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 478, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 351, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 412, in _run_image_with_mounts
+    raise AirflowException(f"Docker container failed: {repr(result)} lines {joined_log_lines}")
+airflow.exceptions.AirflowException: Docker container failed: {'StatusCode': 1} lines Starting IDX revenue transformation process
+Starting revenue transformation by sector...
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/06/17 09:22:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Traceback (most recent call last):
+  File "/app/idx-transform.py", line 1755, in <module>
+    transform_revenue_data()
+  File "/app/idx-transform.py", line 1386, in transform_revenue_data
+    spark = create_spark_session()
+  File "/app/idx-transform.py", line 165, in create_spark_session
+    spark = SparkSession.builder \
+  File "/usr/local/lib/python3.9/site-packages/pyspark/sql/session.py", line 228, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 392, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 146, in __init__
+    self._do_init(master, appName, sparkHome, pyFiles, environment, batchSize, serializer,
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 209, in _do_init
+    self._jsc = jsc or self._initialize_context(self._conf._jconf)
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 329, in _initialize_context
+    return self._jvm.JavaSparkContext(jconf)
+  File "/usr/local/lib/python3.9/site-packages/py4j/java_gateway.py", line 1573, in __call__
+    return_value = get_return_value(
+  File "/usr/local/lib/python3.9/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling None.org.apache.spark.api.java.JavaSparkContext.
+: java.lang.IllegalAccessError: class org.apache.spark.storage.StorageUtils$ (in unnamed module @0x69eee410) cannot access class sun.nio.ch.DirectBuffer (in module java.base) because module java.base does not export sun.nio.ch to unnamed module @0x69eee410
+	at org.apache.spark.storage.StorageUtils$.<init>(StorageUtils.scala:213)
+	at org.apache.spark.storage.StorageUtils$.<clinit>(StorageUtils.scala)
+	at org.apache.spark.storage.BlockManagerMasterEndpoint.<init>(BlockManagerMasterEndpoint.scala:110)
+	at org.apache.spark.SparkEnv$.$anonfun$create$9(SparkEnv.scala:348)
+	at org.apache.spark.SparkEnv$.registerOrLookupEndpoint$1(SparkEnv.scala:287)
+	at org.apache.spark.SparkEnv$.create(SparkEnv.scala:336)
+	at org.apache.spark.SparkEnv$.createDriverEnv(SparkEnv.scala:191)
+	at org.apache.spark.SparkContext.createSparkEnv(SparkContext.scala:277)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:460)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:238)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2025-06-17T09:22:13.190+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=idx_pipeline, task_id=transform_idx, execution_date=20250617T091519, start_date=20250617T092210, end_date=20250617T092213
+[2025-06-17T09:22:13.201+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 59 for task transform_idx (Docker container failed: {'StatusCode': 1} lines Starting IDX revenue transformation process
+Starting revenue transformation by sector...
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/06/17 09:22:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Traceback (most recent call last):
+  File "/app/idx-transform.py", line 1755, in <module>
+    transform_revenue_data()
+  File "/app/idx-transform.py", line 1386, in transform_revenue_data
+    spark = create_spark_session()
+  File "/app/idx-transform.py", line 165, in create_spark_session
+    spark = SparkSession.builder \
+  File "/usr/local/lib/python3.9/site-packages/pyspark/sql/session.py", line 228, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 392, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 146, in __init__
+    self._do_init(master, appName, sparkHome, pyFiles, environment, batchSize, serializer,
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 209, in _do_init
+    self._jsc = jsc or self._initialize_context(self._conf._jconf)
+  File "/usr/local/lib/python3.9/site-packages/pyspark/context.py", line 329, in _initialize_context
+    return self._jvm.JavaSparkContext(jconf)
+  File "/usr/local/lib/python3.9/site-packages/py4j/java_gateway.py", line 1573, in __call__
+    return_value = get_return_value(
+  File "/usr/local/lib/python3.9/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling None.org.apache.spark.api.java.JavaSparkContext.
+: java.lang.IllegalAccessError: class org.apache.spark.storage.StorageUtils$ (in unnamed module @0x69eee410) cannot access class sun.nio.ch.DirectBuffer (in module java.base) because module java.base does not export sun.nio.ch to unnamed module @0x69eee410
+	at org.apache.spark.storage.StorageUtils$.<init>(StorageUtils.scala:213)
+	at org.apache.spark.storage.StorageUtils$.<clinit>(StorageUtils.scala)
+	at org.apache.spark.storage.BlockManagerMasterEndpoint.<init>(BlockManagerMasterEndpoint.scala:110)
+	at org.apache.spark.SparkEnv$.$anonfun$create$9(SparkEnv.scala:348)
+	at org.apache.spark.SparkEnv$.registerOrLookupEndpoint$1(SparkEnv.scala:287)
+	at org.apache.spark.SparkEnv$.create(SparkEnv.scala:336)
+	at org.apache.spark.SparkEnv$.createDriverEnv(SparkEnv.scala:191)
+	at org.apache.spark.SparkContext.createSparkEnv(SparkContext.scala:277)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:460)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:238)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840); 626)
+[2025-06-17T09:22:13.241+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2025-06-17T09:22:13.259+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

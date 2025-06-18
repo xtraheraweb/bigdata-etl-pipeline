@@ -1,0 +1,944 @@
+[2025-06-17T12:20:40.178+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.load_idx manual__2025-06-17T12:00:49.054663+00:00 [queued]>
+[2025-06-17T12:20:40.198+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.load_idx manual__2025-06-17T12:00:49.054663+00:00 [queued]>
+[2025-06-17T12:20:40.200+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-06-17T12:20:40.238+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): load_idx> on 2025-06-17 12:00:49.054663+00:00
+[2025-06-17T12:20:40.248+0000] {standard_task_runner.py:57} INFO - Started process 926 to run task
+[2025-06-17T12:20:40.253+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'load_idx', 'manual__2025-06-17T12:00:49.054663+00:00', '--job-id', '104', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmp5dweb9xh']
+[2025-06-17T12:20:40.255+0000] {standard_task_runner.py:85} INFO - Job 104: Subtask load_idx
+[2025-06-17T12:20:40.349+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.load_idx manual__2025-06-17T12:00:49.054663+00:00 [running]> on host 790f4cde8a0c
+[2025-06-17T12:20:40.581+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='load_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-17T12:00:49.054663+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-17T12:00:49.054663+00:00'
+[2025-06-17T12:20:40.654+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-17T12:20:42.429+0000] {docker.py:403} INFO - 🚀 IDX XBRL to JSON Converter & MongoDB Loader
+============================================================
+🔗 MongoDB URI: mongodb+srv://bigdatakecil:bigdata04@xtrahera.m7x7qad.mongodb.net/?retryWrites=true&w=majority&appName=xtrahera
+📂 Download Directory: /app/output
+🗃️  Database: tugas_bigdata
+📁 Collection: idx_raw
+🎯 This will process data from all years (2021-2025) into a single collection
+============================================================
+🚀 Starting XBRL to JSON Conversion and MongoDB Load Process
+================================================================================
+🔗 Testing MongoDB connection...
+   📍 Connecting to MongoDB using URI: mongodb+srv://bigdatakecil:bigdata04@xtrahera.m7x7qad.mongodb.net/?retryWrites=true&w=majority&appName=xtrahera
+[2025-06-17T12:20:43.861+0000] {docker.py:403} INFO - ✅ MongoDB connection successful!
+   📊 Database: tugas_bigdata
+[2025-06-17T12:20:43.889+0000] {docker.py:403} INFO - 📁 Available collections: ['yfinance_data_bulanan', 'idx_raw', 'yfinance_data_lima_tahun', 'idx_transform', 'iqplus_market_news', 'yfinance_data_tiga_tahun', 'yfinance_data_mingguan', 'iqplus_stock_news', 'yfinance_data_satu_tahun', 'yfinance_data_tahunan', 'yfinance_data_harian']
+   🎯 Target collection: idx_raw
+[2025-06-17T12:20:44.083+0000] {docker.py:403} INFO - 📈 Existing documents in collection: 65
+[2025-06-17T12:20:44.087+0000] {docker.py:403} INFO - 📂 Scanning download directory: /app/output
+[2025-06-17T12:20:44.114+0000] {docker.py:403} INFO - 📅 Found 5 year directories: 2021, 2022, 2023, 2024, 2025
+
+📊 ==================== Processing Year: 2021 ====================
+[2025-06-17T12:20:44.171+0000] {docker.py:403} INFO - 🏢 Found 15 company directories for year 2021
+   📋 Companies: AALI, ABBA, ABDA, ABMM, ACES, ACST, ADCP, ADES, ADHI, ADMF, ADMG, ADMR, ADRO, AGAR, AGII
+   [ 1/15] Processing company: AALI
+        📂 Directory: /app/output/2021/AALI
+[2025-06-17T12:20:44.178+0000] {docker.py:403} INFO - 📁 Found 2 files: AALI_2021_instance.json, AALI_instance_2021.zip
+        ✅ Match found: AALI_instance_2021.zip
+        🎯 ZIP files matching pattern: ['AALI_instance_2021.zip']
+        📦 Processing: AALI_instance_2021.zip
+[2025-06-17T12:20:44.186+0000] {docker.py:403} INFO - 📏 File size: 28,906 bytes
+[2025-06-17T12:20:44.195+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:44.334+0000] {docker.py:403} INFO - 📄 Processed 3129 XML elements, extracted 484 data fields
+            🏢 Resolved company name: Astra Agro Lestari Tbk
+[2025-06-17T12:20:44.396+0000] {docker.py:403} INFO - 💾 Local JSON saved: AALI_2021_instance.json
+[2025-06-17T12:20:45.069+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:45.070+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 2/15] Processing company: ABBA
+        📂 Directory: /app/output/2021/ABBA
+[2025-06-17T12:20:45.077+0000] {docker.py:403} INFO - 📁 Found 2 files: ABBA_2021_instance.json, ABBA_instance_2021.zip
+        ✅ Match found: ABBA_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ABBA_instance_2021.zip']
+        📦 Processing: ABBA_instance_2021.zip
+[2025-06-17T12:20:45.086+0000] {docker.py:403} INFO - 📏 File size: 29,336 bytes
+[2025-06-17T12:20:45.094+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:45.366+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: Mahaka Media Tbk
+[2025-06-17T12:20:45.428+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABBA_2021_instance.json
+[2025-06-17T12:20:46.079+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:46.081+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 3/15] Processing company: ABDA
+        📂 Directory: /app/output/2021/ABDA
+[2025-06-17T12:20:46.089+0000] {docker.py:403} INFO - 📁 Found 2 files: ABDA_2021_instance.json, ABDA_instance_2021.zip
+        ✅ Match found: ABDA_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ABDA_instance_2021.zip']
+        📦 Processing: ABDA_instance_2021.zip
+[2025-06-17T12:20:46.099+0000] {docker.py:403} INFO - 📏 File size: 24,130 bytes
+[2025-06-17T12:20:46.109+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:46.224+0000] {docker.py:403} INFO - 📄 Processed 2663 XML elements, extracted 251 data fields
+            🏢 Resolved company name: Asuransi Bina Dana Arta Tbk
+[2025-06-17T12:20:46.278+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABDA_2021_instance.json
+[2025-06-17T12:20:46.820+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:46.822+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 4/15] Processing company: ABMM
+        📂 Directory: /app/output/2021/ABMM
+[2025-06-17T12:20:46.830+0000] {docker.py:403} INFO - 📁 Found 2 files: ABMM_2021_instance.json, ABMM_instance_2021.zip
+        ✅ Match found: ABMM_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ABMM_instance_2021.zip']
+        📦 Processing: ABMM_instance_2021.zip
+[2025-06-17T12:20:46.841+0000] {docker.py:403} INFO - 📏 File size: 29,290 bytes
+[2025-06-17T12:20:46.852+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:46.983+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: ABM Investama Tbk
+[2025-06-17T12:20:47.058+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABMM_2021_instance.json
+[2025-06-17T12:20:47.731+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:47.733+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 5/15] Processing company: ACES
+        📂 Directory: /app/output/2021/ACES
+[2025-06-17T12:20:47.738+0000] {docker.py:403} INFO - 📁 Found 2 files: ACES_2021_instance.json, ACES_instance_2021.zip
+        ✅ Match found: ACES_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ACES_instance_2021.zip']
+        📦 Processing: ACES_instance_2021.zip
+[2025-06-17T12:20:47.748+0000] {docker.py:403} INFO - 📏 File size: 29,450 bytes
+[2025-06-17T12:20:47.757+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:47.887+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: Ace Hardware Indonesia Tbk
+[2025-06-17T12:20:47.960+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACES_2021_instance.json
+[2025-06-17T12:20:48.637+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:48.639+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 6/15] Processing company: ACST
+        📂 Directory: /app/output/2021/ACST
+[2025-06-17T12:20:48.645+0000] {docker.py:403} INFO - 📁 Found 1 files: ACST_instance_2021.zip
+        ✅ Match found: ACST_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ACST_instance_2021.zip']
+        📦 Processing: ACST_instance_2021.zip
+[2025-06-17T12:20:48.653+0000] {docker.py:403} INFO - 📏 File size: 28,282 bytes
+[2025-06-17T12:20:48.662+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:48.814+0000] {docker.py:403} INFO - 📄 Processed 3033 XML elements, extracted 436 data fields
+            🏢 Resolved company name: PT Acset Indonusa Tbk.
+[2025-06-17T12:20:48.876+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACST_2021_instance.json
+[2025-06-17T12:20:49.427+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:49.430+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 7/15] Processing company: ADCP
+        📂 Directory: /app/output/2021/ADCP
+[2025-06-17T12:20:49.438+0000] {docker.py:403} INFO - 📁 Found 1 files: ADCP_instance_2021.zip
+        ✅ Match found: ADCP_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADCP_instance_2021.zip']
+        📦 Processing: ADCP_instance_2021.zip
+[2025-06-17T12:20:49.451+0000] {docker.py:403} INFO - 📏 File size: 28,862 bytes
+[2025-06-17T12:20:49.461+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:49.590+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: PT Adhi Commuter Properti Tbk
+[2025-06-17T12:20:49.657+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADCP_2021_instance.json
+[2025-06-17T12:20:50.177+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:50.179+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 8/15] Processing company: ADES
+        📂 Directory: /app/output/2021/ADES
+[2025-06-17T12:20:50.184+0000] {docker.py:403} INFO - 📁 Found 1 files: ADES_instance_2021.zip
+        ✅ Match found: ADES_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADES_instance_2021.zip']
+        📦 Processing: ADES_instance_2021.zip
+[2025-06-17T12:20:50.193+0000] {docker.py:403} INFO - 📏 File size: 28,067 bytes
+[2025-06-17T12:20:50.201+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:50.326+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: Akasha Wira International Tbk  Tbk
+[2025-06-17T12:20:50.398+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADES_2021_instance.json
+[2025-06-17T12:20:50.906+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:50.909+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 9/15] Processing company: ADHI
+        📂 Directory: /app/output/2021/ADHI
+[2025-06-17T12:20:50.920+0000] {docker.py:403} INFO - 📁 Found 1 files: ADHI_instance_2021.zip
+        ✅ Match found: ADHI_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADHI_instance_2021.zip']
+        📦 Processing: ADHI_instance_2021.zip
+[2025-06-17T12:20:50.931+0000] {docker.py:403} INFO - 📏 File size: 28,206 bytes
+[2025-06-17T12:20:50.940+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:51.083+0000] {docker.py:403} INFO - 📄 Processed 2931 XML elements, extracted 385 data fields
+            🏢 Resolved company name: PT Adhi Karya (Persero) Tbk.
+[2025-06-17T12:20:51.157+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADHI_2021_instance.json
+[2025-06-17T12:20:51.627+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:51.629+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [10/15] Processing company: ADMF
+        📂 Directory: /app/output/2021/ADMF
+[2025-06-17T12:20:51.635+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMF_instance_2021.zip
+        ✅ Match found: ADMF_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADMF_instance_2021.zip']
+        📦 Processing: ADMF_instance_2021.zip
+[2025-06-17T12:20:51.645+0000] {docker.py:403} INFO - 📏 File size: 28,258 bytes
+[2025-06-17T12:20:51.654+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:51.826+0000] {docker.py:403} INFO - 📄 Processed 3009 XML elements, extracted 353 data fields
+            🏢 Resolved company name: Adira Dinamika Multi Finance Tbk
+[2025-06-17T12:20:51.893+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMF_2021_instance.json
+[2025-06-17T12:20:52.239+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:52.240+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [11/15] Processing company: ADMG
+        📂 Directory: /app/output/2021/ADMG
+[2025-06-17T12:20:52.247+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMG_instance_2021.zip
+        ✅ Match found: ADMG_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADMG_instance_2021.zip']
+        📦 Processing: ADMG_instance_2021.zip
+[2025-06-17T12:20:52.255+0000] {docker.py:403} INFO - 📏 File size: 28,528 bytes
+[2025-06-17T12:20:52.263+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:52.404+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: Polychem Indonesia Tbk
+[2025-06-17T12:20:52.481+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMG_2021_instance.json
+[2025-06-17T12:20:52.830+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:52.832+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [12/15] Processing company: ADMR
+        📂 Directory: /app/output/2021/ADMR
+[2025-06-17T12:20:52.836+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMR_instance_2021.zip
+        ✅ Match found: ADMR_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADMR_instance_2021.zip']
+        📦 Processing: ADMR_instance_2021.zip
+[2025-06-17T12:20:52.846+0000] {docker.py:403} INFO - 📏 File size: 29,091 bytes
+[2025-06-17T12:20:52.854+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:53.023+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: PT Adaro Minerals Indonesia Tbk
+[2025-06-17T12:20:53.092+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMR_2021_instance.json
+[2025-06-17T12:20:53.600+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:53.602+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [13/15] Processing company: ADRO
+        📂 Directory: /app/output/2021/ADRO
+[2025-06-17T12:20:53.608+0000] {docker.py:403} INFO - 📁 Found 1 files: ADRO_instance_2021.zip
+        ✅ Match found: ADRO_instance_2021.zip
+        🎯 ZIP files matching pattern: ['ADRO_instance_2021.zip']
+        📦 Processing: ADRO_instance_2021.zip
+[2025-06-17T12:20:53.616+0000] {docker.py:403} INFO - 📏 File size: 29,674 bytes
+[2025-06-17T12:20:53.625+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:53.798+0000] {docker.py:403} INFO - 📄 Processed 3129 XML elements, extracted 484 data fields
+            🏢 Resolved company name: ADARO ENERGY Tbk
+[2025-06-17T12:20:53.872+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADRO_2021_instance.json
+[2025-06-17T12:20:54.400+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:54.407+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [14/15] Processing company: AGAR
+        📂 Directory: /app/output/2021/AGAR
+[2025-06-17T12:20:54.414+0000] {docker.py:403} INFO - 📁 Found 1 files: AGAR_instance_2021.zip
+        ✅ Match found: AGAR_instance_2021.zip
+        🎯 ZIP files matching pattern: ['AGAR_instance_2021.zip']
+        📦 Processing: AGAR_instance_2021.zip
+[2025-06-17T12:20:54.425+0000] {docker.py:403} INFO - 📏 File size: 28,411 bytes
+[2025-06-17T12:20:54.436+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:54.582+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: PT Asia Sejahtera Mina Tbk
+[2025-06-17T12:20:54.651+0000] {docker.py:403} INFO - 💾 Local JSON saved: AGAR_2021_instance.json
+[2025-06-17T12:20:55.317+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:55.319+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [15/15] Processing company: AGII
+        📂 Directory: /app/output/2021/AGII
+[2025-06-17T12:20:55.326+0000] {docker.py:403} INFO - 📁 Found 1 files: AGII_instance_2021.zip
+        ✅ Match found: AGII_instance_2021.zip
+        🎯 ZIP files matching pattern: ['AGII_instance_2021.zip']
+        📦 Processing: AGII_instance_2021.zip
+[2025-06-17T12:20:55.336+0000] {docker.py:403} INFO - 📏 File size: 29,080 bytes
+[2025-06-17T12:20:55.344+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:55.497+0000] {docker.py:403} INFO - 📄 Processed 3125 XML elements, extracted 482 data fields
+            🏢 Resolved company name: PT Aneka Gas Industri Tbk.
+[2025-06-17T12:20:55.603+0000] {docker.py:403} INFO - 💾 Local JSON saved: AGII_2021_instance.json
+[2025-06-17T12:20:56.292+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:20:56.294+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+
+📈 Year 2021 Summary:
+   ✅ Successful: 0
+   ❌ Failed: 15
+   ⏭️  Skipped: 0
+   📊 Success rate: 0.0%
+
+📊 ==================== Processing Year: 2022 ====================
+[2025-06-17T12:20:56.367+0000] {docker.py:403} INFO - 🏢 Found 15 company directories for year 2022
+   📋 Companies: AALI, ABBA, ABDA, ABMM, ACES, ACST, ADCP, ADES, ADHI, ADMF, ADMG, ADMR, ADRO, AGAR, AGII
+   [ 1/15] Processing company: AALI
+        📂 Directory: /app/output/2022/AALI
+[2025-06-17T12:20:56.373+0000] {docker.py:403} INFO - 📁 Found 2 files: AALI_2022_instance.json, AALI_instance_2022.zip
+        ✅ Match found: AALI_instance_2022.zip
+        🎯 ZIP files matching pattern: ['AALI_instance_2022.zip']
+        📦 Processing: AALI_instance_2022.zip
+[2025-06-17T12:20:56.382+0000] {docker.py:403} INFO - 📏 File size: 184,027 bytes
+[2025-06-17T12:20:56.390+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:20:57.664+0000] {docker.py:403} INFO - 📄 Processed 62079 XML elements, extracted 709 data fields
+            🏢 Resolved company name: Astra Agro Lestari Tbk
+[2025-06-17T12:20:57.990+0000] {docker.py:403} INFO - 💾 Local JSON saved: AALI_2022_instance.json
+[2025-06-17T12:21:01.280+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:01.281+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 2/15] Processing company: ABBA
+        📂 Directory: /app/output/2022/ABBA
+[2025-06-17T12:21:01.287+0000] {docker.py:403} INFO - 📁 Found 2 files: ABBA_2022_instance.json, ABBA_instance_2022.zip
+        ✅ Match found: ABBA_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ABBA_instance_2022.zip']
+        📦 Processing: ABBA_instance_2022.zip
+[2025-06-17T12:21:01.297+0000] {docker.py:403} INFO - 📏 File size: 172,426 bytes
+[2025-06-17T12:21:01.306+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:02.652+0000] {docker.py:403} INFO - 📄 Processed 61953 XML elements, extracted 703 data fields
+            🏢 Resolved company name: Mahaka Media Tbk
+[2025-06-17T12:21:02.971+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABBA_2022_instance.json
+[2025-06-17T12:21:06.370+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:06.371+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 3/15] Processing company: ABDA
+        📂 Directory: /app/output/2022/ABDA
+[2025-06-17T12:21:06.377+0000] {docker.py:403} INFO - 📁 Found 2 files: ABDA_2022_instance.json, ABDA_instance_2022.zip
+        ✅ Match found: ABDA_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ABDA_instance_2022.zip']
+        📦 Processing: ABDA_instance_2022.zip
+[2025-06-17T12:21:06.386+0000] {docker.py:403} INFO - 📏 File size: 67,449 bytes
+[2025-06-17T12:21:06.394+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:06.696+0000] {docker.py:403} INFO - 📄 Processed 9494 XML elements, extracted 375 data fields
+            🏢 Resolved company name: Asuransi Bina Dana Arta Tbk
+[2025-06-17T12:21:06.815+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABDA_2022_instance.json
+[2025-06-17T12:21:07.640+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:07.642+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 4/15] Processing company: ABMM
+        📂 Directory: /app/output/2022/ABMM
+[2025-06-17T12:21:07.649+0000] {docker.py:403} INFO - 📁 Found 2 files: ABMM_2022_instance.json, ABMM_instance_2022.zip
+        ✅ Match found: ABMM_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ABMM_instance_2022.zip']
+        📦 Processing: ABMM_instance_2022.zip
+[2025-06-17T12:21:07.656+0000] {docker.py:403} INFO - 📏 File size: 209,846 bytes
+[2025-06-17T12:21:07.663+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:08.977+0000] {docker.py:403} INFO - 📄 Processed 64964 XML elements, extracted 738 data fields
+            🏢 Resolved company name: ABM Investama Tbk
+[2025-06-17T12:21:09.472+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABMM_2022_instance.json
+[2025-06-17T12:21:12.664+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:12.665+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 5/15] Processing company: ACES
+        📂 Directory: /app/output/2022/ACES
+[2025-06-17T12:21:12.672+0000] {docker.py:403} INFO - 📁 Found 2 files: ACES_2022_instance.json, ACES_instance_2022.zip
+        ✅ Match found: ACES_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ACES_instance_2022.zip']
+        📦 Processing: ACES_instance_2022.zip
+[2025-06-17T12:21:12.681+0000] {docker.py:403} INFO - 📏 File size: 184,180 bytes
+[2025-06-17T12:21:12.690+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:14.060+0000] {docker.py:403} INFO - 📄 Processed 62222 XML elements, extracted 713 data fields
+            🏢 Resolved company name: Ace Hardware Indonesia Tbk
+[2025-06-17T12:21:14.410+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACES_2022_instance.json
+[2025-06-17T12:21:16.985+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:16.987+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 6/15] Processing company: ACST
+        📂 Directory: /app/output/2022/ACST
+[2025-06-17T12:21:16.995+0000] {docker.py:403} INFO - 📁 Found 1 files: ACST_instance_2022.zip
+        ✅ Match found: ACST_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ACST_instance_2022.zip']
+        📦 Processing: ACST_instance_2022.zip
+[2025-06-17T12:21:17.005+0000] {docker.py:403} INFO - 📏 File size: 184,056 bytes
+[2025-06-17T12:21:17.014+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:18.271+0000] {docker.py:403} INFO - 📄 Processed 62060 XML elements, extracted 657 data fields
+            🏢 Resolved company name: PT Acset Indonusa Tbk.
+[2025-06-17T12:21:18.595+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACST_2022_instance.json
+[2025-06-17T12:21:21.054+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:21.056+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 7/15] Processing company: ADCP
+        📂 Directory: /app/output/2022/ADCP
+[2025-06-17T12:21:21.062+0000] {docker.py:403} INFO - 📁 Found 1 files: ADCP_instance_2022.zip
+        ✅ Match found: ADCP_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ADCP_instance_2022.zip']
+        📦 Processing: ADCP_instance_2022.zip
+[2025-06-17T12:21:21.070+0000] {docker.py:403} INFO - 📏 File size: 187,079 bytes
+[2025-06-17T12:21:21.079+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:22.418+0000] {docker.py:403} INFO - 📄 Processed 61653 XML elements, extracted 563 data fields
+            🏢 Resolved company name: PT Adhi Commuter Properti Tbk
+[2025-06-17T12:21:22.800+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADCP_2022_instance.json
+[2025-06-17T12:21:25.441+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:25.446+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 8/15] Processing company: ADES
+        📂 Directory: /app/output/2022/ADES
+[2025-06-17T12:21:25.451+0000] {docker.py:403} INFO - 📁 Found 1 files: ADES_instance_2022.zip
+        ✅ Match found: ADES_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ADES_instance_2022.zip']
+        📦 Processing: ADES_instance_2022.zip
+[2025-06-17T12:21:25.460+0000] {docker.py:403} INFO - 📏 File size: 180,759 bytes
+[2025-06-17T12:21:25.467+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:26.863+0000] {docker.py:403} INFO - 📄 Processed 62335 XML elements, extracted 712 data fields
+            🏢 Resolved company name: Akasha Wira International Tbk  Tbk
+[2025-06-17T12:21:27.192+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADES_2022_instance.json
+[2025-06-17T12:21:30.523+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:30.527+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:30.528+0000] {docker.py:403} INFO - [ 9/15] Processing company: ADHI
+        📂 Directory: /app/output/2022/ADHI
+[2025-06-17T12:21:30.532+0000] {docker.py:403} INFO - 📁 Found 1 files: ADHI_instance_2022.zip
+        ✅ Match found: ADHI_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ADHI_instance_2022.zip']
+        📦 Processing: ADHI_instance_2022.zip
+[2025-06-17T12:21:30.541+0000] {docker.py:403} INFO - 📏 File size: 213,601 bytes
+[2025-06-17T12:21:30.549+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:31.926+0000] {docker.py:403} INFO - 📄 Processed 62128 XML elements, extracted 573 data fields
+            🏢 Resolved company name: PT Adhi Karya (Persero) Tbk.
+[2025-06-17T12:21:32.485+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADHI_2022_instance.json
+[2025-06-17T12:21:35.030+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:35.031+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [10/15] Processing company: ADMF
+        📂 Directory: /app/output/2022/ADMF
+[2025-06-17T12:21:35.037+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMF_instance_2022.zip
+        ✅ Match found: ADMF_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ADMF_instance_2022.zip']
+        📦 Processing: ADMF_instance_2022.zip
+[2025-06-17T12:21:35.047+0000] {docker.py:403} INFO - 📏 File size: 153,862 bytes
+[2025-06-17T12:21:35.054+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:35.909+0000] {docker.py:403} INFO - 📄 Processed 41627 XML elements, extracted 460 data fields
+            🏢 Resolved company name: Adira Dinamika Multi Finance Tbk
+[2025-06-17T12:21:36.176+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMF_2022_instance.json
+[2025-06-17T12:21:37.553+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:37.554+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [11/15] Processing company: ADMG
+        📂 Directory: /app/output/2022/ADMG
+[2025-06-17T12:21:37.561+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMG_instance_2022.zip
+        ✅ Match found: ADMG_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ADMG_instance_2022.zip']
+        📦 Processing: ADMG_instance_2022.zip
+[2025-06-17T12:21:37.571+0000] {docker.py:403} INFO - 📏 File size: 180,169 bytes
+[2025-06-17T12:21:37.579+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:38.887+0000] {docker.py:403} INFO - 📄 Processed 62345 XML elements, extracted 707 data fields
+            🏢 Resolved company name: Polychem Indonesia Tbk
+[2025-06-17T12:21:39.539+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMG_2022_instance.json
+[2025-06-17T12:21:42.159+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:42.161+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [12/15] Processing company: ADMR
+        📂 Directory: /app/output/2022/ADMR
+[2025-06-17T12:21:42.166+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMR_instance_2022.zip
+        ✅ Match found: ADMR_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ADMR_instance_2022.zip']
+        📦 Processing: ADMR_instance_2022.zip
+[2025-06-17T12:21:42.175+0000] {docker.py:403} INFO - 📏 File size: 184,552 bytes
+[2025-06-17T12:21:42.183+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:43.441+0000] {docker.py:403} INFO - 📄 Processed 61771 XML elements, extracted 702 data fields
+            🏢 Resolved company name: PT Adaro Minerals Indonesia Tbk
+[2025-06-17T12:21:43.760+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMR_2022_instance.json
+[2025-06-17T12:21:46.140+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:46.142+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [13/15] Processing company: ADRO
+        📂 Directory: /app/output/2022/ADRO
+[2025-06-17T12:21:46.148+0000] {docker.py:403} INFO - 📁 Found 1 files: ADRO_instance_2022.zip
+        ✅ Match found: ADRO_instance_2022.zip
+        🎯 ZIP files matching pattern: ['ADRO_instance_2022.zip']
+        📦 Processing: ADRO_instance_2022.zip
+[2025-06-17T12:21:46.156+0000] {docker.py:403} INFO - 📏 File size: 196,696 bytes
+[2025-06-17T12:21:46.163+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:47.445+0000] {docker.py:403} INFO - 📄 Processed 62362 XML elements, extracted 725 data fields
+            🏢 Resolved company name: Adaro Energy Indonesia Tbk
+[2025-06-17T12:21:47.787+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADRO_2022_instance.json
+[2025-06-17T12:21:50.279+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:50.280+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [14/15] Processing company: AGAR
+        📂 Directory: /app/output/2022/AGAR
+[2025-06-17T12:21:50.286+0000] {docker.py:403} INFO - 📁 Found 1 files: AGAR_instance_2022.zip
+        ✅ Match found: AGAR_instance_2022.zip
+        🎯 ZIP files matching pattern: ['AGAR_instance_2022.zip']
+        📦 Processing: AGAR_instance_2022.zip
+[2025-06-17T12:21:50.296+0000] {docker.py:403} INFO - 📏 File size: 183,858 bytes
+[2025-06-17T12:21:50.302+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:51.674+0000] {docker.py:403} INFO - 📄 Processed 62701 XML elements, extracted 704 data fields
+            🏢 Resolved company name: PT Asia Sejahtera Mina Tbk
+[2025-06-17T12:21:52.061+0000] {docker.py:403} INFO - 💾 Local JSON saved: AGAR_2022_instance.json
+[2025-06-17T12:21:54.681+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:54.683+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [15/15] Processing company: AGII
+        📂 Directory: /app/output/2022/AGII
+[2025-06-17T12:21:54.689+0000] {docker.py:403} INFO - 📁 Found 1 files: AGII_instance_2022.zip
+        ✅ Match found: AGII_instance_2022.zip
+        🎯 ZIP files matching pattern: ['AGII_instance_2022.zip']
+        📦 Processing: AGII_instance_2022.zip
+[2025-06-17T12:21:54.699+0000] {docker.py:403} INFO - 📏 File size: 190,548 bytes
+[2025-06-17T12:21:54.706+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:21:56.038+0000] {docker.py:403} INFO - 📄 Processed 62976 XML elements, extracted 734 data fields
+            🏢 Resolved company name: PT Samator Indo Gas Tbk
+[2025-06-17T12:21:56.396+0000] {docker.py:403} INFO - 💾 Local JSON saved: AGII_2022_instance.json
+[2025-06-17T12:21:59.811+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:21:59.813+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+
+📈 Year 2022 Summary:
+   ✅ Successful: 0
+   ❌ Failed: 15
+   ⏭️  Skipped: 0
+   📊 Success rate: 0.0%
+
+📊 ==================== Processing Year: 2023 ====================
+[2025-06-17T12:21:59.882+0000] {docker.py:403} INFO - 🏢 Found 15 company directories for year 2023
+   📋 Companies: AALI, ABBA, ABDA, ABMM, ACES, ACRO, ACST, ADCP, ADES, ADHI, ADMF, ADMG, ADMR, ADRO, AEGS
+   [ 1/15] Processing company: AALI
+        📂 Directory: /app/output/2023/AALI
+[2025-06-17T12:21:59.887+0000] {docker.py:403} INFO - 📁 Found 2 files: AALI_2023_instance.json, AALI_instance_2023.zip
+        ✅ Match found: AALI_instance_2023.zip
+        🎯 ZIP files matching pattern: ['AALI_instance_2023.zip']
+        📦 Processing: AALI_instance_2023.zip
+[2025-06-17T12:21:59.896+0000] {docker.py:403} INFO - 📏 File size: 114,051 bytes
+[2025-06-17T12:21:59.904+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:00.712+0000] {docker.py:403} INFO - 📄 Processed 34056 XML elements, extracted 695 data fields
+            🏢 Resolved company name: Astra Agro Lestari Tbk
+[2025-06-17T12:22:01.148+0000] {docker.py:403} INFO - 💾 Local JSON saved: AALI_2023_instance.json
+[2025-06-17T12:22:03.972+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:03.974+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 2/15] Processing company: ABBA
+        📂 Directory: /app/output/2023/ABBA
+[2025-06-17T12:22:03.980+0000] {docker.py:403} INFO - 📁 Found 2 files: ABBA_2023_instance.json, ABBA_instance_2023.zip
+        ✅ Match found: ABBA_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ABBA_instance_2023.zip']
+        📦 Processing: ABBA_instance_2023.zip
+[2025-06-17T12:22:03.987+0000] {docker.py:403} INFO - 📏 File size: 112,795 bytes
+[2025-06-17T12:22:03.996+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:04.727+0000] {docker.py:403} INFO - 📄 Processed 34052 XML elements, extracted 693 data fields
+            🏢 Resolved company name: Mahaka Media Tbk
+[2025-06-17T12:22:05.048+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABBA_2023_instance.json
+[2025-06-17T12:22:07.100+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:07.101+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 3/15] Processing company: ABDA
+        📂 Directory: /app/output/2023/ABDA
+[2025-06-17T12:22:07.109+0000] {docker.py:403} INFO - 📁 Found 2 files: ABDA_2023_instance.json, ABDA_instance_2023.zip
+        ✅ Match found: ABDA_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ABDA_instance_2023.zip']
+        📦 Processing: ABDA_instance_2023.zip
+[2025-06-17T12:22:07.118+0000] {docker.py:403} INFO - 📏 File size: 50,494 bytes
+[2025-06-17T12:22:07.125+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:07.396+0000] {docker.py:403} INFO - 📄 Processed 8219 XML elements, extracted 330 data fields
+            🏢 Resolved company name: Asuransi Bina Dana Arta Tbk
+[2025-06-17T12:22:07.514+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABDA_2023_instance.json
+[2025-06-17T12:22:08.192+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:08.194+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 4/15] Processing company: ABMM
+        📂 Directory: /app/output/2023/ABMM
+[2025-06-17T12:22:08.200+0000] {docker.py:403} INFO - 📁 Found 2 files: ABMM_2023_instance.json, ABMM_instance_2023.zip
+        ✅ Match found: ABMM_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ABMM_instance_2023.zip']
+        📦 Processing: ABMM_instance_2023.zip
+[2025-06-17T12:22:08.210+0000] {docker.py:403} INFO - 📏 File size: 146,058 bytes
+[2025-06-17T12:22:08.218+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:09.080+0000] {docker.py:403} INFO - 📄 Processed 41102 XML elements, extracted 721 data fields
+            🏢 Resolved company name: ABM Investama Tbk
+[2025-06-17T12:22:09.429+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABMM_2023_instance.json
+[2025-06-17T12:22:12.534+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:12.536+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 5/15] Processing company: ACES
+        📂 Directory: /app/output/2023/ACES
+[2025-06-17T12:22:12.541+0000] {docker.py:403} INFO - 📁 Found 2 files: ACES_2023_instance.json, ACES_instance_2023.zip
+        ✅ Match found: ACES_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ACES_instance_2023.zip']
+        📦 Processing: ACES_instance_2023.zip
+[2025-06-17T12:22:12.551+0000] {docker.py:403} INFO - 📏 File size: 138,737 bytes
+[2025-06-17T12:22:12.560+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:13.438+0000] {docker.py:403} INFO - 📄 Processed 37656 XML elements, extracted 709 data fields
+            🏢 Resolved company name: Ace Hardware Indonesia Tbk
+[2025-06-17T12:22:13.772+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACES_2023_instance.json
+[2025-06-17T12:22:16.347+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:16.349+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 6/15] Processing company: ACRO
+        📂 Directory: /app/output/2023/ACRO
+[2025-06-17T12:22:16.354+0000] {docker.py:403} INFO - 📁 Found 1 files: ACRO_instance_2023.zip
+        ✅ Match found: ACRO_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ACRO_instance_2023.zip']
+        📦 Processing: ACRO_instance_2023.zip
+[2025-06-17T12:22:16.363+0000] {docker.py:403} INFO - 📏 File size: 125,725 bytes
+[2025-06-17T12:22:16.371+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:17.178+0000] {docker.py:403} INFO - 📄 Processed 35686 XML elements, extracted 698 data fields
+            🏢 Resolved company name: PT Samcro Hyosung Adilestari Tbk.
+[2025-06-17T12:22:17.509+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACRO_2023_instance.json
+[2025-06-17T12:22:20.098+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:20.099+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 7/15] Processing company: ACST
+        📂 Directory: /app/output/2023/ACST
+[2025-06-17T12:22:20.105+0000] {docker.py:403} INFO - 📁 Found 1 files: ACST_instance_2023.zip
+        ✅ Match found: ACST_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ACST_instance_2023.zip']
+        📦 Processing: ACST_instance_2023.zip
+[2025-06-17T12:22:20.114+0000] {docker.py:403} INFO - 📏 File size: 116,110 bytes
+[2025-06-17T12:22:20.121+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:20.859+0000] {docker.py:403} INFO - 📄 Processed 34773 XML elements, extracted 661 data fields
+            🏢 Resolved company name: PT Acset Indonusa Tbk.
+[2025-06-17T12:22:21.173+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACST_2023_instance.json
+[2025-06-17T12:22:23.585+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:23.587+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 8/15] Processing company: ADCP
+        📂 Directory: /app/output/2023/ADCP
+[2025-06-17T12:22:23.599+0000] {docker.py:403} INFO - 📁 Found 1 files: ADCP_instance_2023.zip
+        ✅ Match found: ADCP_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ADCP_instance_2023.zip']
+        📦 Processing: ADCP_instance_2023.zip
+[2025-06-17T12:22:23.609+0000] {docker.py:403} INFO - 📏 File size: 152,690 bytes
+[2025-06-17T12:22:23.617+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:24.704+0000] {docker.py:403} INFO - 📄 Processed 48179 XML elements, extracted 563 data fields
+            🏢 Resolved company name: PT Adhi Commuter Properti Tbk
+[2025-06-17T12:22:25.083+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADCP_2023_instance.json
+[2025-06-17T12:22:27.900+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:27.901+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 9/15] Processing company: ADES
+        📂 Directory: /app/output/2023/ADES
+[2025-06-17T12:22:27.906+0000] {docker.py:403} INFO - 📁 Found 1 files: ADES_instance_2023.zip
+        ✅ Match found: ADES_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ADES_instance_2023.zip']
+        📦 Processing: ADES_instance_2023.zip
+[2025-06-17T12:22:27.915+0000] {docker.py:403} INFO - 📏 File size: 125,465 bytes
+[2025-06-17T12:22:27.924+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:28.712+0000] {docker.py:403} INFO - 📄 Processed 36657 XML elements, extracted 701 data fields
+[2025-06-17T12:22:28.714+0000] {docker.py:403} INFO - 🏢 Resolved company name: Akasha Wira International Tbk  Tbk
+[2025-06-17T12:22:29.056+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADES_2023_instance.json
+[2025-06-17T12:22:30.632+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:30.634+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [10/15] Processing company: ADHI
+        📂 Directory: /app/output/2023/ADHI
+[2025-06-17T12:22:30.639+0000] {docker.py:403} INFO - 📁 Found 1 files: ADHI_instance_2023.zip
+        ✅ Match found: ADHI_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ADHI_instance_2023.zip']
+        📦 Processing: ADHI_instance_2023.zip
+[2025-06-17T12:22:30.648+0000] {docker.py:403} INFO - 📏 File size: 177,880 bytes
+[2025-06-17T12:22:30.655+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:31.670+0000] {docker.py:403} INFO - 📄 Processed 51442 XML elements, extracted 579 data fields
+            🏢 Resolved company name: PT Adhi Karya (Persero) Tbk.
+[2025-06-17T12:22:32.055+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADHI_2023_instance.json
+[2025-06-17T12:22:34.922+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:34.924+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [11/15] Processing company: ADMF
+        📂 Directory: /app/output/2023/ADMF
+[2025-06-17T12:22:34.930+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMF_instance_2023.zip
+        ✅ Match found: ADMF_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ADMF_instance_2023.zip']
+[2025-06-17T12:22:34.932+0000] {docker.py:403} INFO - 📦 Processing: ADMF_instance_2023.zip
+[2025-06-17T12:22:34.940+0000] {docker.py:403} INFO - 📏 File size: 110,593 bytes
+[2025-06-17T12:22:34.948+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:35.430+0000] {docker.py:403} INFO - 📄 Processed 22562 XML elements, extracted 455 data fields
+            🏢 Resolved company name: Adira Dinamika Multi Finance Tbk
+[2025-06-17T12:22:35.687+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMF_2023_instance.json
+[2025-06-17T12:22:36.943+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:36.944+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [12/15] Processing company: ADMG
+        📂 Directory: /app/output/2023/ADMG
+[2025-06-17T12:22:36.949+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMG_instance_2023.zip
+        ✅ Match found: ADMG_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ADMG_instance_2023.zip']
+        📦 Processing: ADMG_instance_2023.zip
+[2025-06-17T12:22:36.958+0000] {docker.py:403} INFO - 📏 File size: 131,291 bytes
+[2025-06-17T12:22:36.967+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:37.773+0000] {docker.py:403} INFO - 📄 Processed 39717 XML elements, extracted 705 data fields
+            🏢 Resolved company name: Polychem Indonesia Tbk
+[2025-06-17T12:22:38.132+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMG_2023_instance.json
+[2025-06-17T12:22:39.877+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:39.880+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [13/15] Processing company: ADMR
+        📂 Directory: /app/output/2023/ADMR
+[2025-06-17T12:22:39.884+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMR_instance_2023.zip
+        ✅ Match found: ADMR_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ADMR_instance_2023.zip']
+        📦 Processing: ADMR_instance_2023.zip
+[2025-06-17T12:22:39.894+0000] {docker.py:403} INFO - 📏 File size: 117,467 bytes
+[2025-06-17T12:22:39.902+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:40.722+0000] {docker.py:403} INFO - 📄 Processed 35836 XML elements, extracted 699 data fields
+            🏢 Resolved company name: PT Adaro Minerals Indonesia Tbk
+[2025-06-17T12:22:41.055+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMR_2023_instance.json
+[2025-06-17T12:22:43.078+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:43.080+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [14/15] Processing company: ADRO
+        📂 Directory: /app/output/2023/ADRO
+[2025-06-17T12:22:43.085+0000] {docker.py:403} INFO - 📁 Found 1 files: ADRO_instance_2023.zip
+        ✅ Match found: ADRO_instance_2023.zip
+        🎯 ZIP files matching pattern: ['ADRO_instance_2023.zip']
+        📦 Processing: ADRO_instance_2023.zip
+[2025-06-17T12:22:43.094+0000] {docker.py:403} INFO - 📏 File size: 120,432 bytes
+[2025-06-17T12:22:43.102+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:43.879+0000] {docker.py:403} INFO - 📄 Processed 36173 XML elements, extracted 713 data fields
+            🏢 Resolved company name: Adaro Energy Indonesia Tbk
+[2025-06-17T12:22:44.207+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADRO_2023_instance.json
+[2025-06-17T12:22:46.628+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:46.630+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [15/15] Processing company: AEGS
+        📂 Directory: /app/output/2023/AEGS
+[2025-06-17T12:22:46.635+0000] {docker.py:403} INFO - 📁 Found 1 files: AEGS_instance_2023.zip
+        ✅ Match found: AEGS_instance_2023.zip
+        🎯 ZIP files matching pattern: ['AEGS_instance_2023.zip']
+        📦 Processing: AEGS_instance_2023.zip
+[2025-06-17T12:22:46.643+0000] {docker.py:403} INFO - 📏 File size: 128,163 bytes
+[2025-06-17T12:22:46.650+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:47.510+0000] {docker.py:403} INFO - 📄 Processed 39796 XML elements, extracted 712 data fields
+            🏢 Resolved company name: PT Anugerah Spareparts Sejahtera Tbk.
+[2025-06-17T12:22:47.863+0000] {docker.py:403} INFO - 💾 Local JSON saved: AEGS_2023_instance.json
+[2025-06-17T12:22:50.933+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:50.934+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+
+📈 Year 2023 Summary:
+   ✅ Successful: 0
+   ❌ Failed: 15
+   ⏭️  Skipped: 0
+   📊 Success rate: 0.0%
+
+📊 ==================== Processing Year: 2024 ====================
+[2025-06-17T12:22:51.006+0000] {docker.py:403} INFO - 🏢 Found 15 company directories for year 2024
+   📋 Companies: AADI, AALI, ABBA, ABDA, ABMM, ACES, ACRO, ACST, ADCP, ADES, ADHI, ADMF, ADMG, ADMR, ADRO
+   [ 1/15] Processing company: AADI
+        📂 Directory: /app/output/2024/AADI
+[2025-06-17T12:22:51.012+0000] {docker.py:403} INFO - 📁 Found 2 files: AADI_2024_instance.json, AADI_instance_2024.zip
+        ✅ Match found: AADI_instance_2024.zip
+        🎯 ZIP files matching pattern: ['AADI_instance_2024.zip']
+        📦 Processing: AADI_instance_2024.zip
+[2025-06-17T12:22:51.021+0000] {docker.py:403} INFO - 📏 File size: 143,996 bytes
+[2025-06-17T12:22:51.030+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:51.818+0000] {docker.py:403} INFO - 📄 Processed 36511 XML elements, extracted 714 data fields
+            🏢 Resolved company name: PT Adaro Andalan Indonesia Tbk
+[2025-06-17T12:22:52.174+0000] {docker.py:403} INFO - 💾 Local JSON saved: AADI_2024_instance.json
+[2025-06-17T12:22:54.623+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:54.624+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:54.626+0000] {docker.py:403} INFO - [ 2/15] Processing company: AALI
+        📂 Directory: /app/output/2024/AALI
+[2025-06-17T12:22:54.633+0000] {docker.py:403} INFO - 📁 Found 2 files: AALI_2024_instance.json, AALI_instance_2024.zip
+        ✅ Match found: AALI_instance_2024.zip
+        🎯 ZIP files matching pattern: ['AALI_instance_2024.zip']
+        📦 Processing: AALI_instance_2024.zip
+[2025-06-17T12:22:54.640+0000] {docker.py:403} INFO - 📏 File size: 124,227 bytes
+[2025-06-17T12:22:54.648+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:55.481+0000] {docker.py:403} INFO - 📄 Processed 33950 XML elements, extracted 695 data fields
+            🏢 Resolved company name: Astra Agro Lestari Tbk
+[2025-06-17T12:22:55.783+0000] {docker.py:403} INFO - 💾 Local JSON saved: AALI_2024_instance.json
+[2025-06-17T12:22:58.446+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:22:58.448+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 3/15] Processing company: ABBA
+        📂 Directory: /app/output/2024/ABBA
+[2025-06-17T12:22:58.454+0000] {docker.py:403} INFO - 📁 Found 2 files: ABBA_2024_instance.json, ABBA_instance_2024.zip
+        ✅ Match found: ABBA_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ABBA_instance_2024.zip']
+        📦 Processing: ABBA_instance_2024.zip
+[2025-06-17T12:22:58.462+0000] {docker.py:403} INFO - 📏 File size: 111,972 bytes
+[2025-06-17T12:22:58.469+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:22:59.323+0000] {docker.py:403} INFO - 📄 Processed 33946 XML elements, extracted 693 data fields
+            🏢 Resolved company name: Mahaka Media Tbk
+[2025-06-17T12:22:59.636+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABBA_2024_instance.json
+[2025-06-17T12:23:01.669+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:01.674+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 4/15] Processing company: ABDA
+        📂 Directory: /app/output/2024/ABDA
+[2025-06-17T12:23:01.680+0000] {docker.py:403} INFO - 📁 Found 2 files: ABDA_2024_instance.json, ABDA_instance_2024.zip
+        ✅ Match found: ABDA_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ABDA_instance_2024.zip']
+        📦 Processing: ABDA_instance_2024.zip
+[2025-06-17T12:23:01.691+0000] {docker.py:403} INFO - 📏 File size: 50,102 bytes
+[2025-06-17T12:23:01.699+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:01.970+0000] {docker.py:403} INFO - 📄 Processed 8199 XML elements, extracted 330 data fields
+            🏢 Resolved company name: Asuransi Bina Dana Arta Tbk
+[2025-06-17T12:23:02.077+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABDA_2024_instance.json
+[2025-06-17T12:23:02.601+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:02.603+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 5/15] Processing company: ABMM
+        📂 Directory: /app/output/2024/ABMM
+[2025-06-17T12:23:02.609+0000] {docker.py:403} INFO - 📁 Found 2 files: ABMM_2024_instance.json, ABMM_instance_2024.zip
+        ✅ Match found: ABMM_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ABMM_instance_2024.zip']
+        📦 Processing: ABMM_instance_2024.zip
+[2025-06-17T12:23:02.620+0000] {docker.py:403} INFO - 📏 File size: 141,013 bytes
+[2025-06-17T12:23:02.629+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:03.471+0000] {docker.py:403} INFO - 📄 Processed 40882 XML elements, extracted 721 data fields
+            🏢 Resolved company name: ABM Investama Tbk
+[2025-06-17T12:23:03.831+0000] {docker.py:403} INFO - 💾 Local JSON saved: ABMM_2024_instance.json
+[2025-06-17T12:23:06.753+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:06.754+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 6/15] Processing company: ACES
+        📂 Directory: /app/output/2024/ACES
+[2025-06-17T12:23:06.761+0000] {docker.py:403} INFO - 📁 Found 1 files: ACES_instance_2024.zip
+        ✅ Match found: ACES_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ACES_instance_2024.zip']
+        📦 Processing: ACES_instance_2024.zip
+[2025-06-17T12:23:06.771+0000] {docker.py:403} INFO - 📏 File size: 135,199 bytes
+[2025-06-17T12:23:06.781+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:07.571+0000] {docker.py:403} INFO - 📄 Processed 37524 XML elements, extracted 709 data fields
+            🏢 Resolved company name: PT Aspirasi Hidup Indonesia Tbk
+[2025-06-17T12:23:07.911+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACES_2024_instance.json
+[2025-06-17T12:23:10.419+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:10.420+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 7/15] Processing company: ACRO
+        📂 Directory: /app/output/2024/ACRO
+[2025-06-17T12:23:10.428+0000] {docker.py:403} INFO - 📁 Found 1 files: ACRO_instance_2024.zip
+        ✅ Match found: ACRO_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ACRO_instance_2024.zip']
+        📦 Processing: ACRO_instance_2024.zip
+[2025-06-17T12:23:10.437+0000] {docker.py:403} INFO - 📏 File size: 119,628 bytes
+[2025-06-17T12:23:10.447+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:11.228+0000] {docker.py:403} INFO - 📄 Processed 35574 XML elements, extracted 698 data fields
+            🏢 Resolved company name: PT Samcro Hyosung Adilestari Tbk.
+[2025-06-17T12:23:11.561+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACRO_2024_instance.json
+[2025-06-17T12:23:13.962+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:13.964+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 8/15] Processing company: ACST
+        📂 Directory: /app/output/2024/ACST
+[2025-06-17T12:23:13.970+0000] {docker.py:403} INFO - 📁 Found 1 files: ACST_instance_2024.zip
+        ✅ Match found: ACST_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ACST_instance_2024.zip']
+        📦 Processing: ACST_instance_2024.zip
+[2025-06-17T12:23:13.978+0000] {docker.py:403} INFO - 📏 File size: 118,902 bytes
+[2025-06-17T12:23:13.986+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:14.679+0000] {docker.py:403} INFO - 📄 Processed 31730 XML elements, extracted 652 data fields
+            🏢 Resolved company name: PT Acset Indonusa Tbk.
+[2025-06-17T12:23:14.979+0000] {docker.py:403} INFO - 💾 Local JSON saved: ACST_2024_instance.json
+[2025-06-17T12:23:17.961+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:17.963+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 9/15] Processing company: ADCP
+        📂 Directory: /app/output/2024/ADCP
+[2025-06-17T12:23:17.969+0000] {docker.py:403} INFO - 📁 Found 1 files: ADCP_instance_2024.zip
+        ✅ Match found: ADCP_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ADCP_instance_2024.zip']
+        📦 Processing: ADCP_instance_2024.zip
+[2025-06-17T12:23:17.979+0000] {docker.py:403} INFO - 📏 File size: 152,833 bytes
+[2025-06-17T12:23:17.986+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:18.876+0000] {docker.py:403} INFO - 📄 Processed 49506 XML elements, extracted 562 data fields
+            🏢 Resolved company name: PT Adhi Commuter Properti Tbk
+[2025-06-17T12:23:19.341+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADCP_2024_instance.json
+[2025-06-17T12:23:22.206+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:22.208+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [10/15] Processing company: ADES
+        📂 Directory: /app/output/2024/ADES
+[2025-06-17T12:23:22.215+0000] {docker.py:403} INFO - 📁 Found 1 files: ADES_instance_2024.zip
+        ✅ Match found: ADES_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ADES_instance_2024.zip']
+        📦 Processing: ADES_instance_2024.zip
+[2025-06-17T12:23:22.224+0000] {docker.py:403} INFO - 📏 File size: 125,235 bytes
+[2025-06-17T12:23:22.233+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:23.059+0000] {docker.py:403} INFO - 📄 Processed 36545 XML elements, extracted 701 data fields
+            🏢 Resolved company name: Akasha Wira International Tbk  Tbk
+[2025-06-17T12:23:23.423+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADES_2024_instance.json
+[2025-06-17T12:23:25.743+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:25.744+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [11/15] Processing company: ADHI
+        📂 Directory: /app/output/2024/ADHI
+[2025-06-17T12:23:25.750+0000] {docker.py:403} INFO - 📁 Found 1 files: ADHI_instance_2024.zip
+        ✅ Match found: ADHI_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ADHI_instance_2024.zip']
+        📦 Processing: ADHI_instance_2024.zip
+[2025-06-17T12:23:25.759+0000] {docker.py:403} INFO - 📏 File size: 151,395 bytes
+[2025-06-17T12:23:25.766+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:26.614+0000] {docker.py:403} INFO - 📄 Processed 39285 XML elements, extracted 576 data fields
+            🏢 Resolved company name: PT Adhi Karya (Persero) Tbk.
+[2025-06-17T12:23:26.959+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADHI_2024_instance.json
+[2025-06-17T12:23:30.255+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:30.256+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [12/15] Processing company: ADMF
+        📂 Directory: /app/output/2024/ADMF
+[2025-06-17T12:23:30.263+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMF_instance_2024.zip
+        ✅ Match found: ADMF_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ADMF_instance_2024.zip']
+        📦 Processing: ADMF_instance_2024.zip
+[2025-06-17T12:23:30.272+0000] {docker.py:403} INFO - 📏 File size: 109,179 bytes
+[2025-06-17T12:23:30.280+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:30.812+0000] {docker.py:403} INFO - 📄 Processed 22472 XML elements, extracted 455 data fields
+            🏢 Resolved company name: Adira Dinamika Multi Finance Tbk
+[2025-06-17T12:23:31.061+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMF_2024_instance.json
+[2025-06-17T12:23:32.565+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:32.566+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [13/15] Processing company: ADMG
+        📂 Directory: /app/output/2024/ADMG
+[2025-06-17T12:23:32.573+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMG_instance_2024.zip
+        ✅ Match found: ADMG_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ADMG_instance_2024.zip']
+        📦 Processing: ADMG_instance_2024.zip
+[2025-06-17T12:23:32.581+0000] {docker.py:403} INFO - 📏 File size: 130,213 bytes
+[2025-06-17T12:23:32.589+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:33.467+0000] {docker.py:403} INFO - 📄 Processed 39523 XML elements, extracted 705 data fields
+            🏢 Resolved company name: Polychem Indonesia Tbk
+[2025-06-17T12:23:33.793+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMG_2024_instance.json
+[2025-06-17T12:23:35.455+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:35.456+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [14/15] Processing company: ADMR
+        📂 Directory: /app/output/2024/ADMR
+[2025-06-17T12:23:35.462+0000] {docker.py:403} INFO - 📁 Found 1 files: ADMR_instance_2024.zip
+        ✅ Match found: ADMR_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ADMR_instance_2024.zip']
+        📦 Processing: ADMR_instance_2024.zip
+[2025-06-17T12:23:35.470+0000] {docker.py:403} INFO - 📏 File size: 132,142 bytes
+[2025-06-17T12:23:35.478+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:36.235+0000] {docker.py:403} INFO - 📄 Processed 36186 XML elements, extracted 700 data fields
+            🏢 Resolved company name: PT Adaro Minerals Indonesia Tbk
+[2025-06-17T12:23:36.570+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADMR_2024_instance.json
+[2025-06-17T12:23:38.738+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:38.739+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [15/15] Processing company: ADRO
+        📂 Directory: /app/output/2024/ADRO
+[2025-06-17T12:23:38.745+0000] {docker.py:403} INFO - 📁 Found 1 files: ADRO_instance_2024.zip
+        ✅ Match found: ADRO_instance_2024.zip
+        🎯 ZIP files matching pattern: ['ADRO_instance_2024.zip']
+        📦 Processing: ADRO_instance_2024.zip
+[2025-06-17T12:23:38.754+0000] {docker.py:403} INFO - 📏 File size: 140,646 bytes
+[2025-06-17T12:23:38.762+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:39.602+0000] {docker.py:403} INFO - 📄 Processed 36197 XML elements, extracted 705 data fields
+            🏢 Resolved company name: Alamtri Resources Indonesia Tbk
+[2025-06-17T12:23:39.958+0000] {docker.py:403} INFO - 💾 Local JSON saved: ADRO_2024_instance.json
+[2025-06-17T12:23:42.784+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:42.785+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+
+📈 Year 2024 Summary:
+   ✅ Successful: 0
+   ❌ Failed: 15
+   ⏭️  Skipped: 0
+   📊 Success rate: 0.0%
+
+📊 ==================== Processing Year: 2025 ====================
+[2025-06-17T12:23:42.806+0000] {docker.py:403} INFO - 🏢 Found 2 company directories for year 2025
+   📋 Companies: LOPI, PUDP
+   [ 1/ 2] Processing company: LOPI
+        📂 Directory: /app/output/2025/LOPI
+[2025-06-17T12:23:42.812+0000] {docker.py:403} INFO - 📁 Found 2 files: LOPI_2025_instance.json, LOPI_instance_2025.zip
+        ✅ Match found: LOPI_instance_2025.zip
+        🎯 ZIP files matching pattern: ['LOPI_instance_2025.zip']
+        📦 Processing: LOPI_instance_2025.zip
+[2025-06-17T12:23:42.821+0000] {docker.py:403} INFO - 📏 File size: 114,124 bytes
+[2025-06-17T12:23:42.830+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:43.539+0000] {docker.py:403} INFO - 📄 Processed 35162 XML elements, extracted 714 data fields
+            🏢 Resolved company name: PT Logisticsplus International Tbk
+[2025-06-17T12:23:43.832+0000] {docker.py:403} INFO - 💾 Local JSON saved: LOPI_2025_instance.json
+[2025-06-17T12:23:45.934+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:45.936+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+   [ 2/ 2] Processing company: PUDP
+        📂 Directory: /app/output/2025/PUDP
+[2025-06-17T12:23:45.942+0000] {docker.py:403} INFO - 📁 Found 2 files: PUDP_2025_instance.json, PUDP_instance_2025.zip
+        ✅ Match found: PUDP_instance_2025.zip
+        🎯 ZIP files matching pattern: ['PUDP_instance_2025.zip']
+        📦 Processing: PUDP_instance_2025.zip
+[2025-06-17T12:23:45.953+0000] {docker.py:403} INFO - 📏 File size: 121,325 bytes
+[2025-06-17T12:23:45.961+0000] {docker.py:403} INFO - 📄 ZIP contents: ['instance.xbrl', 'Taxonomy.xsd']
+[2025-06-17T12:23:46.679+0000] {docker.py:403} INFO - 📄 Processed 34803 XML elements, extracted 551 data fields
+            🏢 Resolved company name: Pudjiadi Prestige Tbk
+[2025-06-17T12:23:46.989+0000] {docker.py:403} INFO - 💾 Local JSON saved: PUDP_2025_instance.json
+[2025-06-17T12:23:49.271+0000] {docker.py:403} INFO - ❌ MongoDB insert failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:23:49.273+0000] {docker.py:403} INFO - ❌ Failed: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+
+📈 Year 2025 Summary:
+   ✅ Successful: 0
+   ❌ Failed: 2
+   ⏭️  Skipped: 0
+   📊 Success rate: 0.0%
+
+🎉 ==================== FINAL SUMMARY ====================
+[2025-06-17T12:23:49.349+0000] {docker.py:403} INFO - 📊 Final documents in MongoDB collection: 65
+📈 New documents inserted this session: 0
+
+Conversion and Load Summary:
+---------------------------
+Total files processed: 62
+Successfully processed and loaded: 0
+Failed processing: 62
+Skipped files: 0
+Years processed: 2021, 2022, 2023, 2024, 2025
+New documents inserted to MongoDB: 0
+Success rate: 0.0%
+Completion time: 2025-06-17 12:23:49.346721
+
+Year-by-Year Breakdown:
+
+Year 2021:
+  - Companies found: 15
+  - Successful: 0
+  - Failed: 15
+  - Skipped: 0
+  - Success rate: 0.0%
+
+Year 2022:
+  - Companies found: 15
+  - Successful: 0
+  - Failed: 15
+  - Skipped: 0
+  - Success rate: 0.0%
+
+Year 2023:
+  - Companies found: 15
+  - Successful: 0
+  - Failed: 15
+  - Skipped: 0
+  - Success rate: 0.0%
+
+Year 2024:
+  - Companies found: 15
+  - Successful: 0
+  - Failed: 15
+  - Skipped: 0
+  - Success rate: 0.0%
+
+Year 2025:
+  - Companies found: 2
+  - Successful: 0
+  - Failed: 2
+  - Skipped: 0
+  - Success rate: 0.0%
+[2025-06-17T12:23:49.350+0000] {docker.py:403} INFO - 📄 XBRL conversion and MongoDB load process completed. See /app/output/xbrl_conversion_and_load_results.log for details.
+[2025-06-17T12:23:49.380+0000] {docker.py:403} INFO - 🔒 MongoDB connection closed successfully.
+
+🎉 Process completed successfully!
+[2025-06-17T12:23:50.543+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=idx_pipeline, task_id=load_idx, execution_date=20250617T120049, start_date=20250617T122040, end_date=20250617T122350
+[2025-06-17T12:23:50.600+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2025-06-17T12:23:50.656+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

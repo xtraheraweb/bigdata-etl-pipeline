@@ -1,0 +1,73 @@
+[2025-06-17T09:15:21.517+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.extract_idx manual__2025-06-17T09:15:19.936725+00:00 [queued]>
+[2025-06-17T09:15:21.525+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.extract_idx manual__2025-06-17T09:15:19.936725+00:00 [queued]>
+[2025-06-17T09:15:21.526+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-06-17T09:15:21.541+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): extract_idx> on 2025-06-17 09:15:19.936725+00:00
+[2025-06-17T09:15:21.546+0000] {standard_task_runner.py:57} INFO - Started process 360 to run task
+[2025-06-17T09:15:21.549+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'extract_idx', 'manual__2025-06-17T09:15:19.936725+00:00', '--job-id', '56', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmpbb67j6w8']
+[2025-06-17T09:15:21.550+0000] {standard_task_runner.py:85} INFO - Job 56: Subtask extract_idx
+[2025-06-17T09:15:21.596+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.extract_idx manual__2025-06-17T09:15:19.936725+00:00 [running]> on host 790f4cde8a0c
+[2025-06-17T09:15:21.684+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='extract_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-17T09:15:19.936725+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-17T09:15:19.936725+00:00'
+[2025-06-17T09:15:21.707+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-17T09:15:22.186+0000] {docker.py:403} INFO - [TESTING MODE] Limiting extraction to 5 companies only
+--- Starting IDX Emiten Name Scraping ---
+[2025-06-17T09:15:24.190+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T09:15:25.302+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T09:15:25.349+0000] {docker.py:403} INFO - Accessing URL: https://www.idx.co.id/id/perusahaan-tercatat/laporan-keuangan-dan-tahunan
+[2025-06-17T09:15:26.138+0000] {docker.py:403} INFO - Page loaded successfully
+Simulating human behavior...
+[2025-06-17T09:15:31.144+0000] {docker.py:403} INFO - Memilih tahun 2024 dan jenis laporan 'Audit'...
+[2025-06-17T09:15:34.187+0000] {docker.py:403} INFO - ✓ Tahun 2024 telah dipilih.
+[2025-06-17T09:15:35.216+0000] {docker.py:403} INFO - ✓ Jenis laporan 'Audit' (Tahunan) telah dipilih.
+[2025-06-17T09:15:35.257+0000] {docker.py:403} INFO - ✓ Tombol 'Terapkan' telah diklik.
+[2025-06-17T09:15:40.273+0000] {docker.py:403} INFO - [TESTING MODE] Akan membatasi proses scraping nama emiten hanya 5 perusahaan saja
+Processing page 1...
+[2025-06-17T09:15:40.284+0000] {docker.py:403} INFO - Found 12 company sections on page 1
+[2025-06-17T09:15:40.307+0000] {docker.py:403} INFO - Found company on page 1: AADI (1/5)
+[2025-06-17T09:15:40.320+0000] {docker.py:403} INFO - Found company on page 1: AALI (2/5)
+[2025-06-17T09:15:40.334+0000] {docker.py:403} INFO - Found company on page 1: ABBA (3/5)
+[2025-06-17T09:15:40.347+0000] {docker.py:403} INFO - Found company on page 1: ABDA (4/5)
+[2025-06-17T09:15:40.360+0000] {docker.py:403} INFO - Found company on page 1: ABMM (5/5)
+[TESTING MODE] Sudah mencapai batas 5 perusahaan, berhenti scraping
+[TESTING MODE] Sudah mencapai batas 5 perusahaan, berhenti pagination
+[TESTING MODE] Berhasil scrape 5 nama perusahaan dari total 5 yang diinginkan
+[2025-06-17T09:15:40.362+0000] {docker.py:403} INFO - Saved 5 company names to /app/output/idx_company_names_2024.txt
+[2025-06-17T09:15:40.428+0000] {docker.py:403} INFO - Browser closed after scraping names.
+[2025-06-17T09:15:40.432+0000] {docker.py:403} INFO - --- Starting Instance ZIP File Downloads ---
+[2025-06-17T09:15:40.434+0000] {docker.py:403} INFO - Starting direct Selenium downloads for 5 companies...
+[2025-06-17T09:15:42.440+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T09:15:43.337+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T09:15:43.382+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T09:15:48.288+0000] {docker.py:403} INFO - [1/5] Selenium navigating for AADI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/AADI/instance.zip
+[2025-06-17T09:15:56.401+0000] {docker.py:403} INFO - ✓ Successfully downloaded AADI_instance.zip - 143996 bytes
+[2025-06-17T09:15:58.468+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T09:15:59.322+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T09:15:59.373+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T09:16:03.119+0000] {docker.py:403} INFO - [2/5] Selenium navigating for AALI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/AALI/instance.zip
+[2025-06-17T09:16:11.205+0000] {docker.py:403} INFO - ✓ Successfully downloaded AALI_instance.zip - 124227 bytes
+[2025-06-17T09:16:13.273+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T09:16:14.105+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T09:16:14.154+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T09:16:18.191+0000] {docker.py:403} INFO - [3/5] Selenium navigating for ABBA to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ABBA/instance.zip
+[2025-06-17T09:16:26.313+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABBA_instance.zip - 111972 bytes
+[2025-06-17T09:16:28.434+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T09:16:29.257+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T09:16:29.306+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T09:16:33.022+0000] {docker.py:403} INFO - [4/5] Selenium navigating for ABDA to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ABDA/instance.zip
+[2025-06-17T09:16:41.131+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABDA_instance.zip - 50102 bytes
+[2025-06-17T09:16:43.252+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T09:16:44.115+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T09:16:44.161+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T09:16:48.078+0000] {docker.py:403} INFO - [5/5] Selenium navigating for ABMM to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ABMM/instance.zip
+[2025-06-17T09:16:56.165+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABMM_instance.zip - 141013 bytes
+[2025-06-17T09:16:58.231+0000] {docker.py:403} INFO - Selenium Download Summary:
+-------------------------
+Total companies: 5
+Successful downloads: 5
+Failed downloads: 0
+Success rate: 100.0%
+Completion time: 2025-06-17 09:16:58.229540
+[2025-06-17T09:16:58.239+0000] {docker.py:403} INFO - Selenium download process completed. See /app/output/download_results_selenium.log for details.
+[2025-06-17T09:16:58.239+0000] {docker.py:403} INFO - --- IDX Extract Process Completed ---
+[2025-06-17T09:16:58.573+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=idx_pipeline, task_id=extract_idx, execution_date=20250617T091519, start_date=20250617T091521, end_date=20250617T091658
+[2025-06-17T09:16:58.621+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2025-06-17T09:16:58.651+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

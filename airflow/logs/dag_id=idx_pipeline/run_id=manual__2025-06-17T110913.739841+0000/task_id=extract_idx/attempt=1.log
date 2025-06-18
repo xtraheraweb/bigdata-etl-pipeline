@@ -1,0 +1,33 @@
+[2025-06-17T11:09:15.600+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.extract_idx manual__2025-06-17T11:09:13.739841+00:00 [queued]>
+[2025-06-17T11:09:15.628+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.extract_idx manual__2025-06-17T11:09:13.739841+00:00 [queued]>
+[2025-06-17T11:09:15.629+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-06-17T11:09:15.667+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): extract_idx> on 2025-06-17 11:09:13.739841+00:00
+[2025-06-17T11:09:15.676+0000] {standard_task_runner.py:57} INFO - Started process 660 to run task
+[2025-06-17T11:09:15.684+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'extract_idx', 'manual__2025-06-17T11:09:13.739841+00:00', '--job-id', '83', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmpjkqpg8by']
+[2025-06-17T11:09:15.687+0000] {standard_task_runner.py:85} INFO - Job 83: Subtask extract_idx
+[2025-06-17T11:09:15.796+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.extract_idx manual__2025-06-17T11:09:13.739841+00:00 [running]> on host 790f4cde8a0c
+[2025-06-17T11:09:16.037+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='extract_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-17T11:09:13.739841+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-17T11:09:13.739841+00:00'
+[2025-06-17T11:09:16.099+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-17T11:09:16.990+0000] {docker.py:403} INFO - 🚀 Starting IDX Multi-Year Extract Process
+Years to process: [2021, 2022, 2023, 2024, 2025]
+Max companies per year: 5
+================================================================================
+[2025-06-17T11:09:16.993+0000] {docker.py:403} INFO - ============================================================
+--- Processing Year 2021 ---
+[TESTING MODE] Limiting extraction to 5 companies
+============================================================
+
+📋 Step 1: Scraping company names for year 2021
+[2025-06-17T11:09:18.999+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T11:09:20.798+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T11:09:20.947+0000] {docker.py:403} INFO - Accessing URL: https://www.idx.co.id/id/perusahaan-tercatat/laporan-keuangan-dan-tahunan for year 2021
+[2025-06-17T11:09:22.477+0000] {docker.py:403} INFO - Page loaded successfully
+Simulating human behavior...
+[2025-06-17T11:09:27.489+0000] {docker.py:403} INFO - Memilih tahun 2021 dan jenis laporan 'Audit'...
+[2025-06-17T11:09:30.594+0000] {docker.py:403} INFO - ✓ Tahun 2021 telah dipilih.
+[2025-06-17T11:09:30.811+0000] {local_task_job_runner.py:292} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2025-06-17T11:09:30.816+0000] {process_utils.py:135} INFO - Sending Signals.SIGTERM to group 660. PIDs of all processes in the group: [660]
+[2025-06-17T11:09:30.818+0000] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 660
+[2025-06-17T11:09:30.819+0000] {taskinstance.py:1517} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-17T11:09:30.820+0000] {docker.py:495} INFO - Stopping docker container
+[2025-06-17T11:09:41.616+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=660, status='terminated', exitcode=0, started='11:09:14') (660) terminated with exit code 0

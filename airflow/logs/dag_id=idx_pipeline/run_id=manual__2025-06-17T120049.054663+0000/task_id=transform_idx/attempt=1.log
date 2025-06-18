@@ -1,0 +1,180 @@
+[2025-06-17T12:23:52.221+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T12:00:49.054663+00:00 [queued]>
+[2025-06-17T12:23:52.243+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T12:00:49.054663+00:00 [queued]>
+[2025-06-17T12:23:52.245+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-06-17T12:23:52.282+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): transform_idx> on 2025-06-17 12:00:49.054663+00:00
+[2025-06-17T12:23:52.293+0000] {standard_task_runner.py:57} INFO - Started process 1058 to run task
+[2025-06-17T12:23:52.299+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'transform_idx', 'manual__2025-06-17T12:00:49.054663+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmpyf3dns2z']
+[2025-06-17T12:23:52.302+0000] {standard_task_runner.py:85} INFO - Job 105: Subtask transform_idx
+[2025-06-17T12:23:52.414+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.transform_idx manual__2025-06-17T12:00:49.054663+00:00 [running]> on host 790f4cde8a0c
+[2025-06-17T12:23:52.627+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='transform_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-17T12:00:49.054663+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-17T12:00:49.054663+00:00'
+[2025-06-17T12:23:52.688+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-17T12:23:54.671+0000] {docker.py:403} INFO - Starting IDX revenue transformation process
+Starting revenue transformation by sector...
+[2025-06-17T12:23:56.974+0000] {docker.py:403} INFO - Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+[2025-06-17T12:23:56.975+0000] {docker.py:403} INFO - Setting default log level to "WARN".
+[2025-06-17T12:23:56.976+0000] {docker.py:403} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2025-06-17T12:23:57.353+0000] {docker.py:403} INFO - 25/06/17 12:23:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-06-17T12:24:01.177+0000] {docker.py:403} INFO - Connected to MongoDB - Database: tugas_bigdata
+[2025-06-17T12:24:30.752+0000] {docker.py:403} INFO - Found 65 raw financial reports
+Processing financial reports...
+[2025-06-17T12:24:30.976+0000] {docker.py:403} INFO - Processed 20/65 documents (30.8%)
+[2025-06-17T12:24:31.341+0000] {docker.py:403} INFO - Processed 40/65 documents (61.5%)
+[2025-06-17T12:24:31.553+0000] {docker.py:403} INFO - Processed 60/65 documents (92.3%)
+[2025-06-17T12:24:31.623+0000] {docker.py:403} INFO - Processed 65/65 documents (100.0%)
+
+Storing 65 records to MongoDB...
+[2025-06-17T12:24:31.843+0000] {docker.py:403} INFO - Error in transformation: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:24:32.289+0000] {docker.py:403} INFO - Transformation process completed
+[2025-06-17T12:24:32.293+0000] {docker.py:403} INFO - Traceback (most recent call last):
+  File "/app/idx-transform.py", line 1761, in <module>
+    transform_revenue_data()
+  File "/app/idx-transform.py", line 1710, in transform_revenue_data
+    raise e
+  File "/app/idx-transform.py", line 1677, in transform_revenue_data
+    transformed_collection.insert_many(transformed_data)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 757, in insert_many
+    blk.execute(write_concern, session=session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 580, in execute
+    return self.execute_command(generator, write_concern, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 447, in execute_command
+    client._retry_with_session(self.is_retryable, retryable_bulk, s, self)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1413, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1460, in _retry_internal
+    return func(session, conn, retryable)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 435, in retryable_bulk
+    self._execute_command(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 381, in _execute_command
+    result, to_send = bwc.execute(cmd, ops, client)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/message.py", line 967, in execute
+    result = self.write_command(cmd, request_id, msg, to_send)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/helpers.py", line 315, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/message.py", line 1061, in write_command
+    reply = self.conn.write_command(request_id, msg, self.codec)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/pool.py", line 1024, in write_command
+    helpers._check_command_response(result, self.max_wire_version)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/helpers.py", line 223, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:24:33.610+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 478, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 351, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/docker/operators/docker.py", line 412, in _run_image_with_mounts
+    raise AirflowException(f"Docker container failed: {repr(result)} lines {joined_log_lines}")
+airflow.exceptions.AirflowException: Docker container failed: {'StatusCode': 1} lines Starting IDX revenue transformation process
+Starting revenue transformation by sector...
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/06/17 12:23:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Connected to MongoDB - Database: tugas_bigdata
+Found 65 raw financial reports
+Processing financial reports...
+Processed 20/65 documents (30.8%)
+Processed 40/65 documents (61.5%)
+Processed 60/65 documents (92.3%)
+Processed 65/65 documents (100.0%)
+
+Storing 65 records to MongoDB...
+Error in transformation: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+Transformation process completed
+Traceback (most recent call last):
+  File "/app/idx-transform.py", line 1761, in <module>
+    transform_revenue_data()
+  File "/app/idx-transform.py", line 1710, in transform_revenue_data
+    raise e
+  File "/app/idx-transform.py", line 1677, in transform_revenue_data
+    transformed_collection.insert_many(transformed_data)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 757, in insert_many
+    blk.execute(write_concern, session=session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 580, in execute
+    return self.execute_command(generator, write_concern, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 447, in execute_command
+    client._retry_with_session(self.is_retryable, retryable_bulk, s, self)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1413, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1460, in _retry_internal
+    return func(session, conn, retryable)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 435, in retryable_bulk
+    self._execute_command(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 381, in _execute_command
+    result, to_send = bwc.execute(cmd, ops, client)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/message.py", line 967, in execute
+    result = self.write_command(cmd, request_id, msg, to_send)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/helpers.py", line 315, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/message.py", line 1061, in write_command
+    reply = self.conn.write_command(request_id, msg, self.codec)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/pool.py", line 1024, in write_command
+    helpers._check_command_response(result, self.max_wire_version)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/helpers.py", line 223, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+[2025-06-17T12:24:33.618+0000] {taskinstance.py:1350} INFO - Marking task as UP_FOR_RETRY. dag_id=idx_pipeline, task_id=transform_idx, execution_date=20250617T120049, start_date=20250617T122352, end_date=20250617T122433
+[2025-06-17T12:24:33.646+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 105 for task transform_idx (Docker container failed: {'StatusCode': 1} lines Starting IDX revenue transformation process
+Starting revenue transformation by sector...
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/06/17 12:23:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Connected to MongoDB - Database: tugas_bigdata
+Found 65 raw financial reports
+Processing financial reports...
+Processed 20/65 documents (30.8%)
+Processed 40/65 documents (61.5%)
+Processed 60/65 documents (92.3%)
+Processed 65/65 documents (100.0%)
+
+Storing 65 records to MongoDB...
+Error in transformation: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}
+Transformation process completed
+Traceback (most recent call last):
+  File "/app/idx-transform.py", line 1761, in <module>
+    transform_revenue_data()
+  File "/app/idx-transform.py", line 1710, in transform_revenue_data
+    raise e
+  File "/app/idx-transform.py", line 1677, in transform_revenue_data
+    transformed_collection.insert_many(transformed_data)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 757, in insert_many
+    blk.execute(write_concern, session=session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 580, in execute
+    return self.execute_command(generator, write_concern, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 447, in execute_command
+    client._retry_with_session(self.is_retryable, retryable_bulk, s, self)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1413, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1460, in _retry_internal
+    return func(session, conn, retryable)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 435, in retryable_bulk
+    self._execute_command(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/bulk.py", line 381, in _execute_command
+    result, to_send = bwc.execute(cmd, ops, client)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/message.py", line 967, in execute
+    result = self.write_command(cmd, request_id, msg, to_send)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/helpers.py", line 315, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/message.py", line 1061, in write_command
+    reply = self.conn.write_command(request_id, msg, self.codec)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/pool.py", line 1024, in write_command
+    helpers._check_command_response(result, self.max_wire_version)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/helpers.py", line 223, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: you are over your space quota, using 512 MB of 512 MB, full error: {'ok': 0, 'errmsg': 'you are over your space quota, using 512 MB of 512 MB', 'code': 8000, 'codeName': 'AtlasError'}; 1058)
+[2025-06-17T12:24:33.689+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2025-06-17T12:24:33.726+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

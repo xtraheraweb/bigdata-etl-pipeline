@@ -1,0 +1,38 @@
+[2025-06-17T11:09:27.615+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.load_idx manual__2025-06-17T11:09:13.739841+00:00 [queued]>
+[2025-06-17T11:09:27.637+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.load_idx manual__2025-06-17T11:09:13.739841+00:00 [queued]>
+[2025-06-17T11:09:27.638+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-06-17T11:09:27.683+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): load_idx> on 2025-06-17 11:09:13.739841+00:00
+[2025-06-17T11:09:27.694+0000] {standard_task_runner.py:57} INFO - Started process 662 to run task
+[2025-06-17T11:09:27.700+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'load_idx', 'manual__2025-06-17T11:09:13.739841+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmptxsm6cfd']
+[2025-06-17T11:09:27.703+0000] {standard_task_runner.py:85} INFO - Job 84: Subtask load_idx
+[2025-06-17T11:09:27.812+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.load_idx manual__2025-06-17T11:09:13.739841+00:00 [running]> on host 790f4cde8a0c
+[2025-06-17T11:09:28.031+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='load_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-17T11:09:13.739841+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-17T11:09:13.739841+00:00'
+[2025-06-17T11:09:28.114+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-17T11:09:29.831+0000] {docker.py:403} INFO - --- Starting XBRL to JSON Conversion and MongoDB Load ---
+Database: tugas_bigdata, Collection: idx_raw
+MongoDB URI: mongodb+srv://bigdatakecil:bigdata04@xtrahera.m7x7qad.mongodb.net/?retryWrites=true&w=majority&appName=xtrahera
+This will process data from all years (2021-2025) into a single collection
+[2025-06-17T11:09:30.173+0000] {docker.py:403} INFO - Connected to MongoDB using URI, Database: tugas_bigdata, Collection: idx_raw
+[2025-06-17T11:09:30.204+0000] {docker.py:403} INFO - Found 5 year directories: 2021, 2022, 2023, 2024, 2025
+
+=== Processing files for year: 2021 ===
+[2025-06-17T11:09:30.230+0000] {docker.py:403} INFO - Found 5 company directories for year 2021
+[2025-06-17T11:09:30.258+0000] {docker.py:403} INFO - === Processing files for year: 2022 ===
+[2025-06-17T11:09:30.281+0000] {docker.py:403} INFO - Found 5 company directories for year 2022
+[2025-06-17T11:09:30.308+0000] {docker.py:403} INFO - === Processing files for year: 2023 ===
+[2025-06-17T11:09:30.331+0000] {docker.py:403} INFO - Found 5 company directories for year 2023
+[2025-06-17T11:09:30.361+0000] {docker.py:403} INFO - === Processing files for year: 2024 ===
+[2025-06-17T11:09:30.389+0000] {docker.py:403} INFO - Found 5 company directories for year 2024
+[2025-06-17T11:09:30.422+0000] {docker.py:403} INFO - === Processing files for year: 2025 ===
+[2025-06-17T11:09:30.441+0000] {docker.py:403} INFO - Found 2 company directories for year 2025
+[2025-06-17T11:09:30.454+0000] {docker.py:403} INFO - Conversion and Load Summary:
+---------------------------
+Total files processed: 0
+Successfully processed and loaded: 0
+Failed processing: 0
+Years processed: 2021, 2022, 2023, 2024, 2025
+Completion time: 2025-06-17 11:09:30.452621
+[2025-06-17T11:09:30.455+0000] {docker.py:403} INFO - XBRL conversion and MongoDB load process completed. See /app/output/xbrl_conversion_and_load_results.log for details.
+[2025-06-17T11:09:31.740+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=idx_pipeline, task_id=load_idx, execution_date=20250617T110913, start_date=20250617T110927, end_date=20250617T110931
+[2025-06-17T11:09:31.817+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2025-06-17T11:09:31.883+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

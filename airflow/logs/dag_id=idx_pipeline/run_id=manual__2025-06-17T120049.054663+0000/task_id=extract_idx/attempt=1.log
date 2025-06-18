@@ -1,0 +1,622 @@
+[2025-06-17T12:00:52.509+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.extract_idx manual__2025-06-17T12:00:49.054663+00:00 [queued]>
+[2025-06-17T12:00:52.530+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.extract_idx manual__2025-06-17T12:00:49.054663+00:00 [queued]>
+[2025-06-17T12:00:52.531+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-06-17T12:00:52.577+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): extract_idx> on 2025-06-17 12:00:49.054663+00:00
+[2025-06-17T12:00:52.588+0000] {standard_task_runner.py:57} INFO - Started process 154 to run task
+[2025-06-17T12:00:52.593+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'extract_idx', 'manual__2025-06-17T12:00:49.054663+00:00', '--job-id', '103', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmpzpaux1ui']
+[2025-06-17T12:00:52.595+0000] {standard_task_runner.py:85} INFO - Job 103: Subtask extract_idx
+[2025-06-17T12:00:52.695+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.extract_idx manual__2025-06-17T12:00:49.054663+00:00 [running]> on host 790f4cde8a0c
+[2025-06-17T12:00:52.954+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='extract_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-17T12:00:49.054663+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-17T12:00:49.054663+00:00'
+[2025-06-17T12:00:53.030+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-17T12:00:53.930+0000] {docker.py:403} INFO - 🚀 Starting IDX Multi-Year Extract Process
+Years to process: [2021, 2022, 2023, 2024, 2025]
+================================================================================
+[2025-06-17T12:00:53.934+0000] {docker.py:403} INFO - ============================================================
+--- Processing Year 2021 ---
+============================================================
+
+📋 Step 1: Scraping company names for year 2021
+[2025-06-17T12:00:55.936+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:00:58.406+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:00:58.568+0000] {docker.py:403} INFO - Accessing URL: https://www.idx.co.id/id/perusahaan-tercatat/laporan-keuangan-dan-tahunan for year 2021
+[2025-06-17T12:01:00.187+0000] {docker.py:403} INFO - Page loaded successfully
+Simulating human behavior...
+[2025-06-17T12:01:05.194+0000] {docker.py:403} INFO - Memilih tahun 2021 dan jenis laporan 'Audit'...
+[2025-06-17T12:01:08.329+0000] {docker.py:403} INFO - ✓ Tahun 2021 telah dipilih.
+[2025-06-17T12:01:09.409+0000] {docker.py:403} INFO - ✓ Jenis laporan 'Audit' (Tahunan) telah dipilih.
+[2025-06-17T12:01:09.629+0000] {docker.py:403} INFO - ✓ Tombol 'Terapkan' telah diklik.
+[2025-06-17T12:01:14.690+0000] {docker.py:403} INFO - [TESTING MODE] Akan membatasi proses scraping nama emiten hanya 15 perusahaan saja untuk tahun 2021
+Processing page 1 for year 2021...
+[2025-06-17T12:01:14.724+0000] {docker.py:403} INFO - Found 12 company sections on page 1
+[2025-06-17T12:01:14.796+0000] {docker.py:403} INFO - Found company on page 1: AALI (1/15)
+[2025-06-17T12:01:14.836+0000] {docker.py:403} INFO - Found company on page 1: ABBA (2/15)
+[2025-06-17T12:01:14.880+0000] {docker.py:403} INFO - Found company on page 1: ABDA (3/15)
+[2025-06-17T12:01:14.925+0000] {docker.py:403} INFO - Found company on page 1: ABMM (4/15)
+[2025-06-17T12:01:14.964+0000] {docker.py:403} INFO - Found company on page 1: ACES (5/15)
+[2025-06-17T12:01:15.013+0000] {docker.py:403} INFO - Found company on page 1: ACST (6/15)
+[2025-06-17T12:01:15.056+0000] {docker.py:403} INFO - Found company on page 1: ADCP (7/15)
+[2025-06-17T12:01:15.098+0000] {docker.py:403} INFO - Found company on page 1: ADES (8/15)
+[2025-06-17T12:01:15.142+0000] {docker.py:403} INFO - Found company on page 1: ADHI (9/15)
+[2025-06-17T12:01:15.185+0000] {docker.py:403} INFO - Found company on page 1: ADMF (10/15)
+[2025-06-17T12:01:15.229+0000] {docker.py:403} INFO - Found company on page 1: ADMG (11/15)
+[2025-06-17T12:01:15.281+0000] {docker.py:403} INFO - Found company on page 1: ADMR (12/15)
+[2025-06-17T12:01:16.415+0000] {docker.py:403} INFO - Clicked next button to go to page 2
+[2025-06-17T12:01:21.420+0000] {docker.py:403} INFO - Processing page 2 for year 2021...
+[2025-06-17T12:01:21.443+0000] {docker.py:403} INFO - Found 12 company sections on page 2
+[2025-06-17T12:01:21.486+0000] {docker.py:403} INFO - Found company on page 2: ADRO (13/15)
+[2025-06-17T12:01:21.526+0000] {docker.py:403} INFO - Found company on page 2: AGAR (14/15)
+[2025-06-17T12:01:21.564+0000] {docker.py:403} INFO - Found company on page 2: AGII (15/15)
+[TESTING MODE] Sudah mencapai batas 15 perusahaan untuk tahun 2021, berhenti scraping
+[TESTING MODE] Sudah mencapai batas 15 perusahaan, berhenti pagination
+[TESTING MODE] Berhasil scrape 15 nama perusahaan untuk tahun 2021
+[2025-06-17T12:01:21.570+0000] {docker.py:403} INFO - Saved 15 company names to /app/output/2021/idx_company_names_2021.txt
+[2025-06-17T12:01:21.708+0000] {docker.py:403} INFO - Browser closed after scraping names for year 2021.
+[2025-06-17T12:01:21.720+0000] {docker.py:403} INFO - ✅ Successfully obtained 15 company names for year 2021
+Companies: AALI, ABBA, ABDA, ABMM, ACES, ACST, ADCP, ADES, ADHI, ADMF, ADMG, ADMR, ADRO, AGAR, AGII
+
+💾 Step 2: Downloading ZIP files for year 2021
+Starting direct Selenium downloads for 15 companies for year 2021...
+[2025-06-17T12:01:23.731+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:01:24.962+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:01:25.124+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:01:29.486+0000] {docker.py:403} INFO - [1/15] Year 2021 - Selenium navigating for AALI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/AALI/instance.zip
+[2025-06-17T12:01:37.706+0000] {docker.py:403} INFO - ✓ Successfully downloaded AALI_instance_2021.zip - 28906 bytes
+[2025-06-17T12:01:39.845+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:01:41.062+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:01:41.234+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:01:45.730+0000] {docker.py:403} INFO - [2/15] Year 2021 - Selenium navigating for ABBA to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ABBA/instance.zip
+[2025-06-17T12:01:53.846+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABBA_instance_2021.zip - 29336 bytes
+[2025-06-17T12:01:55.936+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:01:57.197+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:01:57.368+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:02:01.786+0000] {docker.py:403} INFO - [3/15] Year 2021 - Selenium navigating for ABDA to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ABDA/instance.zip
+[2025-06-17T12:02:09.972+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABDA_instance_2021.zip - 24130 bytes
+[2025-06-17T12:02:12.116+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:02:13.297+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:02:13.470+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:02:17.970+0000] {docker.py:403} INFO - [4/15] Year 2021 - Selenium navigating for ABMM to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ABMM/instance.zip
+[2025-06-17T12:02:26.091+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABMM_instance_2021.zip - 29290 bytes
+[2025-06-17T12:02:28.276+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:02:29.504+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:02:29.664+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:02:34.035+0000] {docker.py:403} INFO - [5/15] Year 2021 - Selenium navigating for ACES to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ACES/instance.zip
+[2025-06-17T12:02:42.144+0000] {docker.py:403} INFO - ✓ Successfully downloaded ACES_instance_2021.zip - 29450 bytes
+[2025-06-17T12:02:44.238+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:02:45.395+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:02:45.556+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:02:49.891+0000] {docker.py:403} INFO - [6/15] Year 2021 - Selenium navigating for ACST to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ACST/instance.zip
+[2025-06-17T12:02:58.045+0000] {docker.py:403} INFO - ✓ Successfully downloaded ACST_instance_2021.zip - 28282 bytes
+[2025-06-17T12:03:00.202+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:03:01.456+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:03:01.626+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:03:06.020+0000] {docker.py:403} INFO - [7/15] Year 2021 - Selenium navigating for ADCP to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ADCP/instance.zip
+[2025-06-17T12:03:14.165+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADCP_instance_2021.zip - 28862 bytes
+[2025-06-17T12:03:16.259+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:03:17.536+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:03:17.705+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:03:22.231+0000] {docker.py:403} INFO - [8/15] Year 2021 - Selenium navigating for ADES to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ADES/instance.zip
+[2025-06-17T12:03:30.376+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADES_instance_2021.zip - 28067 bytes
+[2025-06-17T12:03:32.515+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:03:33.763+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:03:33.927+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:03:38.301+0000] {docker.py:403} INFO - [9/15] Year 2021 - Selenium navigating for ADHI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ADHI/instance.zip
+[2025-06-17T12:03:46.533+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADHI_instance_2021.zip - 28206 bytes
+[2025-06-17T12:03:48.676+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:03:49.939+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:03:50.107+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:03:54.437+0000] {docker.py:403} INFO - [10/15] Year 2021 - Selenium navigating for ADMF to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ADMF/instance.zip
+[2025-06-17T12:04:02.585+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMF_instance_2021.zip - 28258 bytes
+[2025-06-17T12:04:04.726+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:04:05.951+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:04:06.122+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:04:10.616+0000] {docker.py:403} INFO - [11/15] Year 2021 - Selenium navigating for ADMG to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ADMG/instance.zip
+[2025-06-17T12:04:18.793+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMG_instance_2021.zip - 28528 bytes
+[2025-06-17T12:04:20.919+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:04:22.104+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:04:22.273+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:04:26.670+0000] {docker.py:403} INFO - [12/15] Year 2021 - Selenium navigating for ADMR to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ADMR/instance.zip
+[2025-06-17T12:04:34.856+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMR_instance_2021.zip - 29091 bytes
+[2025-06-17T12:04:37.002+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:04:38.312+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:04:38.452+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:04:42.835+0000] {docker.py:403} INFO - [13/15] Year 2021 - Selenium navigating for ADRO to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/ADRO/instance.zip
+[2025-06-17T12:04:50.949+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADRO_instance_2021.zip - 29674 bytes
+[2025-06-17T12:04:53.087+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:04:54.289+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:04:54.455+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:04:58.867+0000] {docker.py:403} INFO - [14/15] Year 2021 - Selenium navigating for AGAR to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/AGAR/instance.zip
+[2025-06-17T12:05:07.062+0000] {docker.py:403} INFO - ✓ Successfully downloaded AGAR_instance_2021.zip - 28411 bytes
+[2025-06-17T12:05:09.157+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:05:10.403+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:05:10.587+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:05:14.968+0000] {docker.py:403} INFO - [15/15] Year 2021 - Selenium navigating for AGII to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202021/Audit/AGII/instance.zip
+[2025-06-17T12:05:23.122+0000] {docker.py:403} INFO - ✓ Successfully downloaded AGII_instance_2021.zip - 29080 bytes
+[2025-06-17T12:05:25.260+0000] {docker.py:403} INFO - Selenium Download Summary for Year 2021:
+----------------------------------------
+Total companies: 15
+Successful downloads: 15
+Failed downloads: 0
+Success rate: 100.0%
+Completion time: 2025-06-17 12:05:25.257682
+[2025-06-17T12:05:25.295+0000] {docker.py:403} INFO - Selenium download process completed for year 2021. See /app/output/2021/download_results_selenium_2021.log for details.
+[2025-06-17T12:05:25.297+0000] {docker.py:403} INFO - ✅ Completed processing for year 2021
+✅ Year 2021 completed successfully
+⏳ Waiting 10 seconds before processing next year...
+[2025-06-17T12:05:35.313+0000] {docker.py:403} INFO - ============================================================
+--- Processing Year 2022 ---
+============================================================
+
+📋 Step 1: Scraping company names for year 2022
+[2025-06-17T12:05:37.318+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:05:38.527+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:05:38.695+0000] {docker.py:403} INFO - Accessing URL: https://www.idx.co.id/id/perusahaan-tercatat/laporan-keuangan-dan-tahunan for year 2022
+[2025-06-17T12:05:40.098+0000] {docker.py:403} INFO - Page loaded successfully
+Simulating human behavior...
+[2025-06-17T12:05:45.105+0000] {docker.py:403} INFO - Memilih tahun 2022 dan jenis laporan 'Audit'...
+[2025-06-17T12:05:48.210+0000] {docker.py:403} INFO - ✓ Tahun 2022 telah dipilih.
+[2025-06-17T12:05:49.297+0000] {docker.py:403} INFO - ✓ Jenis laporan 'Audit' (Tahunan) telah dipilih.
+[2025-06-17T12:05:49.421+0000] {docker.py:403} INFO - ✓ Tombol 'Terapkan' telah diklik.
+[2025-06-17T12:05:54.454+0000] {docker.py:403} INFO - [TESTING MODE] Akan membatasi proses scraping nama emiten hanya 15 perusahaan saja untuk tahun 2022
+Processing page 1 for year 2022...
+[2025-06-17T12:05:54.485+0000] {docker.py:403} INFO - Found 12 company sections on page 1
+[2025-06-17T12:05:54.554+0000] {docker.py:403} INFO - Found company on page 1: AALI (1/15)
+[2025-06-17T12:05:54.599+0000] {docker.py:403} INFO - Found company on page 1: ABBA (2/15)
+[2025-06-17T12:05:54.641+0000] {docker.py:403} INFO - Found company on page 1: ABDA (3/15)
+[2025-06-17T12:05:54.683+0000] {docker.py:403} INFO - Found company on page 1: ABMM (4/15)
+[2025-06-17T12:05:54.726+0000] {docker.py:403} INFO - Found company on page 1: ACES (5/15)
+[2025-06-17T12:05:54.767+0000] {docker.py:403} INFO - Found company on page 1: ACST (6/15)
+[2025-06-17T12:05:54.811+0000] {docker.py:403} INFO - Found company on page 1: ADCP (7/15)
+[2025-06-17T12:05:54.857+0000] {docker.py:403} INFO - Found company on page 1: ADES (8/15)
+[2025-06-17T12:05:54.900+0000] {docker.py:403} INFO - Found company on page 1: ADHI (9/15)
+[2025-06-17T12:05:54.943+0000] {docker.py:403} INFO - Found company on page 1: ADMF (10/15)
+[2025-06-17T12:05:54.985+0000] {docker.py:403} INFO - Found company on page 1: ADMG (11/15)
+[2025-06-17T12:05:55.027+0000] {docker.py:403} INFO - Found company on page 1: ADMR (12/15)
+[2025-06-17T12:05:56.372+0000] {docker.py:403} INFO - Clicked next button to go to page 2
+[2025-06-17T12:06:01.378+0000] {docker.py:403} INFO - Processing page 2 for year 2022...
+[2025-06-17T12:06:01.402+0000] {docker.py:403} INFO - Found 12 company sections on page 2
+[2025-06-17T12:06:01.449+0000] {docker.py:403} INFO - Found company on page 2: ADRO (13/15)
+[2025-06-17T12:06:01.493+0000] {docker.py:403} INFO - Found company on page 2: AGAR (14/15)
+[2025-06-17T12:06:01.535+0000] {docker.py:403} INFO - Found company on page 2: AGII (15/15)
+[TESTING MODE] Sudah mencapai batas 15 perusahaan untuk tahun 2022, berhenti scraping
+[TESTING MODE] Sudah mencapai batas 15 perusahaan, berhenti pagination
+[TESTING MODE] Berhasil scrape 15 nama perusahaan untuk tahun 2022
+[2025-06-17T12:06:01.541+0000] {docker.py:403} INFO - Saved 15 company names to /app/output/2022/idx_company_names_2022.txt
+[2025-06-17T12:06:01.679+0000] {docker.py:403} INFO - Browser closed after scraping names for year 2022.
+[2025-06-17T12:06:01.710+0000] {docker.py:403} INFO - ✅ Successfully obtained 15 company names for year 2022
+Companies: AALI, ABBA, ABDA, ABMM, ACES, ACST, ADCP, ADES, ADHI, ADMF, ADMG, ADMR, ADRO, AGAR, AGII
+
+💾 Step 2: Downloading ZIP files for year 2022
+Starting direct Selenium downloads for 15 companies for year 2022...
+[2025-06-17T12:06:03.724+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:06:04.906+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:06:05.087+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:06:09.703+0000] {docker.py:403} INFO - [1/15] Year 2022 - Selenium navigating for AALI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/AALI/instance.zip
+[2025-06-17T12:06:17.869+0000] {docker.py:403} INFO - ✓ Successfully downloaded AALI_instance_2022.zip - 184027 bytes
+[2025-06-17T12:06:20.008+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:06:21.231+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:06:21.398+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:06:25.751+0000] {docker.py:403} INFO - [2/15] Year 2022 - Selenium navigating for ABBA to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ABBA/instance.zip
+[2025-06-17T12:06:33.939+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABBA_instance_2022.zip - 172426 bytes
+[2025-06-17T12:06:36.027+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:06:37.151+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:06:37.329+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:06:41.722+0000] {docker.py:403} INFO - [3/15] Year 2022 - Selenium navigating for ABDA to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ABDA/instance.zip
+[2025-06-17T12:06:49.867+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABDA_instance_2022.zip - 67449 bytes
+[2025-06-17T12:06:52.009+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:06:53.219+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:06:53.383+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:06:57.678+0000] {docker.py:403} INFO - [4/15] Year 2022 - Selenium navigating for ABMM to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ABMM/instance.zip
+[2025-06-17T12:07:05.794+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABMM_instance_2022.zip - 209846 bytes
+[2025-06-17T12:07:07.883+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:07:09.064+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:07:09.224+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:07:13.567+0000] {docker.py:403} INFO - [5/15] Year 2022 - Selenium navigating for ACES to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ACES/instance.zip
+[2025-06-17T12:07:21.691+0000] {docker.py:403} INFO - ✓ Successfully downloaded ACES_instance_2022.zip - 184180 bytes
+[2025-06-17T12:07:23.841+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:07:24.990+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:07:25.154+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:07:29.555+0000] {docker.py:403} INFO - [6/15] Year 2022 - Selenium navigating for ACST to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ACST/instance.zip
+[2025-06-17T12:07:37.715+0000] {docker.py:403} INFO - ✓ Successfully downloaded ACST_instance_2022.zip - 184056 bytes
+[2025-06-17T12:07:39.815+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:07:41.024+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:07:41.189+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:07:45.573+0000] {docker.py:403} INFO - [7/15] Year 2022 - Selenium navigating for ADCP to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ADCP/instance.zip
+[2025-06-17T12:07:53.723+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADCP_instance_2022.zip - 187079 bytes
+[2025-06-17T12:07:55.865+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:07:57.034+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:07:57.199+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:08:01.556+0000] {docker.py:403} INFO - [8/15] Year 2022 - Selenium navigating for ADES to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ADES/instance.zip
+[2025-06-17T12:08:09.919+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADES_instance_2022.zip - 180759 bytes
+[2025-06-17T12:08:12.009+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:08:13.267+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:08:13.444+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:08:17.797+0000] {docker.py:403} INFO - [9/15] Year 2022 - Selenium navigating for ADHI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ADHI/instance.zip
+[2025-06-17T12:08:25.943+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADHI_instance_2022.zip - 213601 bytes
+[2025-06-17T12:08:28.083+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:08:29.304+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:08:29.465+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:08:33.873+0000] {docker.py:403} INFO - [10/15] Year 2022 - Selenium navigating for ADMF to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ADMF/instance.zip
+[2025-06-17T12:08:42.032+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMF_instance_2022.zip - 153862 bytes
+[2025-06-17T12:08:44.126+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:08:45.315+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:08:45.493+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:08:49.882+0000] {docker.py:403} INFO - [11/15] Year 2022 - Selenium navigating for ADMG to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ADMG/instance.zip
+[2025-06-17T12:08:58.046+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMG_instance_2022.zip - 180169 bytes
+[2025-06-17T12:09:00.143+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:09:01.296+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:09:01.492+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:09:05.893+0000] {docker.py:403} INFO - [12/15] Year 2022 - Selenium navigating for ADMR to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ADMR/instance.zip
+[2025-06-17T12:09:14.050+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMR_instance_2022.zip - 184552 bytes
+[2025-06-17T12:09:16.189+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:09:17.352+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:09:17.511+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:09:21.919+0000] {docker.py:403} INFO - [13/15] Year 2022 - Selenium navigating for ADRO to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/ADRO/instance.zip
+[2025-06-17T12:09:30.082+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADRO_instance_2022.zip - 196696 bytes
+[2025-06-17T12:09:32.183+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:09:33.412+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:09:33.565+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:09:37.953+0000] {docker.py:403} INFO - [14/15] Year 2022 - Selenium navigating for AGAR to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/AGAR/instance.zip
+[2025-06-17T12:09:46.210+0000] {docker.py:403} INFO - ✓ Successfully downloaded AGAR_instance_2022.zip - 183858 bytes
+[2025-06-17T12:09:48.350+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:09:49.530+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:09:49.689+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:09:54.044+0000] {docker.py:403} INFO - [15/15] Year 2022 - Selenium navigating for AGII to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202022/Audit/AGII/instance.zip
+[2025-06-17T12:10:02.204+0000] {docker.py:403} INFO - ✓ Successfully downloaded AGII_instance_2022.zip - 190548 bytes
+[2025-06-17T12:10:04.367+0000] {docker.py:403} INFO - Selenium Download Summary for Year 2022:
+----------------------------------------
+Total companies: 15
+Successful downloads: 15
+Failed downloads: 0
+Success rate: 100.0%
+Completion time: 2025-06-17 12:10:04.364113
+[2025-06-17T12:10:04.422+0000] {docker.py:403} INFO - Selenium download process completed for year 2022. See /app/output/2022/download_results_selenium_2022.log for details.
+[2025-06-17T12:10:04.423+0000] {docker.py:403} INFO - ✅ Completed processing for year 2022
+✅ Year 2022 completed successfully
+⏳ Waiting 10 seconds before processing next year...
+[2025-06-17T12:10:14.436+0000] {docker.py:403} INFO - ============================================================
+--- Processing Year 2023 ---
+============================================================
+
+📋 Step 1: Scraping company names for year 2023
+[2025-06-17T12:10:16.441+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:10:17.620+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:10:17.821+0000] {docker.py:403} INFO - Accessing URL: https://www.idx.co.id/id/perusahaan-tercatat/laporan-keuangan-dan-tahunan for year 2023
+[2025-06-17T12:10:19.417+0000] {docker.py:403} INFO - Page loaded successfully
+Simulating human behavior...
+[2025-06-17T12:10:24.422+0000] {docker.py:403} INFO - Memilih tahun 2023 dan jenis laporan 'Audit'...
+[2025-06-17T12:10:27.546+0000] {docker.py:403} INFO - ✓ Tahun 2023 telah dipilih.
+[2025-06-17T12:10:29.002+0000] {docker.py:403} INFO - ✓ Jenis laporan 'Audit' (Tahunan) telah dipilih.
+[2025-06-17T12:10:29.120+0000] {docker.py:403} INFO - ✓ Tombol 'Terapkan' telah diklik.
+[2025-06-17T12:10:34.156+0000] {docker.py:403} INFO - [TESTING MODE] Akan membatasi proses scraping nama emiten hanya 15 perusahaan saja untuk tahun 2023
+Processing page 1 for year 2023...
+[2025-06-17T12:10:34.185+0000] {docker.py:403} INFO - Found 12 company sections on page 1
+[2025-06-17T12:10:34.250+0000] {docker.py:403} INFO - Found company on page 1: AALI (1/15)
+[2025-06-17T12:10:34.287+0000] {docker.py:403} INFO - Found company on page 1: ABBA (2/15)
+[2025-06-17T12:10:34.327+0000] {docker.py:403} INFO - Found company on page 1: ABDA (3/15)
+[2025-06-17T12:10:34.368+0000] {docker.py:403} INFO - Found company on page 1: ABMM (4/15)
+[2025-06-17T12:10:34.411+0000] {docker.py:403} INFO - Found company on page 1: ACES (5/15)
+[2025-06-17T12:10:34.452+0000] {docker.py:403} INFO - Found company on page 1: ACRO (6/15)
+[2025-06-17T12:10:34.492+0000] {docker.py:403} INFO - Found company on page 1: ACST (7/15)
+[2025-06-17T12:10:34.532+0000] {docker.py:403} INFO - Found company on page 1: ADCP (8/15)
+[2025-06-17T12:10:34.573+0000] {docker.py:403} INFO - Found company on page 1: ADES (9/15)
+[2025-06-17T12:10:34.612+0000] {docker.py:403} INFO - Found company on page 1: ADHI (10/15)
+[2025-06-17T12:10:34.651+0000] {docker.py:403} INFO - Found company on page 1: ADMF (11/15)
+[2025-06-17T12:10:34.690+0000] {docker.py:403} INFO - Found company on page 1: ADMG (12/15)
+[2025-06-17T12:10:35.829+0000] {docker.py:403} INFO - Clicked next button to go to page 2
+[2025-06-17T12:10:40.835+0000] {docker.py:403} INFO - Processing page 2 for year 2023...
+[2025-06-17T12:10:40.858+0000] {docker.py:403} INFO - Found 12 company sections on page 2
+[2025-06-17T12:10:40.899+0000] {docker.py:403} INFO - Found company on page 2: ADMR (13/15)
+[2025-06-17T12:10:40.937+0000] {docker.py:403} INFO - Found company on page 2: ADRO (14/15)
+[2025-06-17T12:10:40.974+0000] {docker.py:403} INFO - Found company on page 2: AEGS (15/15)
+[TESTING MODE] Sudah mencapai batas 15 perusahaan untuk tahun 2023, berhenti scraping
+[TESTING MODE] Sudah mencapai batas 15 perusahaan, berhenti pagination
+[TESTING MODE] Berhasil scrape 15 nama perusahaan untuk tahun 2023
+[2025-06-17T12:10:40.987+0000] {docker.py:403} INFO - Saved 15 company names to /app/output/2023/idx_company_names_2023.txt
+[2025-06-17T12:10:41.264+0000] {docker.py:403} INFO - Browser closed after scraping names for year 2023.
+[2025-06-17T12:10:41.321+0000] {docker.py:403} INFO - ✅ Successfully obtained 15 company names for year 2023
+Companies: AALI, ABBA, ABDA, ABMM, ACES, ACRO, ACST, ADCP, ADES, ADHI, ADMF, ADMG, ADMR, ADRO, AEGS
+
+💾 Step 2: Downloading ZIP files for year 2023
+Starting direct Selenium downloads for 15 companies for year 2023...
+[2025-06-17T12:10:43.334+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:10:44.579+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:10:44.753+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:10:49.227+0000] {docker.py:403} INFO - [1/15] Year 2023 - Selenium navigating for AALI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/AALI/instance.zip
+[2025-06-17T12:10:57.336+0000] {docker.py:403} INFO - ✓ Successfully downloaded AALI_instance_2023.zip - 114051 bytes
+[2025-06-17T12:10:59.481+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:11:00.650+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:11:00.838+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:11:05.300+0000] {docker.py:403} INFO - [2/15] Year 2023 - Selenium navigating for ABBA to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ABBA/instance.zip
+[2025-06-17T12:11:13.430+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABBA_instance_2023.zip - 112795 bytes
+[2025-06-17T12:11:15.572+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:11:16.750+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:11:16.926+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:11:21.477+0000] {docker.py:403} INFO - [3/15] Year 2023 - Selenium navigating for ABDA to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ABDA/instance.zip
+[2025-06-17T12:11:29.589+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABDA_instance_2023.zip - 50494 bytes
+[2025-06-17T12:11:31.731+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:11:32.944+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:11:33.123+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:11:37.494+0000] {docker.py:403} INFO - [4/15] Year 2023 - Selenium navigating for ABMM to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ABMM/instance.zip
+[2025-06-17T12:11:45.628+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABMM_instance_2023.zip - 146058 bytes
+[2025-06-17T12:11:47.768+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:11:49.034+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:11:49.217+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:11:53.622+0000] {docker.py:403} INFO - [5/15] Year 2023 - Selenium navigating for ACES to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ACES/instance.zip
+[2025-06-17T12:12:01.803+0000] {docker.py:403} INFO - ✓ Successfully downloaded ACES_instance_2023.zip - 138737 bytes
+[2025-06-17T12:12:03.948+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:12:05.194+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:12:05.381+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:12:09.853+0000] {docker.py:403} INFO - [6/15] Year 2023 - Selenium navigating for ACRO to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ACRO/instance.zip
+[2025-06-17T12:12:17.978+0000] {docker.py:403} INFO - ✓ Successfully downloaded ACRO_instance_2023.zip - 125725 bytes
+[2025-06-17T12:12:20.123+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:12:21.342+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:12:21.506+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:12:25.818+0000] {docker.py:403} INFO - [7/15] Year 2023 - Selenium navigating for ACST to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ACST/instance.zip
+[2025-06-17T12:12:33.955+0000] {docker.py:403} INFO - ✓ Successfully downloaded ACST_instance_2023.zip - 116110 bytes
+[2025-06-17T12:12:36.100+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:12:37.285+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:12:37.477+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:12:41.867+0000] {docker.py:403} INFO - [8/15] Year 2023 - Selenium navigating for ADCP to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ADCP/instance.zip
+[2025-06-17T12:12:49.976+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADCP_instance_2023.zip - 152690 bytes
+[2025-06-17T12:12:52.137+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:12:53.308+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:12:53.470+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:12:57.798+0000] {docker.py:403} INFO - [9/15] Year 2023 - Selenium navigating for ADES to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ADES/instance.zip
+[2025-06-17T12:13:05.968+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADES_instance_2023.zip - 125465 bytes
+[2025-06-17T12:13:08.072+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:13:09.287+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:13:09.446+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:13:13.780+0000] {docker.py:403} INFO - [10/15] Year 2023 - Selenium navigating for ADHI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ADHI/instance.zip
+[2025-06-17T12:13:21.960+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADHI_instance_2023.zip - 177880 bytes
+[2025-06-17T12:13:24.102+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:13:25.327+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:13:25.485+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:13:32.481+0000] {docker.py:403} INFO - [11/15] Year 2023 - Selenium navigating for ADMF to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ADMF/instance.zip
+[2025-06-17T12:13:40.638+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMF_instance_2023.zip - 110593 bytes
+[2025-06-17T12:13:42.780+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:13:44.028+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:13:44.185+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:13:48.728+0000] {docker.py:403} INFO - [12/15] Year 2023 - Selenium navigating for ADMG to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ADMG/instance.zip
+[2025-06-17T12:13:56.866+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMG_instance_2023.zip - 131291 bytes
+[2025-06-17T12:13:59.004+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:14:00.233+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:14:00.396+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:14:04.774+0000] {docker.py:403} INFO - [13/15] Year 2023 - Selenium navigating for ADMR to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ADMR/instance.zip
+[2025-06-17T12:14:12.922+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMR_instance_2023.zip - 117467 bytes
+[2025-06-17T12:14:15.010+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:14:16.250+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:14:16.441+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:14:20.914+0000] {docker.py:403} INFO - [14/15] Year 2023 - Selenium navigating for ADRO to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/ADRO/instance.zip
+[2025-06-17T12:14:29.079+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADRO_instance_2023.zip - 120432 bytes
+[2025-06-17T12:14:31.177+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:14:32.414+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:14:32.621+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:14:38.536+0000] {docker.py:403} INFO - [15/15] Year 2023 - Selenium navigating for AEGS to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202023/Audit/AEGS/instance.zip
+[2025-06-17T12:14:46.819+0000] {docker.py:403} INFO - ✓ Successfully downloaded AEGS_instance_2023.zip - 128163 bytes
+[2025-06-17T12:14:48.920+0000] {docker.py:403} INFO - Selenium Download Summary for Year 2023:
+----------------------------------------
+Total companies: 15
+Successful downloads: 15
+Failed downloads: 0
+Success rate: 100.0%
+Completion time: 2025-06-17 12:14:48.917206
+[2025-06-17T12:14:49.017+0000] {docker.py:403} INFO - Selenium download process completed for year 2023. See /app/output/2023/download_results_selenium_2023.log for details.
+[2025-06-17T12:14:49.019+0000] {docker.py:403} INFO - ✅ Completed processing for year 2023
+✅ Year 2023 completed successfully
+⏳ Waiting 10 seconds before processing next year...
+[2025-06-17T12:14:59.030+0000] {docker.py:403} INFO - ============================================================
+--- Processing Year 2024 ---
+============================================================
+
+📋 Step 1: Scraping company names for year 2024
+[2025-06-17T12:15:01.035+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:15:02.193+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:15:02.352+0000] {docker.py:403} INFO - Accessing URL: https://www.idx.co.id/id/perusahaan-tercatat/laporan-keuangan-dan-tahunan for year 2024
+[2025-06-17T12:15:03.740+0000] {docker.py:403} INFO - Page loaded successfully
+Simulating human behavior...
+[2025-06-17T12:15:08.745+0000] {docker.py:403} INFO - Memilih tahun 2024 dan jenis laporan 'Audit'...
+[2025-06-17T12:15:11.846+0000] {docker.py:403} INFO - ✓ Tahun 2024 telah dipilih.
+[2025-06-17T12:15:13.035+0000] {docker.py:403} INFO - ✓ Jenis laporan 'Audit' (Tahunan) telah dipilih.
+[2025-06-17T12:15:13.155+0000] {docker.py:403} INFO - ✓ Tombol 'Terapkan' telah diklik.
+[2025-06-17T12:15:18.192+0000] {docker.py:403} INFO - [TESTING MODE] Akan membatasi proses scraping nama emiten hanya 15 perusahaan saja untuk tahun 2024
+Processing page 1 for year 2024...
+[2025-06-17T12:15:18.231+0000] {docker.py:403} INFO - Found 12 company sections on page 1
+[2025-06-17T12:15:18.302+0000] {docker.py:403} INFO - Found company on page 1: AADI (1/15)
+[2025-06-17T12:15:18.349+0000] {docker.py:403} INFO - Found company on page 1: AALI (2/15)
+[2025-06-17T12:15:18.395+0000] {docker.py:403} INFO - Found company on page 1: ABBA (3/15)
+[2025-06-17T12:15:18.441+0000] {docker.py:403} INFO - Found company on page 1: ABDA (4/15)
+[2025-06-17T12:15:18.487+0000] {docker.py:403} INFO - Found company on page 1: ABMM (5/15)
+[2025-06-17T12:15:18.532+0000] {docker.py:403} INFO - Found company on page 1: ACES (6/15)
+[2025-06-17T12:15:18.577+0000] {docker.py:403} INFO - Found company on page 1: ACRO (7/15)
+[2025-06-17T12:15:18.868+0000] {docker.py:403} INFO - Found company on page 1: ACST (8/15)
+[2025-06-17T12:15:18.913+0000] {docker.py:403} INFO - Found company on page 1: ADCP (9/15)
+[2025-06-17T12:15:18.965+0000] {docker.py:403} INFO - Found company on page 1: ADES (10/15)
+[2025-06-17T12:15:19.089+0000] {docker.py:403} INFO - Found company on page 1: ADHI (11/15)
+[2025-06-17T12:15:19.140+0000] {docker.py:403} INFO - Found company on page 1: ADMF (12/15)
+[2025-06-17T12:15:20.312+0000] {docker.py:403} INFO - Clicked next button to go to page 2
+[2025-06-17T12:15:25.316+0000] {docker.py:403} INFO - Processing page 2 for year 2024...
+[2025-06-17T12:15:25.339+0000] {docker.py:403} INFO - Found 12 company sections on page 2
+[2025-06-17T12:15:25.381+0000] {docker.py:403} INFO - Found company on page 2: ADMG (13/15)
+[2025-06-17T12:15:25.421+0000] {docker.py:403} INFO - Found company on page 2: ADMR (14/15)
+[2025-06-17T12:15:25.461+0000] {docker.py:403} INFO - Found company on page 2: ADRO (15/15)
+[TESTING MODE] Sudah mencapai batas 15 perusahaan untuk tahun 2024, berhenti scraping
+[TESTING MODE] Sudah mencapai batas 15 perusahaan, berhenti pagination
+[TESTING MODE] Berhasil scrape 15 nama perusahaan untuk tahun 2024
+[2025-06-17T12:15:25.467+0000] {docker.py:403} INFO - Saved 15 company names to /app/output/2024/idx_company_names_2024.txt
+[2025-06-17T12:15:25.605+0000] {docker.py:403} INFO - Browser closed after scraping names for year 2024.
+[2025-06-17T12:15:25.676+0000] {docker.py:403} INFO - ✅ Successfully obtained 15 company names for year 2024
+Companies: AADI, AALI, ABBA, ABDA, ABMM, ACES, ACRO, ACST, ADCP, ADES, ADHI, ADMF, ADMG, ADMR, ADRO
+
+💾 Step 2: Downloading ZIP files for year 2024
+Starting direct Selenium downloads for 15 companies for year 2024...
+[2025-06-17T12:15:27.689+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:15:28.921+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:15:29.091+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:15:33.501+0000] {docker.py:403} INFO - [1/15] Year 2024 - Selenium navigating for AADI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/AADI/instance.zip
+[2025-06-17T12:15:41.604+0000] {docker.py:403} INFO - ✓ Successfully downloaded AADI_instance_2024.zip - 143996 bytes
+[2025-06-17T12:15:43.743+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:15:44.942+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:15:45.090+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:15:49.542+0000] {docker.py:403} INFO - [2/15] Year 2024 - Selenium navigating for AALI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/AALI/instance.zip
+[2025-06-17T12:15:57.666+0000] {docker.py:403} INFO - ✓ Successfully downloaded AALI_instance_2024.zip - 124227 bytes
+[2025-06-17T12:15:59.809+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:16:01.057+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:16:01.272+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:16:05.679+0000] {docker.py:403} INFO - [3/15] Year 2024 - Selenium navigating for ABBA to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ABBA/instance.zip
+[2025-06-17T12:16:13.827+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABBA_instance_2024.zip - 111972 bytes
+[2025-06-17T12:16:15.969+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:16:17.152+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:16:17.330+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:16:21.696+0000] {docker.py:403} INFO - [4/15] Year 2024 - Selenium navigating for ABDA to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ABDA/instance.zip
+[2025-06-17T12:16:29.820+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABDA_instance_2024.zip - 50102 bytes
+[2025-06-17T12:16:31.959+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:16:33.139+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:16:33.326+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:16:37.688+0000] {docker.py:403} INFO - [5/15] Year 2024 - Selenium navigating for ABMM to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ABMM/instance.zip
+[2025-06-17T12:16:45.875+0000] {docker.py:403} INFO - ✓ Successfully downloaded ABMM_instance_2024.zip - 141013 bytes
+[2025-06-17T12:16:47.968+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:16:49.188+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:16:49.387+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:16:53.886+0000] {docker.py:403} INFO - [6/15] Year 2024 - Selenium navigating for ACES to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ACES/instance.zip
+[2025-06-17T12:17:01.998+0000] {docker.py:403} INFO - ✓ Successfully downloaded ACES_instance_2024.zip - 135199 bytes
+[2025-06-17T12:17:04.136+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:17:05.373+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:17:05.558+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:17:10.062+0000] {docker.py:403} INFO - [7/15] Year 2024 - Selenium navigating for ACRO to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ACRO/instance.zip
+[2025-06-17T12:17:18.251+0000] {docker.py:403} INFO - ✓ Successfully downloaded ACRO_instance_2024.zip - 119628 bytes
+[2025-06-17T12:17:20.355+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:17:21.624+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:17:21.790+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:17:26.113+0000] {docker.py:403} INFO - [8/15] Year 2024 - Selenium navigating for ACST to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ACST/instance.zip
+[2025-06-17T12:17:34.231+0000] {docker.py:403} INFO - ✓ Successfully downloaded ACST_instance_2024.zip - 118902 bytes
+[2025-06-17T12:17:36.379+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:17:37.755+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:17:37.916+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:17:42.404+0000] {docker.py:403} INFO - [9/15] Year 2024 - Selenium navigating for ADCP to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ADCP/instance.zip
+[2025-06-17T12:17:50.570+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADCP_instance_2024.zip - 152833 bytes
+[2025-06-17T12:17:52.713+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:17:54.000+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:17:54.157+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:17:58.580+0000] {docker.py:403} INFO - [10/15] Year 2024 - Selenium navigating for ADES to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ADES/instance.zip
+[2025-06-17T12:18:06.701+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADES_instance_2024.zip - 125235 bytes
+[2025-06-17T12:18:08.832+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:18:09.986+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:18:10.151+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:18:14.589+0000] {docker.py:403} INFO - [11/15] Year 2024 - Selenium navigating for ADHI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ADHI/instance.zip
+[2025-06-17T12:18:23.801+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADHI_instance_2024.zip - 151395 bytes
+[2025-06-17T12:18:25.941+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:18:27.189+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:18:27.375+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:18:33.526+0000] {docker.py:403} INFO - [12/15] Year 2024 - Selenium navigating for ADMF to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ADMF/instance.zip
+[2025-06-17T12:18:41.667+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMF_instance_2024.zip - 109179 bytes
+[2025-06-17T12:18:43.812+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:18:45.013+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:18:45.199+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:18:49.648+0000] {docker.py:403} INFO - [13/15] Year 2024 - Selenium navigating for ADMG to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ADMG/instance.zip
+[2025-06-17T12:18:57.791+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMG_instance_2024.zip - 130213 bytes
+[2025-06-17T12:18:59.929+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:19:01.074+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:19:01.260+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:19:05.626+0000] {docker.py:403} INFO - [14/15] Year 2024 - Selenium navigating for ADMR to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ADMR/instance.zip
+[2025-06-17T12:19:13.843+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADMR_instance_2024.zip - 132142 bytes
+[2025-06-17T12:19:15.941+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:19:17.138+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:19:17.299+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:19:21.722+0000] {docker.py:403} INFO - [15/15] Year 2024 - Selenium navigating for ADRO to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202024/Audit/ADRO/instance.zip
+[2025-06-17T12:19:29.898+0000] {docker.py:403} INFO - ✓ Successfully downloaded ADRO_instance_2024.zip - 140646 bytes
+[2025-06-17T12:19:32.016+0000] {docker.py:403} INFO - Selenium Download Summary for Year 2024:
+----------------------------------------
+Total companies: 15
+Successful downloads: 15
+Failed downloads: 0
+Success rate: 100.0%
+Completion time: 2025-06-17 12:19:32.014101
+[2025-06-17T12:19:32.119+0000] {docker.py:403} INFO - Selenium download process completed for year 2024. See /app/output/2024/download_results_selenium_2024.log for details.
+[2025-06-17T12:19:32.120+0000] {docker.py:403} INFO - ✅ Completed processing for year 2024
+✅ Year 2024 completed successfully
+⏳ Waiting 10 seconds before processing next year...
+[2025-06-17T12:19:42.132+0000] {docker.py:403} INFO - ============================================================
+--- Processing Year 2025 ---
+============================================================
+
+📋 Step 1: Scraping company names for year 2025
+[2025-06-17T12:19:44.135+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:19:45.337+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:19:45.493+0000] {docker.py:403} INFO - Accessing URL: https://www.idx.co.id/id/perusahaan-tercatat/laporan-keuangan-dan-tahunan for year 2025
+[2025-06-17T12:19:46.895+0000] {docker.py:403} INFO - Page loaded successfully
+Simulating human behavior...
+[2025-06-17T12:19:51.901+0000] {docker.py:403} INFO - Memilih tahun 2025 dan jenis laporan 'Audit'...
+[2025-06-17T12:19:54.991+0000] {docker.py:403} INFO - ✓ Tahun 2025 telah dipilih.
+[2025-06-17T12:19:56.214+0000] {docker.py:403} INFO - ✓ Jenis laporan 'Audit' (Tahunan) telah dipilih.
+[2025-06-17T12:19:56.334+0000] {docker.py:403} INFO - ✓ Tombol 'Terapkan' telah diklik.
+[2025-06-17T12:20:01.375+0000] {docker.py:403} INFO - [TESTING MODE] Akan membatasi proses scraping nama emiten hanya 15 perusahaan saja untuk tahun 2025
+Processing page 1 for year 2025...
+[2025-06-17T12:20:01.406+0000] {docker.py:403} INFO - Found 2 company sections on page 1
+[2025-06-17T12:20:01.473+0000] {docker.py:403} INFO - Found company on page 1: LOPI (1/15)
+[2025-06-17T12:20:01.513+0000] {docker.py:403} INFO - Found company on page 1: PUDP (2/15)
+[2025-06-17T12:20:01.579+0000] {docker.py:403} INFO - No more pages or error clicking next button: Message: no such element: Unable to locate element: {"method":"css selector","selector":"button.btn-arrow.--next"}
+  (Session info: chrome=137.0.7151.103)
+Stacktrace:
+#0 0x55fd038336de <unknown>
+#1 0x55fd032ed6f1 <unknown>
+#2 0x55fd0333d6db <unknown>
+#3 0x55fd0333d8b1 <unknown>
+#4 0x55fd03386174 <unknown>
+#5 0x55fd033621fd <unknown>
+#6 0x55fd03383be6 <unknown>
+#7 0x55fd03361fa3 <unknown>
+#8 0x55fd0332ff1d <unknown>
+#9 0x55fd03330cf1 <unknown>
+#10 0x55fd037ff3aa <unknown>
+#11 0x55fd038026ff <unknown>
+#12 0x55fd03802198 <unknown>
+#13 0x55fd03802ba5 <unknown>
+#14 0x55fd037e90cb <unknown>
+#15 0x55fd03802f10 <unknown>
+#16 0x55fd037d2b09 <unknown>
+#17 0x55fd03821315 <unknown>
+#18 0x55fd0382150b <unknown>
+#19 0x55fd03832255 <unknown>
+#20 0x7f86988a91f5 <unknown>
+
+[TESTING MODE] Berhasil scrape 2 nama perusahaan untuk tahun 2025
+[2025-06-17T12:20:01.592+0000] {docker.py:403} INFO - Saved 2 company names to /app/output/2025/idx_company_names_2025.txt
+[2025-06-17T12:20:01.741+0000] {docker.py:403} INFO - Browser closed after scraping names for year 2025.
+[2025-06-17T12:20:01.854+0000] {docker.py:403} INFO - ✅ Successfully obtained 2 company names for year 2025
+Companies: LOPI, PUDP
+
+💾 Step 2: Downloading ZIP files for year 2025
+Starting direct Selenium downloads for 2 companies for year 2025...
+[2025-06-17T12:20:03.865+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:20:05.053+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:20:05.215+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:20:09.838+0000] {docker.py:403} INFO - [1/2] Year 2025 - Selenium navigating for LOPI to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202025/Audit/LOPI/instance.zip
+[2025-06-17T12:20:18.014+0000] {docker.py:403} INFO - ✓ Successfully downloaded LOPI_instance_2025.zip - 114124 bytes
+[2025-06-17T12:20:20.149+0000] {docker.py:403} INFO - 🔧 Trying Chrome driver initialization method 1...
+[2025-06-17T12:20:21.311+0000] {docker.py:403} INFO - ✅ Chrome driver initialized successfully with method 1
+[2025-06-17T12:20:21.511+0000] {docker.py:403} INFO - → Establishing session at main page...
+[2025-06-17T12:20:27.316+0000] {docker.py:403} INFO - [2/2] Year 2025 - Selenium navigating for PUDP to https://www.idx.co.id/Portals/0/StaticData/ListedCompanies/Corporate_Actions/New_Info_JSX/Jenis_Informasi/01_Laporan_Keuangan/02_Soft_Copy_Laporan_Keuangan//Laporan%20Keuangan%20Tahun%202025/Audit/PUDP/instance.zip
+[2025-06-17T12:20:35.476+0000] {docker.py:403} INFO - ✓ Successfully downloaded PUDP_instance_2025.zip - 121325 bytes
+[2025-06-17T12:20:37.614+0000] {docker.py:403} INFO - Selenium Download Summary for Year 2025:
+----------------------------------------
+Total companies: 2
+Successful downloads: 2
+Failed downloads: 0
+Success rate: 100.0%
+Completion time: 2025-06-17 12:20:37.611569
+[2025-06-17T12:20:37.713+0000] {docker.py:403} INFO - Selenium download process completed for year 2025. See /app/output/2025/download_results_selenium_2025.log for details.
+[2025-06-17T12:20:37.715+0000] {docker.py:403} INFO - ✅ Completed processing for year 2025
+✅ Year 2025 completed successfully
+
+================================================================================
+📊 FINAL SUMMARY
+================================================================================
+✅ Successfully processed years: [2021, 2022, 2023, 2024, 2025]
+❌ Failed years: []
+📈 Success rate: 5/5 (100.0%)
+================================================================================
+🎉 IDX Multi-Year Extract Process Completed
+[2025-06-17T12:20:37.716+0000] {docker.py:403} INFO - 
+[2025-06-17T12:20:38.491+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=idx_pipeline, task_id=extract_idx, execution_date=20250617T120049, start_date=20250617T120052, end_date=20250617T122038
+[2025-06-17T12:20:38.577+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2025-06-17T12:20:38.658+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

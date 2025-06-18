@@ -1,0 +1,40 @@
+[2025-06-17T10:31:02.786+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: idx_pipeline.load_idx manual__2025-06-17T10:29:08.652857+00:00 [queued]>
+[2025-06-17T10:31:02.805+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: idx_pipeline.load_idx manual__2025-06-17T10:29:08.652857+00:00 [queued]>
+[2025-06-17T10:31:02.807+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2025-06-17T10:31:02.841+0000] {taskinstance.py:1327} INFO - Executing <Task(DockerOperator): load_idx> on 2025-06-17 10:29:08.652857+00:00
+[2025-06-17T10:31:02.850+0000] {standard_task_runner.py:57} INFO - Started process 672 to run task
+[2025-06-17T10:31:02.855+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'idx_pipeline', 'load_idx', 'manual__2025-06-17T10:29:08.652857+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/idx_pipeline_dag.py', '--cfg-path', '/tmp/tmp0brczv61']
+[2025-06-17T10:31:02.857+0000] {standard_task_runner.py:85} INFO - Job 65: Subtask load_idx
+[2025-06-17T10:31:02.957+0000] {task_command.py:410} INFO - Running <TaskInstance: idx_pipeline.load_idx manual__2025-06-17T10:29:08.652857+00:00 [running]> on host 790f4cde8a0c
+[2025-06-17T10:31:03.169+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='idx_pipeline' AIRFLOW_CTX_TASK_ID='load_idx' AIRFLOW_CTX_EXECUTION_DATE='2025-06-17T10:29:08.652857+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-17T10:29:08.652857+00:00'
+[2025-06-17T10:31:03.230+0000] {docker.py:334} INFO - Starting docker container from image bigdata-pipeline:latest
+[2025-06-17T10:31:04.635+0000] {docker.py:403} INFO - --- Starting XBRL to JSON Conversion and MongoDB Load ---
+Database: tugas_bigdata, Collection: idx_raw
+MongoDB URI: mongodb+srv://bigdatakecil:bigdata04@xtrahera.m7x7qad.mongodb.net/?retryWrites=true&w=majority&appName=xtrahera
+This will process data from all years (2021-2025) into a single collection
+[2025-06-17T10:31:04.914+0000] {docker.py:403} INFO - Connected to MongoDB using URI, Database: tugas_bigdata, Collection: idx_raw
+[2025-06-17T10:31:04.933+0000] {docker.py:403} INFO - Found 1 year directories: Legacy structure - no year directories
+
+=== Processing files for year: unknown ===
+[2025-06-17T10:31:04.948+0000] {docker.py:403} INFO - Found 5 company directories for year unknown
+[2025-06-17T10:31:04.952+0000] {docker.py:403} INFO - Processing /app/output/AADI/AADI_instance.zip ...
+[2025-06-17T10:31:08.960+0000] {docker.py:403} INFO - ✓ Saved -> AADI_unknown_instance.json & MongoDB
+[2025-06-17T10:31:08.965+0000] {docker.py:403} INFO - Processing /app/output/AALI/AALI_instance.zip ...
+[2025-06-17T10:31:12.421+0000] {docker.py:403} INFO - ✓ Saved -> AALI_unknown_instance.json & MongoDB
+[2025-06-17T10:31:12.426+0000] {docker.py:403} INFO - Processing /app/output/ABBA/ABBA_instance.zip ...
+[2025-06-17T10:31:15.860+0000] {docker.py:403} INFO - ✓ Saved -> ABBA_unknown_instance.json & MongoDB
+[2025-06-17T10:31:15.867+0000] {docker.py:403} INFO - Processing /app/output/ABDA/ABDA_instance.zip ...
+[2025-06-17T10:31:16.915+0000] {docker.py:403} INFO - ✓ Saved -> ABDA_unknown_instance.json & MongoDB
+[2025-06-17T10:31:16.922+0000] {docker.py:403} INFO - Processing /app/output/ABMM/ABMM_instance.zip ...
+[2025-06-17T10:31:20.050+0000] {docker.py:403} INFO - ✓ Saved -> ABMM_unknown_instance.json & MongoDB
+[2025-06-17T10:31:20.051+0000] {docker.py:403} INFO - Conversion and Load Summary:
+---------------------------
+Total files processed: 5
+Successfully processed and loaded: 5
+Failed processing: 0
+Years processed: Legacy structure
+Completion time: 2025-06-17 10:31:20.049955
+[2025-06-17T10:31:20.053+0000] {docker.py:403} INFO - XBRL conversion and MongoDB load process completed. See /app/output/xbrl_conversion_and_load_results.log for details.
+[2025-06-17T10:31:21.094+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=idx_pipeline, task_id=load_idx, execution_date=20250617T102908, start_date=20250617T103102, end_date=20250617T103121
+[2025-06-17T10:31:21.170+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2025-06-17T10:31:21.230+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check
