@@ -72,4 +72,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=5 \
     CMD curl --fail http://localhost:8080/health || exit 1
 
 # Default command (can be overridden by docker-compose)
-CMD ["python", "--version"]
+CMD ["bash", "-c", "pip install apache-airflow-providers-docker && airflow webserver --port 8080"]
