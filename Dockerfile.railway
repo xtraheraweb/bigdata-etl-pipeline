@@ -1,0 +1,22 @@
+FROM apache/airflow:2.6.3
+
+USER airflow
+
+# Copy requirements dari folder dags
+COPY airflow/dags/requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+# Copy semua file DAGs dan scripts
+COPY airflow/dags/ /opt/airflow/dags/
+
+# Environment variables
+ENV AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////tmp/airflow.db
+ENV AIRFLOW__CORE__EXECUTOR=LocalExecutor
+ENV AIRFLOW__CORE__LOAD_EXAMPLES=false
+ENV MONGO_URI="mongodb+srv://bigdatakecil:bigdata04@xtrahera.m7x7qad.mongodb.net/?retryWrites=true&w=majority&appName=xtrahera"
+
+RUN mkdir -p /opt/airflow/logs /opt/airflow/output
+
+EXPOSE 8080
+
+CMD bash -c "airflow db init && airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com && airflow webserver --port 8080 & airflow scheduler & wait"
